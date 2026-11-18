@@ -1,6 +1,6 @@
 # Frozen evaluator demonstration
 
-The release artifact and decoder parameters use training-trip CV evidence. The trained-model default was corrected after the evaluator data had been supplied; the correction did not fit or tune on evaluator rows, but must not be described as a blind pre-evaluator choice. The ten supplied evaluator trips are **only** for final API inference and server-side metrics. Do not use their `.route` files for model fitting, feature selection, tuning, or hardcoded outputs. Keep the evaluator folder on Laptop 1, outside the repository.
+The release scorer was selected using training-trip CV evidence after evaluator results had been seen. An observed failure on evaluator trip 00000015 later motivated the segment restart option. The restart penalty was selected using student-test trips. Evaluator references are used for server-side metrics after prediction. Keep the evaluator folder on Laptop 1, outside the repository.
 
 ## Laptop 1
 
@@ -32,4 +32,4 @@ For a frozen automated check on Laptop 1:
 python -m pathsnap.verify_demo --api http://127.0.0.1:8000 --partition evaluator_test --all-methods
 ```
 
-This verifies both exposed methods on all ten IDs, observation ordering, geometry response shape, no reference arc IDs in the response, and a missing-trip 404. It must not feed back into model selection. The report still needs actual photographs or screenshots of the physical two-laptop setup and API console during the event.
+This verifies all exposed methods on ten IDs, observation ordering, geometry response shape, reference arc isolation, and a missing-trip 404. Capture the two-laptop setup and Laptop 1 API console during the event.
