@@ -29,3 +29,19 @@ def test_cached_path_respects_the_exact_limit():
     distance = graph.lengths[0]
     assert graph.path(0, 1, distance + .01) == (distance, [0])
     assert graph.path(0, 1, distance - .01) == (float('inf'), [])
+
+
+def test_decoder_can_restart_instead_of_staying_on_an_unlikely_arc():
+    graph = RoadGraph([(0., 0.), (.0005, 0.), (0., .0001), (.0005, .0001)],
+                      [(0, 1), (2, 3)])
+    track = [dict(lon=0., lat=0., timestamp=0.),
+             dict(lon=0., lat=.0001, timestamp=60.)]
+    grouped = {0: [dict(arc_id=0, probability=1., snapped_lon=0., snapped_lat=0.)],
+               1: [dict(arc_id=0, probability=.001, snapped_lon=0., snapped_lat=0.),
+                   dict(arc_id=1, probability=.999, snapped_lon=0., snapped_lat=.0001)]}
+
+    assert decode(track, graph, grouped, bridge_gaps=True)[0] == [0, 0]
+    ids, links, warnings = decode(track, graph, grouped, bridge_gaps=True, restart_penalty=2.)
+    assert ids == [0, 1]
+    assert links == [[], []]
+    assert warnings == ['observation 1: evidence favors a new segment']

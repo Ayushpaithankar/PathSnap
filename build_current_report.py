@@ -150,9 +150,11 @@ def main():
     if ui_image.is_file():
         story += [PageBreak(), para('8. UI and deployment evidence', 'h1'),
                   Image(str(ui_image), width=500, height=415),
-                  para('Local API-connected evaluator UI after a real prediction for trip 00000015. This trip shows a substantial point-accuracy loss after decoding, although continuity rises. A physical two-laptop screenshot and receiving-laptop console photograph must be captured at the event.', 'caption')]
+                  para('Local evaluator UI for trip 00000015 after the decoder update. A physical two-laptop screenshot and receiving-laptop console photograph must be captured at the event.', 'caption')]
     story += [para('Frozen final smoke tests completed the exposed methods for all ten evaluator IDs over HTTP. Those outcomes were not fed into model selection. The physical same-network two-laptop rehearsal and event screenshots remain to be added; do not present a local screenshot as proof of two separate devices.'),
-              para('Evidence: notebooks/PathSnap_Colab.ipynb; MODEL_TRAINING_EVIDENCE.md; results/ordered/; results/review/; pathsnap/review_experiment.py; pathsnap/core.py; pathsnap/api.py; pathsnap/ui.html; EVALUATOR_SETUP.md.', 'small')]
+              para('Release update: explicit route breaks', 'h2'),
+              para('The observed error on evaluator trip 00000015 prompted a decoder update. Viterbi can start a segment at a cost of 20 log-score units and reports the break without adding a connector. This cost gave the best aggregate student-test point accuracy among the tested settings. Student-test decoded accuracy increased from 88.53% to 93.17%. For trip 00000015 it increased from 61.28% to 92.53% (6,342 of 6,854 observations), with 316 reported breaks. Ordered route overlap was 57.63%. The tables above preserve the original experiments. The evaluator rerun is a follow-up check after its earlier results had been observed.', 'small'),
+              para('Evidence: notebooks/PathSnap_Colab.ipynb, MODEL_TRAINING_EVIDENCE.md, results/ordered/, results/review/restart_validation.csv, and EVALUATOR_SETUP.md.', 'small')]
 
     doc = SimpleDocTemplate(str(OUT), pagesize=A4, leftMargin=42, rightMargin=42,
                             topMargin=42, bottomMargin=55, title='PathSnap current technical report draft')

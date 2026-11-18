@@ -147,16 +147,29 @@ def arc_fraction(graph,row):
 
 def decode(track, graph, grouped, max_gap_s=30., max_speed_mps=45., beta_m=100.,
            backward_jitter_m=8., emission_weight=1., reversal_penalty=0.,
-           stationary_speed=None, bridge_gaps=False):
-    """Viterbi over candidate arcs; empty sets and large gaps split runs."""
+           stationary_speed=None, bridge_gaps=False, restart_penalty=None):
+    """Decode candidate arcs, with optional penalized starts of new segments."""
+    if restart_penalty is not None and (not math.isfinite(restart_penalty) or restart_penalty < 0):
+        raise ValueError('Restart penalty must be finite and nonnegative')
     predictions=[None]*len(track); connectors=[[] for _ in track];warnings=[]
     previous=None; scores={}; back={}; run=[];previous_fractions={}
+    def warn(i, message):
+        warnings.append((i, f'observation {i}: {message}'))
+
     def finish():
         if not run:return
         end=max(scores,key=scores.get)
         for i in reversed(run):
             predictions[i]=end
-            prev,link=back[(i,end)];connectors[i]=link
+            prev,link=back[(i,end)]
+            if link is None:
+                warn(i, 'evidence favors a new segment')
+            else:
+                connectors[i]=link
+                if bridge_gaps and prev is not None:
+                    gap = track[i]['timestamp'] - track[i-1]['timestamp']
+                    if gap > max_gap_s:
+                        warn(i, f'time gap {gap:g}s bridged via directed route')
             end=prev
             if end is None:break
     for i,obs in enumerate(track):
@@ -166,9 +179,9 @@ def decode(track, graph, grouped, max_gap_s=30., max_speed_mps=45., beta_m=100.,
             finish();scores={};run=[];previous=None;previous_fractions={}
             back.clear()
             if not candidates:
-                warnings.append(f'observation {i}: no candidates')
+                warn(i, 'no candidates')
                 continue
-            warnings.append(f'observation {i}: time gap {gap:g}s; new segment')
+            warn(i, f'time gap {gap:g}s; new segment')
         total=sum(max(float(r['probability']),1e-12) for r in candidates)
         emissions={r['arc_id']:emission_weight * math.log(max(float(r['probability']),1e-12)/total)
                    for r in candidates}
@@ -180,6 +193,7 @@ def decode(track, graph, grouped, max_gap_s=30., max_speed_mps=45., beta_m=100.,
             cap = max_speed_mps * gap + (0. if long_gap else 100.)
             stationary = stationary_speed is not None and not long_gap and straight <= stationary_speed * gap
             shared = scores.keys() & fractions.keys() if stationary else set()
+            restart_arc = max(scores, key=scores.get) if restart_penalty is not None else None
         updated={}; local_back={}
         for r in candidates:
             a=r['arc_id']; best=(-float('inf'),None,[])
@@ -210,20 +224,23 @@ def decode(track, graph, grouped, max_gap_s=30., max_speed_mps=45., beta_m=100.,
                     emission = 0. if stationary and old == a else emissions[a]
                     value=score+emission-abs(travel-straight)/likelihood_scale-reversal_penalty*reversals
                     if value>best[0]:best=(value,old,link)
+                if restart_arc is not None:
+                    # Restart from the best prefix without claiming a connecting path.
+                    restart_score = scores[restart_arc] + emissions[a] - restart_penalty
+                    if restart_score > best[0]:
+                        best = (restart_score, restart_arc, None)
             if math.isfinite(best[0]):updated[a]=best[0];local_back[(i,a)]=(best[1],best[2])
         if not updated:
             finish();scores={a:emissions[a] for a in emissions};run=[i]
             back.clear()
             for a in scores:back[(i,a)]=(None,[])
-            warnings.append(f'observation {i}: disconnected candidates; new segment')
+            warn(i, 'disconnected candidates; new segment')
         else:
             scores=updated;back.update(local_back);run.append(i)
-            if bridge_gaps and previous is not None and gap > max_gap_s:
-                warnings.append(f'observation {i}: time gap {gap:g}s bridged via directed route')
         previous=i
         previous_fractions=fractions
     finish()
-    return predictions,connectors,warnings
+    return predictions,connectors,[message for _, message in sorted(warnings)]
 
 def baseline(track,grouped):
     return [max(grouped[i], key=lambda r: float(r['probability']))['arc_id']

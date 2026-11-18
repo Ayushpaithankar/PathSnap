@@ -4,6 +4,7 @@ import json
 import shutil
 from pathlib import Path
 
+import joblib
 import pandas as pd
 from threadpoolctl import threadpool_limits
 
@@ -18,6 +19,7 @@ def main():
     parser.add_argument('prepared', type=Path)
     parser.add_argument('review', type=Path)
     parser.add_argument('--threads', type=int, default=4)
+    parser.add_argument('--restart-penalty', type=float, help='Apply the optional route segment restart cost')
     args = parser.parse_args()
     review = args.review
     cv = pd.read_csv(review / 'cv_summary.csv').set_index('method')
@@ -48,6 +50,10 @@ def main():
         shutil.copy2(deployed, nearest)
     export(selected, model, decoder['slopes'], decoder['configs'],
            previous['transition_beta_m'], deployed, test)
+    if args.restart_penalty is not None:
+        artifact = joblib.load(deployed)
+        artifact['decoder']['restart_penalty'] = args.restart_penalty
+        joblib.dump(artifact, deployed, compress=3)
     detail = pd.read_csv(review / 'cv_per_trip.csv', dtype={'trip_id': str})
     selected_vs_nearest = paired_interval(detail, selected, RULES[0],
                                           'trusted_decoded_correct', 'trusted_observations')
