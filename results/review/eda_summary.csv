@@ -1,0 +1,5 @@
+,observations,observations,invalid_gps,invalid_gps,invalid_timestamps,invalid_timestamps,nonpositive_steps,nonpositive_steps,gaps_over_30s,gaps_over_30s,nodes,nodes,directed_arcs,directed_arcs,weak_components,weak_components,isolated_nodes,isolated_nodes
+,sum,median,sum,median,sum,median,sum,median,sum,median,sum,median,sum,median,sum,median,sum,median
+partition,,,,,,,,,,,,,,,,,,
+student_test,19160,1420.0,0,0.0,0,0.0,0,0.0,2,0.0,90689,6596.5,185041,13145.0,227,11.0,0,0.0
+train,208417,1529.0,0,0.0,0,0.0,0,0.0,133,0.0,1933485,9608.0,3876904,19526.5,3121,20.0,0,0.0

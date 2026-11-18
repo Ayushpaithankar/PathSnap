@@ -1,0 +1,2325 @@
+trip_id,observation_index,reference_arc_id,decoded_arc_id,ranker_arc_id,category,reverse_predicted_agrees_with_gps,ranker_was_correct
+00000000,926,628,10981,10981,other reference arc,False,False
+00000000,1880,3691,3554,3554,candidate miss,False,False
+00000000,1881,3691,3554,3554,other off-route,False,False
+00000000,1882,3691,3554,3554,other off-route,False,False
+00000000,1883,3691,3554,3554,other off-route,False,False
+00000000,1884,3691,3554,3554,other off-route,False,False
+00000000,1885,3691,3554,3554,candidate miss,False,False
+00000000,1944,6192,6191,6191,other reference arc,False,False
+00000000,1953,6183,13370,13370,other reference arc,False,False
+00000000,2091,10576,6164,3093,candidate miss,False,False
+00000000,2092,6163,3081,3081,candidate miss,False,False
+00000000,2093,6163,3146,9818,candidate miss,False,False
+00000000,2103,6153,18195,18195,other reference arc,False,False
+00000000,2114,6158,6155,6161,other reference arc,False,False
+00000000,2169,6141,6140,6141,adjacent off-route,False,True
+00000000,2170,6141,6140,6141,adjacent off-route,False,True
+00000000,2171,6141,6140,6141,adjacent off-route,False,True
+00000000,2172,6141,6140,6141,adjacent off-route,False,True
+00000000,2173,6141,6140,6141,adjacent off-route,False,True
+00000000,2174,6141,6140,6141,adjacent off-route,False,True
+00000000,2175,6141,6140,6141,adjacent off-route,False,True
+00000000,2176,6141,6140,6141,adjacent off-route,False,True
+00000000,2177,6141,6140,6141,adjacent off-route,False,True
+00000000,2178,6141,6140,6140,adjacent off-route,False,False
+00000000,2179,6141,6140,6141,adjacent off-route,False,True
+00000000,2180,6141,6140,6141,adjacent off-route,False,True
+00000000,2181,6141,6138,6141,other off-route,False,True
+00000000,2182,6141,6138,6138,other off-route,False,False
+00000000,2183,6141,6138,6138,other off-route,False,False
+00000000,2184,6141,6138,6140,other off-route,False,False
+00000000,2185,6141,6138,6141,other off-route,False,True
+00000000,2186,6141,6138,6140,other off-route,False,False
+00000000,2187,6141,6138,6140,other off-route,False,False
+00000000,2188,6141,6138,6138,other off-route,False,False
+00000000,2189,6141,6138,6141,other off-route,False,True
+00000000,2190,6141,6138,6141,other off-route,False,True
+00000000,2191,6141,6138,6141,other off-route,False,True
+00000000,2192,6141,6138,6141,other off-route,False,True
+00000000,2193,6141,6138,6141,other off-route,False,True
+00000000,2194,6141,6138,6141,other off-route,False,True
+00000000,2195,6141,6138,6141,other off-route,False,True
+00000000,2196,6141,6138,6141,other off-route,False,True
+00000000,2197,6141,6138,6141,other off-route,False,True
+00000000,2198,6141,6138,6141,other off-route,False,True
+00000000,2199,6141,6134,6141,adjacent off-route,False,True
+00000000,2200,6141,3155,6141,other reference arc,False,True
+00000000,2309,4,731,4,other reference arc,False,True
+00000000,2310,4,731,731,other reference arc,False,False
+00000000,2356,3422,10422,10422,other reference arc,False,False
+00000000,2357,3422,10422,3422,other reference arc,False,True
+00000000,2395,4038,1244,1243,other reference arc,False,False
+00000000,2396,4038,1244,1244,other reference arc,False,False
+00000000,2424,3397,1254,1254,other reference arc,False,False
+00000000,2425,3397,1254,3397,other reference arc,False,True
+00000000,2445,17895,1253,1253,other reference arc,False,False
+00000000,2446,17895,1253,17896,other reference arc,False,False
+00000000,2447,17895,1253,17896,other reference arc,False,False
+00000000,2448,17895,1253,17897,other reference arc,False,False
+00000000,2449,17895,1253,17897,other reference arc,False,False
+00000000,2450,17895,1253,17896,other reference arc,False,False
+00000000,2451,17895,1253,17896,other reference arc,False,False
+00000000,2460,17895,17896,17897,reverse arc,False,False
+00000000,2461,17895,17896,17896,reverse arc,False,False
+00000000,2462,17895,17896,17896,reverse arc,True,False
+00000000,2463,17895,17896,17896,reverse arc,False,False
+00000000,2464,17895,17896,17896,reverse arc,False,False
+00000000,2465,17895,17896,17896,reverse arc,False,False
+00000000,2466,17895,17896,17896,reverse arc,True,False
+00000000,2467,17895,17896,17896,reverse arc,False,False
+00000000,2468,17895,17896,17894,reverse arc,False,False
+00000000,2469,17895,17896,17896,reverse arc,False,False
+00000000,2470,17895,17896,17897,reverse arc,False,False
+00000000,2471,17895,17896,17891,reverse arc,False,False
+00000000,2472,17895,17896,17891,reverse arc,False,False
+00000000,2473,17895,17896,17897,reverse arc,True,False
+00000000,2474,17895,17896,17896,reverse arc,False,False
+00000000,2475,17895,17896,17896,reverse arc,True,False
+00000000,2476,17895,17896,17896,reverse arc,True,False
+00000000,2477,17895,17896,17896,reverse arc,False,False
+00000000,2478,17895,17896,17896,reverse arc,True,False
+00000000,2479,17895,17896,17895,reverse arc,True,True
+00000000,2480,17895,17896,17896,reverse arc,True,False
+00000000,2481,17895,17896,17894,reverse arc,True,False
+00000000,2482,17895,17896,17894,reverse arc,True,False
+00000000,2483,17895,17896,17888,reverse arc,False,False
+00000000,2484,17895,17896,17888,reverse arc,False,False
+00000000,2485,17895,17896,17896,reverse arc,False,False
+00000000,2486,17895,17896,17897,reverse arc,False,False
+00000000,2487,17895,17896,17896,reverse arc,False,False
+00000000,2502,17895,17897,17897,adjacent off-route,False,False
+00000007,661,41,536,44,other reference arc,False,False
+00000007,984,352,350,350,other reference arc,False,False
+00000007,1036,585,356,356,other reference arc,False,False
+00000007,1166,285,281,285,other reference arc,False,True
+00000007,1167,285,281,285,other reference arc,False,True
+00000007,1168,285,281,285,other reference arc,False,True
+00000007,1169,285,281,285,other reference arc,False,True
+00000007,1170,285,281,285,other reference arc,False,True
+00000007,1171,285,281,285,other reference arc,False,True
+00000007,1172,285,281,285,other reference arc,False,True
+00000007,1173,285,281,285,other reference arc,False,True
+00000007,1174,285,281,285,other reference arc,False,True
+00000007,1175,285,281,285,other reference arc,False,True
+00000007,1176,285,281,285,other reference arc,False,True
+00000007,1177,285,281,285,other reference arc,False,True
+00000007,1178,285,281,285,other reference arc,False,True
+00000007,1179,285,281,285,other reference arc,False,True
+00000007,1180,285,281,285,other reference arc,False,True
+00000007,1181,285,281,285,other reference arc,False,True
+00000007,1182,285,281,285,other reference arc,False,True
+00000007,1183,285,281,285,other reference arc,False,True
+00000007,1184,285,281,285,other reference arc,False,True
+00000007,1185,285,281,285,other reference arc,False,True
+00000007,1186,285,281,285,other reference arc,False,True
+00000007,1187,285,281,285,other reference arc,False,True
+00000007,1188,285,281,285,other reference arc,False,True
+00000007,1189,285,281,285,other reference arc,False,True
+00000007,1190,285,281,285,other reference arc,False,True
+00000007,1191,285,281,285,other reference arc,False,True
+00000007,1192,285,281,285,other reference arc,False,True
+00000007,1193,285,281,285,other reference arc,False,True
+00000007,1194,285,281,285,other reference arc,False,True
+00000007,1195,285,281,285,other reference arc,False,True
+00000007,1196,285,281,285,other reference arc,False,True
+00000007,1197,285,281,285,other reference arc,False,True
+00000007,1198,285,281,285,other reference arc,False,True
+00000007,1199,285,281,285,other reference arc,False,True
+00000007,1200,285,281,285,other reference arc,False,True
+00000007,1201,285,281,285,other reference arc,False,True
+00000007,1202,285,281,285,other reference arc,False,True
+00000007,1203,285,281,285,other reference arc,False,True
+00000007,1204,285,281,282,other reference arc,False,False
+00000007,1205,285,281,282,other reference arc,False,False
+00000007,1206,285,281,282,other reference arc,False,False
+00000007,1207,285,281,285,other reference arc,False,True
+00000007,1208,285,281,282,other reference arc,False,False
+00000007,1209,285,281,285,other reference arc,False,True
+00000007,1210,285,281,285,other reference arc,False,True
+00000007,1211,285,281,285,other reference arc,False,True
+00000007,1212,285,281,285,other reference arc,False,True
+00000007,1213,285,281,285,other reference arc,False,True
+00000007,1214,285,281,282,other reference arc,False,False
+00000007,1215,285,281,285,other reference arc,False,True
+00000007,1216,285,281,282,other reference arc,False,False
+00000007,1217,285,281,282,other reference arc,False,False
+00000007,1218,285,281,285,other reference arc,False,True
+00000007,1219,285,281,285,other reference arc,False,True
+00000007,1220,285,281,282,other reference arc,False,False
+00000007,1221,285,281,282,other reference arc,False,False
+00000007,1222,285,281,285,other reference arc,False,True
+00000007,1223,285,281,285,other reference arc,False,True
+00000007,1224,285,281,285,other reference arc,False,True
+00000007,1225,285,281,285,other reference arc,False,True
+00000007,1226,285,281,285,other reference arc,False,True
+00000007,1227,285,281,285,other reference arc,False,True
+00000007,1228,285,281,282,other reference arc,False,False
+00000007,1229,285,281,282,other reference arc,False,False
+00000007,1230,285,281,285,other reference arc,False,True
+00000007,1231,285,281,282,other reference arc,False,False
+00000007,1232,285,281,285,other reference arc,False,True
+00000007,1233,285,281,285,other reference arc,False,True
+00000007,1234,285,281,285,other reference arc,False,True
+00000007,1235,285,281,285,other reference arc,False,True
+00000007,1236,285,281,285,other reference arc,False,True
+00000007,1237,285,281,285,other reference arc,False,True
+00000007,1238,285,281,282,other reference arc,False,False
+00000007,1239,285,281,285,other reference arc,False,True
+00000007,1240,285,281,285,other reference arc,False,True
+00000007,1241,285,281,285,other reference arc,False,True
+00000007,1242,285,281,285,other reference arc,False,True
+00000007,1243,285,281,285,other reference arc,False,True
+00000007,1244,285,281,285,other reference arc,False,True
+00000007,1245,285,281,285,other reference arc,False,True
+00000007,1246,285,281,285,other reference arc,False,True
+00000007,1247,285,281,285,other reference arc,False,True
+00000007,1248,285,281,285,other reference arc,False,True
+00000007,1249,285,281,285,other reference arc,False,True
+00000007,1250,285,281,285,other reference arc,False,True
+00000007,1251,285,281,285,other reference arc,False,True
+00000007,1252,285,281,285,other reference arc,False,True
+00000007,1253,285,281,285,other reference arc,False,True
+00000007,1254,285,281,285,other reference arc,False,True
+00000007,1255,285,281,285,other reference arc,False,True
+00000007,1256,285,281,285,other reference arc,False,True
+00000007,1257,285,281,285,other reference arc,False,True
+00000007,1258,285,281,285,other reference arc,False,True
+00000007,1259,285,281,285,other reference arc,False,True
+00000007,1260,285,281,285,other reference arc,False,True
+00000007,1261,285,281,285,other reference arc,False,True
+00000007,1262,285,281,285,other reference arc,False,True
+00000007,1263,285,281,285,other reference arc,False,True
+00000007,1264,285,281,282,other reference arc,False,False
+00000007,1265,285,281,285,other reference arc,False,True
+00000007,1266,285,281,285,other reference arc,False,True
+00000007,1267,285,281,285,other reference arc,False,True
+00000007,1268,285,281,285,other reference arc,False,True
+00000007,1269,285,281,282,other reference arc,False,False
+00000007,1270,285,281,285,other reference arc,False,True
+00000007,1271,285,281,285,other reference arc,False,True
+00000007,1272,285,281,282,other reference arc,False,False
+00000007,1273,285,281,285,other reference arc,False,True
+00000007,1274,285,281,285,other reference arc,False,True
+00000007,1275,285,281,285,other reference arc,False,True
+00000007,1276,285,281,285,other reference arc,False,True
+00000007,1277,285,281,285,other reference arc,False,True
+00000007,1278,285,281,285,other reference arc,False,True
+00000007,1279,285,281,282,other reference arc,False,False
+00000007,1280,285,281,282,other reference arc,False,False
+00000007,1281,285,281,285,other reference arc,False,True
+00000007,1282,285,281,285,other reference arc,False,True
+00000007,1283,285,281,282,other reference arc,False,False
+00000007,1284,285,281,282,other reference arc,False,False
+00000007,1285,285,281,282,other reference arc,False,False
+00000007,1286,285,281,282,other reference arc,False,False
+00000007,1287,285,281,285,other reference arc,False,True
+00000007,1288,285,281,285,other reference arc,False,True
+00000007,1289,285,281,285,other reference arc,False,True
+00000007,1290,285,281,285,other reference arc,False,True
+00000007,1291,285,281,285,other reference arc,False,True
+00000007,1292,285,281,285,other reference arc,False,True
+00000007,1293,285,281,285,other reference arc,False,True
+00000007,1294,285,281,285,other reference arc,False,True
+00000007,1295,285,281,285,other reference arc,False,True
+00000007,1296,285,281,285,other reference arc,False,True
+00000007,1297,285,281,285,other reference arc,False,True
+00000007,1298,285,281,282,other reference arc,False,False
+00000007,1299,285,281,285,other reference arc,False,True
+00000007,1300,285,281,285,other reference arc,False,True
+00000007,1301,285,281,285,other reference arc,False,True
+00000007,1302,285,281,285,other reference arc,False,True
+00000007,1303,285,281,285,other reference arc,False,True
+00000007,1304,285,281,285,other reference arc,False,True
+00000007,1305,285,281,285,other reference arc,False,True
+00000007,1306,285,281,285,other reference arc,False,True
+00000007,1307,285,281,285,other reference arc,False,True
+00000007,1308,285,281,285,other reference arc,False,True
+00000007,1309,285,281,285,other reference arc,False,True
+00000007,1310,285,281,285,other reference arc,False,True
+00000007,1311,285,281,285,other reference arc,False,True
+00000007,1312,285,281,282,other reference arc,False,False
+00000007,1313,285,281,285,other reference arc,False,True
+00000007,1314,285,281,285,other reference arc,False,True
+00000007,1315,285,281,285,other reference arc,False,True
+00000007,1316,285,281,285,other reference arc,False,True
+00000007,1317,285,281,285,other reference arc,False,True
+00000007,1318,285,281,285,other reference arc,False,True
+00000007,1319,285,281,285,other reference arc,False,True
+00000007,1320,285,281,282,other reference arc,False,False
+00000007,1321,285,281,285,other reference arc,False,True
+00000007,1322,285,281,282,other reference arc,False,False
+00000007,1323,285,281,285,other reference arc,False,True
+00000007,1324,285,281,285,other reference arc,False,True
+00000007,1325,285,281,285,other reference arc,False,True
+00000007,1326,285,281,285,other reference arc,False,True
+00000007,1327,285,281,282,other reference arc,False,False
+00000007,1328,285,281,285,other reference arc,False,True
+00000007,1329,285,281,285,other reference arc,False,True
+00000007,1330,285,281,285,other reference arc,False,True
+00000007,1331,285,281,285,other reference arc,False,True
+00000007,1332,285,281,285,other reference arc,False,True
+00000007,1333,285,281,282,other reference arc,False,False
+00000007,1334,285,281,285,other reference arc,False,True
+00000007,1335,285,281,285,other reference arc,False,True
+00000007,1336,285,281,282,other reference arc,False,False
+00000007,1337,285,281,285,other reference arc,False,True
+00000007,1338,285,281,285,other reference arc,False,True
+00000007,1339,285,281,285,other reference arc,False,True
+00000007,1340,285,281,285,other reference arc,False,True
+00000007,1341,285,281,285,other reference arc,False,True
+00000007,1342,285,281,285,other reference arc,False,True
+00000007,1343,285,281,285,other reference arc,False,True
+00000007,1344,285,281,285,other reference arc,False,True
+00000007,1345,285,281,285,other reference arc,False,True
+00000007,1346,285,281,285,other reference arc,False,True
+00000007,1347,285,281,285,other reference arc,False,True
+00000007,1348,285,281,285,other reference arc,False,True
+00000007,1349,285,281,285,other reference arc,False,True
+00000007,1350,285,281,285,other reference arc,False,True
+00000007,1351,285,281,285,other reference arc,False,True
+00000007,1352,285,281,285,other reference arc,False,True
+00000007,1353,285,281,285,other reference arc,False,True
+00000009,0,9690,4947,4947,adjacent off-route,False,False
+00000009,1,9690,4947,4947,adjacent off-route,False,False
+00000009,7,4878,4900,4900,other reference arc,False,False
+00000009,9,4926,4900,4900,candidate miss,False,False
+00000009,10,4971,4900,4900,other reference arc,False,False
+00000009,13,4967,4823,4967,reverse arc,True,True
+00000009,14,4824,4823,4967,candidate miss,False,False
+00000009,15,4864,4823,4967,other off-route,False,False
+00000009,16,4864,4823,4875,other off-route,False,False
+00000009,17,4864,4823,4875,other off-route,False,False
+00000009,18,4864,4823,4875,other off-route,False,False
+00000009,19,4864,4875,4875,reverse arc,True,False
+00000009,20,4864,4875,4875,reverse arc,True,False
+00000009,21,4864,4875,4875,reverse arc,True,False
+00000009,22,4864,4875,4875,reverse arc,True,False
+00000009,23,4864,4875,4875,reverse arc,True,False
+00000009,24,4864,4875,4875,reverse arc,True,False
+00000009,25,4864,4875,5004,reverse arc,True,False
+00000009,26,4864,4875,4875,reverse arc,True,False
+00000009,27,4864,4875,4875,reverse arc,True,False
+00000009,28,4864,4875,4875,reverse arc,True,False
+00000009,29,4864,4875,4875,reverse arc,True,False
+00000009,30,4864,4875,4875,reverse arc,True,False
+00000009,31,4864,4875,4875,reverse arc,True,False
+00000009,32,4864,4875,4875,reverse arc,True,False
+00000009,33,4864,4875,4875,reverse arc,True,False
+00000009,34,4864,4875,4875,reverse arc,True,False
+00000009,35,4864,4875,4875,reverse arc,True,False
+00000009,36,4864,4863,4863,adjacent off-route,False,False
+00000009,37,4864,4852,4852,candidate miss,False,False
+00000009,38,4864,4852,4852,candidate miss,False,False
+00000009,39,4864,4852,4852,candidate miss,False,False
+00000009,40,4864,4852,4852,candidate miss,False,False
+00000009,41,4864,4852,4852,candidate miss,False,False
+00000009,42,4864,4852,4962,candidate miss,False,False
+00000009,43,4864,4852,4962,candidate miss,False,False
+00000009,44,4864,4852,4852,candidate miss,False,False
+00000009,45,4864,4852,4962,candidate miss,False,False
+00000009,46,4864,4852,4884,candidate miss,False,False
+00000009,47,4864,4962,4884,candidate miss,False,False
+00000009,48,4864,4962,4884,candidate miss,False,False
+00000009,49,4864,4962,4864,other off-route,False,True
+00000009,50,4864,4962,4864,other off-route,False,True
+00000009,51,4864,4799,4864,other off-route,False,True
+00000009,52,4864,4799,4864,other off-route,False,True
+00000009,53,4864,4799,4864,other off-route,False,True
+00000009,54,4864,4799,4799,other off-route,False,False
+00000009,55,4864,5008,5008,other off-route,False,False
+00000009,56,4864,5008,5008,candidate miss,False,False
+00000009,57,4864,5008,5008,candidate miss,False,False
+00000009,58,4864,5008,5008,candidate miss,False,False
+00000009,59,4864,5008,5008,other off-route,False,False
+00000009,60,4864,5003,5003,other off-route,False,False
+00000009,61,4876,4986,4986,other off-route,False,False
+00000009,62,4809,4986,5003,candidate miss,False,False
+00000009,63,4836,4986,4986,reverse arc,True,False
+00000009,64,4836,4986,4986,reverse arc,True,False
+00000009,85,5009,4802,4802,candidate miss,False,False
+00000009,86,5009,4802,4928,candidate miss,False,False
+00000009,87,5009,4802,4802,candidate miss,False,False
+00000009,88,4801,4802,4801,adjacent off-route,False,True
+00000009,89,4801,4802,4801,adjacent off-route,False,True
+00000009,90,4801,4908,4801,adjacent off-route,False,True
+00000009,127,4952,4924,4924,other reference arc,False,False
+00000009,193,9520,1767,4510,other reference arc,False,False
+00000009,207,1684,1781,1781,other reference arc,False,False
+00000009,210,1781,1741,1741,other reference arc,False,False
+00000009,232,1750,9514,9514,other reference arc,False,False
+00000009,250,1673,3779,9768,candidate miss,False,False
+00000009,251,3779,3801,9768,candidate miss,False,False
+00000009,299,11964,1752,1752,other reference arc,False,False
+00000009,303,11962,1777,1776,adjacent off-route,False,False
+00000009,304,11966,9119,9119,adjacent off-route,False,False
+00000009,347,1708,1717,1717,other reference arc,False,False
+00000009,405,11986,1702,1702,other reference arc,False,False
+00000009,427,11533,4469,11533,other off-route,False,True
+00000009,428,11533,10619,11533,other off-route,False,True
+00000009,429,11533,10621,10621,candidate miss,False,False
+00000009,430,10533,10623,10538,candidate miss,False,False
+00000009,431,10533,10623,10538,candidate miss,False,False
+00000009,433,10472,3816,3816,other reference arc,False,False
+00000009,448,11994,1723,1723,candidate miss,False,False
+00000009,449,9484,11994,6739,other reference arc,False,False
+00000009,518,10460,2471,2513,candidate miss,False,False
+00000009,519,9508,9510,9508,other reference arc,False,True
+00000009,555,1015,1013,1013,other reference arc,False,False
+00000009,796,1161,3289,3305,candidate miss,False,False
+00000009,838,3326,3332,3332,other reference arc,False,False
+00000009,839,3337,3330,3330,other reference arc,False,False
+00000009,840,3335,3316,3316,other reference arc,False,False
+00000009,973,57,6575,6575,other reference arc,False,False
+00000009,988,1583,1584,1584,adjacent off-route,False,False
+00000009,989,1583,1584,1583,adjacent off-route,False,True
+00000009,990,1583,1584,1583,adjacent off-route,False,True
+00000009,991,1583,1584,1583,adjacent off-route,False,True
+00000009,992,1582,11078,11078,candidate miss,False,False
+00000009,993,1582,11079,1582,adjacent off-route,False,True
+00000009,994,1582,11079,11079,adjacent off-route,False,False
+00000009,1013,12068,1578,1578,other reference arc,False,False
+00000040,0,3449,3386,3449,adjacent off-route,False,True
+00000040,1,3449,3411,3449,reverse arc,False,True
+00000040,2,3449,3411,3449,reverse arc,False,True
+00000040,3,3449,3411,3449,reverse arc,False,True
+00000040,4,3449,3411,3449,reverse arc,False,True
+00000040,5,3449,3411,3449,reverse arc,True,True
+00000040,6,3449,3411,3449,reverse arc,True,True
+00000040,7,3449,3411,3449,reverse arc,True,True
+00000040,8,3449,3411,3449,reverse arc,True,True
+00000040,9,3449,3411,3449,reverse arc,False,True
+00000040,10,3449,3411,3449,reverse arc,False,True
+00000040,11,3449,3411,3449,reverse arc,False,True
+00000040,12,3449,3411,3449,reverse arc,False,True
+00000040,13,3449,3411,3449,reverse arc,False,True
+00000040,14,3449,3411,3449,reverse arc,True,True
+00000040,15,3449,3411,3449,reverse arc,False,True
+00000040,16,3449,3411,3449,reverse arc,False,True
+00000040,17,3449,3411,3449,reverse arc,False,True
+00000040,18,3449,3411,3449,reverse arc,True,True
+00000040,19,3449,3411,3449,reverse arc,False,True
+00000040,34,3449,3411,3449,reverse arc,True,True
+00000040,35,3449,3411,3449,reverse arc,True,True
+00000040,36,3449,3411,3449,reverse arc,True,True
+00000040,37,3449,3411,3449,reverse arc,True,True
+00000040,38,3449,3411,3449,reverse arc,False,True
+00000040,39,3449,3411,3449,reverse arc,True,True
+00000040,40,3449,3411,3449,reverse arc,False,True
+00000040,41,3449,3411,3449,reverse arc,False,True
+00000040,42,3449,3411,3449,reverse arc,True,True
+00000040,43,3449,3411,3449,reverse arc,False,True
+00000040,61,3449,3411,3411,reverse arc,True,False
+00000040,62,3449,3411,3411,reverse arc,True,False
+00000040,63,3449,3411,3411,reverse arc,False,False
+00000040,64,3449,3411,3411,reverse arc,True,False
+00000040,103,3412,3449,3412,other reference arc,False,True
+00000040,110,3387,3412,3412,other reference arc,False,False
+00000040,111,3387,3412,3387,other reference arc,False,True
+00000040,164,3261,3335,3335,other reference arc,False,False
+00000040,165,3261,3335,3261,other reference arc,False,True
+00000040,231,3268,3453,3268,other reference arc,False,True
+00000040,232,3268,3453,3268,other reference arc,False,True
+00000040,249,3268,3445,3268,other reference arc,False,True
+00000040,250,3268,3445,3268,other reference arc,False,True
+00000040,251,3268,3445,3268,other reference arc,False,True
+00000040,252,3268,3445,3268,other reference arc,False,True
+00000040,253,3268,3445,3268,other reference arc,False,True
+00000040,254,3268,3445,3268,other reference arc,False,True
+00000040,298,3380,3461,3380,other reference arc,False,True
+00000040,299,3380,3461,3380,other reference arc,False,True
+00000040,300,3380,3461,3380,other reference arc,False,True
+00000040,301,3380,3461,3380,other reference arc,False,True
+00000040,302,3380,3461,3380,other reference arc,False,True
+00000040,317,3380,3364,3364,other reference arc,False,False
+00000040,318,3380,3364,3364,other reference arc,False,False
+00000040,347,3287,3364,3287,other reference arc,False,True
+00000040,348,3287,3364,3287,other reference arc,False,True
+00000040,510,3348,3231,3348,other reference arc,False,True
+00000040,511,3348,3231,3348,other reference arc,False,True
+00000040,597,3270,3253,3270,other reference arc,False,True
+00000040,598,3270,3253,3270,other reference arc,False,True
+00000040,599,3270,3253,3270,other reference arc,False,True
+00000040,600,3270,3253,3270,other reference arc,False,True
+00000040,601,3270,3253,3270,other reference arc,False,True
+00000040,602,3270,3253,3270,other reference arc,False,True
+00000040,603,3270,3253,3270,other reference arc,False,True
+00000040,604,3270,3253,3270,other reference arc,False,True
+00000040,605,3270,3253,3270,other reference arc,False,True
+00000040,709,3253,3424,3253,other reference arc,False,True
+00000040,710,3253,3424,3253,other reference arc,False,True
+00000040,711,3253,3424,3253,other reference arc,False,True
+00000040,712,3253,3424,3253,other reference arc,False,True
+00000040,713,3253,3424,3253,other reference arc,False,True
+00000040,714,3253,3424,3253,other reference arc,False,True
+00000040,715,3253,3424,3253,other reference arc,False,True
+00000040,716,3253,3424,3253,other reference arc,False,True
+00000040,717,3253,3424,3253,other reference arc,False,True
+00000040,718,3253,3424,3253,other reference arc,False,True
+00000040,719,3253,3424,3253,other reference arc,False,True
+00000040,731,3424,3436,3424,reverse arc,False,True
+00000040,753,3437,3248,3437,reverse arc,False,True
+00000040,754,3437,3248,3437,reverse arc,True,True
+00000040,755,3437,3248,3437,reverse arc,True,True
+00000040,756,3437,3248,3437,reverse arc,False,True
+00000040,757,3437,3248,3437,reverse arc,False,True
+00000040,758,3437,3248,3437,reverse arc,True,True
+00000040,759,3437,3248,3437,reverse arc,False,True
+00000040,760,3437,3248,3437,reverse arc,True,True
+00000040,761,3437,3248,3437,reverse arc,True,True
+00000040,762,3437,3248,3248,reverse arc,True,False
+00000040,763,3437,3248,3248,reverse arc,True,False
+00000040,764,3437,3248,3437,reverse arc,False,True
+00000040,765,3437,3248,3248,reverse arc,False,False
+00000040,766,3437,3438,3248,adjacent off-route,False,False
+00000040,767,3437,3438,3248,adjacent off-route,False,False
+00000040,768,3437,3438,3248,adjacent off-route,False,False
+00000040,769,3437,3438,3248,adjacent off-route,False,False
+00000040,770,3437,3438,3248,adjacent off-route,False,False
+00000040,771,3437,3438,3248,adjacent off-route,False,False
+00000040,772,3437,3438,3248,adjacent off-route,False,False
+00000040,773,3437,3438,3246,adjacent off-route,False,False
+00000040,774,3246,3438,3246,other off-route,False,True
+00000040,775,3246,3323,3246,adjacent off-route,False,True
+00000040,776,3246,3323,3246,adjacent off-route,False,True
+00000040,777,3246,3323,3246,adjacent off-route,False,True
+00000040,1364,797,25541,25541,other reference arc,False,False
+00000040,1397,25527,25525,25525,other reference arc,False,False
+00000040,1480,784,25495,784,other reference arc,False,True
+00000040,1481,784,25495,784,other reference arc,False,True
+00000040,1713,212,5910,212,other reference arc,False,True
+00000040,1714,212,5910,212,other reference arc,False,True
+00000040,2685,15381,1506,1506,other reference arc,False,False
+00000040,2715,722,621,722,adjacent off-route,False,True
+00000040,2716,722,621,722,adjacent off-route,False,True
+00000040,2717,722,621,722,adjacent off-route,False,True
+00000040,2718,722,621,722,adjacent off-route,False,True
+00000040,2719,722,621,722,adjacent off-route,False,True
+00000040,2720,722,26925,722,adjacent off-route,False,True
+00000040,2721,722,621,722,adjacent off-route,False,True
+00000040,2722,722,621,722,adjacent off-route,False,True
+00000040,2723,722,621,722,adjacent off-route,False,True
+00000040,2724,722,621,722,adjacent off-route,False,True
+00000040,2725,722,621,722,adjacent off-route,False,True
+00000040,2726,722,621,722,adjacent off-route,False,True
+00000040,2727,722,621,722,adjacent off-route,False,True
+00000040,2728,722,621,722,adjacent off-route,False,True
+00000040,2729,722,621,722,adjacent off-route,False,True
+00000040,2730,722,621,722,adjacent off-route,False,True
+00000040,2731,722,621,722,adjacent off-route,False,True
+00000040,2732,722,621,722,adjacent off-route,False,True
+00000040,2733,722,26925,722,adjacent off-route,False,True
+00000040,2734,722,623,722,other reference arc,False,True
+00000040,2735,722,623,722,other reference arc,False,True
+00000040,2783,9180,26931,26931,other reference arc,False,False
+00000040,2784,9180,26931,9180,other reference arc,False,True
+00000040,2785,9180,26931,9180,other reference arc,False,True
+00000040,2793,9185,9180,9185,other reference arc,False,True
+00000040,2799,9188,9185,9185,other reference arc,False,False
+00000040,2800,9188,9185,9185,other reference arc,False,False
+00000040,2827,9198,9195,9195,other reference arc,False,False
+00000040,2828,9198,9195,9195,other reference arc,False,False
+00000040,2829,9198,9195,9198,other reference arc,False,True
+00000040,2830,9198,9195,9195,other reference arc,False,False
+00000040,2831,9198,9195,9191,other reference arc,False,False
+00000040,2832,9198,9191,9198,adjacent off-route,False,True
+00000040,2833,9198,9191,9198,adjacent off-route,False,True
+00000040,2834,9198,9191,9191,adjacent off-route,False,False
+00000040,2835,9198,9191,9198,adjacent off-route,False,True
+00000040,2836,9198,9191,9191,adjacent off-route,False,False
+00000040,2837,9198,9191,9193,adjacent off-route,False,False
+00000040,2838,9198,9191,9193,adjacent off-route,False,False
+00000040,2839,9198,9191,9195,adjacent off-route,False,False
+00000040,2840,9198,9191,9191,adjacent off-route,False,False
+00000040,2841,9198,9191,9191,adjacent off-route,False,False
+00000040,2842,9198,9191,9191,adjacent off-route,False,False
+00000040,2843,9198,9191,9191,adjacent off-route,False,False
+00000040,2844,9198,9191,9191,adjacent off-route,False,False
+00000040,2845,9198,9191,9191,adjacent off-route,False,False
+00000040,2846,9198,9191,9191,adjacent off-route,False,False
+00000040,2847,9198,9191,9191,adjacent off-route,False,False
+00000040,2848,9198,9191,9191,adjacent off-route,False,False
+00000040,2849,9198,9191,9191,adjacent off-route,False,False
+00000040,2850,9198,9191,9191,adjacent off-route,False,False
+00000040,2851,9198,9191,9191,adjacent off-route,False,False
+00000040,2852,9198,9191,9191,adjacent off-route,False,False
+00000040,2853,9198,9194,9198,reverse arc,True,True
+00000040,2856,9198,9195,9191,other reference arc,False,False
+00000040,2857,9198,9195,9198,other reference arc,False,True
+00000040,2858,9198,9195,9191,other reference arc,False,False
+00000040,2859,9198,9195,9191,other reference arc,False,False
+00000040,2860,9198,9195,9193,other reference arc,False,False
+00000040,2861,9198,9195,9191,other reference arc,False,False
+00000040,2862,9198,9195,9191,other reference arc,False,False
+00000040,2863,9198,9195,9191,other reference arc,False,False
+00000040,2864,9198,9195,9198,other reference arc,False,True
+00000040,2865,9198,9195,9193,other reference arc,False,False
+00000040,2866,9198,9195,9191,other reference arc,False,False
+00000040,2867,9198,9195,9161,other reference arc,False,False
+00000040,2868,9198,9195,9193,other reference arc,False,False
+00000040,2878,9195,9191,9191,reverse arc,True,False
+00000040,2879,9195,9191,9191,reverse arc,True,False
+00000040,2880,9195,9191,9191,reverse arc,True,False
+00000040,2881,9195,9191,9193,reverse arc,True,False
+00000040,2882,9195,9191,9193,reverse arc,False,False
+00000040,2883,9195,9191,9198,reverse arc,False,False
+00000040,2884,9195,9191,9161,reverse arc,False,False
+00000040,2885,9195,9191,9191,reverse arc,False,False
+00000040,2886,9195,9191,9198,reverse arc,False,False
+00000040,2887,9195,9191,9191,reverse arc,True,False
+00000040,2888,9195,9191,9191,reverse arc,False,False
+00000040,2889,9195,9191,9191,reverse arc,False,False
+00000040,2890,9195,9191,9198,reverse arc,True,False
+00000040,2891,9195,9191,9191,reverse arc,False,False
+00000040,2892,9195,9191,9191,reverse arc,True,False
+00000040,2893,9195,9191,9191,reverse arc,True,False
+00000040,2894,9195,9191,9198,reverse arc,False,False
+00000040,2895,9195,9191,9193,reverse arc,False,False
+00000040,2896,9195,9191,9191,reverse arc,False,False
+00000040,2897,9195,9191,9191,reverse arc,False,False
+00000040,2898,9195,9191,9191,reverse arc,False,False
+00000040,2899,9195,9191,9191,reverse arc,False,False
+00000040,2900,9195,9191,9191,reverse arc,True,False
+00000040,2901,9195,9191,9191,reverse arc,False,False
+00000040,2902,9195,9191,9191,reverse arc,False,False
+00000040,2903,9195,9191,9191,reverse arc,False,False
+00000040,2904,9195,9191,9191,reverse arc,False,False
+00000040,2905,9195,9191,9191,reverse arc,True,False
+00000040,2906,9195,9191,9191,reverse arc,False,False
+00000040,2907,9195,9191,9191,reverse arc,True,False
+00000040,2908,9195,9191,9195,reverse arc,True,True
+00000040,2909,9195,9191,9195,reverse arc,False,True
+00000040,2910,9195,9191,9195,reverse arc,False,True
+00000040,2911,9195,9191,9195,reverse arc,False,True
+00000040,2912,9195,9191,9191,reverse arc,False,False
+00000040,2913,9195,9191,9193,reverse arc,True,False
+00000040,2914,9195,9191,9191,reverse arc,True,False
+00000040,2915,9195,9191,9191,reverse arc,True,False
+00000040,2916,9195,9191,9191,reverse arc,False,False
+00000040,2917,9195,9191,9198,reverse arc,True,False
+00000040,2931,9195,9192,9192,other reference arc,False,False
+00000040,2932,9195,9192,9195,other reference arc,False,True
+00000040,2970,14987,9166,9168,other reference arc,False,False
+00000052,218,1290,3448,3448,other reference arc,False,False
+00000052,231,1297,1296,1296,other reference arc,False,False
+00000056,95,22557,22556,22557,other reference arc,False,True
+00000056,96,22557,22556,22557,other reference arc,False,True
+00000056,97,22557,22556,22557,other reference arc,False,True
+00000056,98,22557,22556,22557,other reference arc,False,True
+00000056,99,22557,22556,22557,other reference arc,False,True
+00000056,100,22557,22556,22557,other reference arc,False,True
+00000056,101,22557,22556,22557,other reference arc,False,True
+00000056,102,22557,22556,22557,other reference arc,False,True
+00000056,103,22557,22556,22557,other reference arc,False,True
+00000056,104,22557,22556,22557,other reference arc,False,True
+00000056,105,22557,22556,22557,other reference arc,False,True
+00000056,106,22557,22556,22557,other reference arc,False,True
+00000056,107,22557,22556,22557,other reference arc,False,True
+00000056,108,22557,22556,22557,other reference arc,False,True
+00000056,109,22557,22556,22557,other reference arc,False,True
+00000056,110,22557,22556,23768,other reference arc,False,False
+00000056,111,22557,22556,22557,other reference arc,False,True
+00000056,112,22557,22556,22557,other reference arc,False,True
+00000056,113,22557,22556,22557,other reference arc,False,True
+00000056,114,22557,22556,23768,other reference arc,False,False
+00000056,115,22557,22556,23768,other reference arc,False,False
+00000056,116,22557,22556,23768,other reference arc,False,False
+00000056,117,22557,22556,22557,other reference arc,False,True
+00000056,118,22557,22556,22557,other reference arc,False,True
+00000056,119,22557,22556,23768,other reference arc,False,False
+00000056,120,22557,22556,22557,other reference arc,False,True
+00000056,121,22557,22556,22557,other reference arc,False,True
+00000056,122,22557,22556,22557,other reference arc,False,True
+00000056,123,22557,22556,22557,other reference arc,False,True
+00000056,124,22557,22556,22557,other reference arc,False,True
+00000056,125,22557,22556,22557,other reference arc,False,True
+00000056,126,22557,22556,22557,other reference arc,False,True
+00000056,127,22557,22556,22557,other reference arc,False,True
+00000056,128,22557,22556,22557,other reference arc,False,True
+00000056,129,22557,22556,22557,other reference arc,False,True
+00000056,130,22557,22556,22557,other reference arc,False,True
+00000056,131,22557,22556,22557,other reference arc,False,True
+00000056,132,22557,22556,23768,other reference arc,False,False
+00000056,133,22557,22556,22557,other reference arc,False,True
+00000056,134,22557,22556,22557,other reference arc,False,True
+00000056,135,22557,22556,22557,other reference arc,False,True
+00000056,136,22557,22556,22557,other reference arc,False,True
+00000056,137,22557,22556,22557,other reference arc,False,True
+00000056,138,22557,22556,22557,other reference arc,False,True
+00000056,139,22557,22556,22557,other reference arc,False,True
+00000056,140,22557,22556,22557,other reference arc,False,True
+00000056,141,22557,22556,22557,other reference arc,False,True
+00000056,142,22557,22556,22557,other reference arc,False,True
+00000056,143,22557,22556,22557,other reference arc,False,True
+00000056,144,22557,22556,22557,other reference arc,False,True
+00000056,145,22557,22556,22557,other reference arc,False,True
+00000056,170,22558,22557,22559,other reference arc,False,False
+00000056,171,22558,22557,22559,other reference arc,False,False
+00000056,172,22558,22557,22559,other reference arc,False,False
+00000056,173,22558,22557,22559,other reference arc,False,False
+00000056,174,22558,22557,22559,other reference arc,False,False
+00000056,175,22558,22557,22559,other reference arc,False,False
+00000056,176,22558,22557,22559,other reference arc,False,False
+00000056,177,22558,22557,22559,other reference arc,False,False
+00000056,178,22558,22557,23772,other reference arc,False,False
+00000056,179,22558,22557,23772,other reference arc,False,False
+00000056,180,22558,22557,23772,other reference arc,False,False
+00000056,182,22558,13383,23772,other off-route,False,False
+00000056,183,22558,13383,23772,other off-route,False,False
+00000056,184,22558,13383,23772,other off-route,False,False
+00000056,185,22558,13383,13383,other off-route,False,False
+00000056,186,22558,13383,23772,other off-route,False,False
+00000056,187,22558,13383,22557,other off-route,False,False
+00000056,188,22558,13383,22559,other off-route,False,False
+00000056,189,22558,13383,23772,other off-route,False,False
+00000056,190,22558,13383,13383,other off-route,False,False
+00000056,191,22558,13383,13383,other off-route,False,False
+00000056,192,22558,13383,23772,other off-route,False,False
+00000056,193,22558,13383,22557,other off-route,False,False
+00000056,194,22558,13383,23772,other off-route,False,False
+00000056,195,22558,13383,23772,other off-route,False,False
+00000056,196,22558,13383,13383,other off-route,False,False
+00000056,197,22558,13383,13383,other off-route,False,False
+00000056,198,22558,23768,23772,other off-route,False,False
+00000056,199,22558,23768,22557,other off-route,False,False
+00000056,200,22558,23768,22557,other off-route,False,False
+00000056,201,22558,23768,22557,other off-route,False,False
+00000056,202,22558,23768,22557,other off-route,False,False
+00000056,203,22558,23768,22557,other off-route,False,False
+00000056,204,22558,23768,22557,other off-route,False,False
+00000056,205,22558,23768,22557,other off-route,False,False
+00000056,206,22558,23768,22557,other off-route,False,False
+00000056,207,22558,23768,23772,other off-route,False,False
+00000056,208,22558,23768,22557,other off-route,False,False
+00000056,209,22558,23768,22557,other off-route,False,False
+00000056,210,22558,23768,22558,other off-route,False,True
+00000056,211,22558,23768,23772,other off-route,False,False
+00000056,212,22558,23768,22558,other off-route,False,True
+00000056,214,12075,13975,13975,candidate miss,False,False
+00000056,266,6876,6859,6859,other reference arc,False,False
+00000056,338,16235,18413,18413,other reference arc,False,False
+00000056,426,18380,18382,18382,other reference arc,False,False
+00000056,513,25478,1814,25478,other reference arc,False,True
+00000056,514,25478,1814,25478,other reference arc,False,True
+00000056,515,25478,1814,25478,other reference arc,False,True
+00000056,661,23437,23442,23442,other reference arc,False,False
+00000056,680,23467,23399,23399,other reference arc,False,False
+00000056,699,24021,22990,22990,other reference arc,False,False
+00000056,787,23490,23487,10360,other reference arc,False,False
+00000056,790,9836,9781,9781,other reference arc,False,False
+00000056,833,8074,7688,7688,other reference arc,False,False
+00000056,834,8074,7688,7688,other reference arc,False,False
+00000056,835,8074,7688,7688,other reference arc,False,False
+00000056,836,8074,7688,8074,other reference arc,False,True
+00000056,900,16137,22913,22913,reverse arc,True,False
+00000056,901,16137,22913,22913,reverse arc,False,False
+00000056,902,16137,22913,22913,reverse arc,True,False
+00000056,914,2261,22912,2261,other reference arc,False,True
+00000056,966,7516,10358,7516,other reference arc,False,True
+00000056,967,7516,10358,7516,other reference arc,False,True
+00000056,1015,1912,24001,1912,other reference arc,False,True
+00000056,1016,1912,24001,1912,other reference arc,False,True
+00000056,1017,1912,24001,1912,other reference arc,False,True
+00000056,1018,1912,24001,1912,other reference arc,False,True
+00000056,1019,1912,24001,1912,other reference arc,False,True
+00000056,1020,1912,24001,1912,other reference arc,False,True
+00000056,1021,1912,24001,1912,other reference arc,False,True
+00000056,1022,1912,24001,1912,other reference arc,False,True
+00000056,1032,1912,1850,1850,other reference arc,False,False
+00000056,1033,1912,1850,1912,other reference arc,False,True
+00000056,1034,1912,1850,1912,other reference arc,False,True
+00000056,1091,22892,22896,22896,adjacent off-route,False,False
+00000056,1092,22897,22899,22892,adjacent off-route,False,False
+00000056,1172,10265,10294,10294,other reference arc,False,False
+00000056,1173,10265,10294,10265,other reference arc,False,True
+00000056,1273,24130,23498,9395,candidate miss,False,False
+00000056,1274,23498,9395,9395,other reference arc,False,False
+00000056,1338,23405,24076,24076,other reference arc,False,False
+00000056,1386,18298,18299,18299,other reference arc,False,False
+00000056,1657,23208,23207,23207,other reference arc,False,False
+00000056,1785,12270,9825,9825,other reference arc,False,False
+00000056,1802,18687,20307,18687,other reference arc,False,True
+00000056,1803,18687,18688,18687,other reference arc,False,True
+00000056,1804,20307,18688,18688,other reference arc,False,False
+00000056,1873,18654,18653,18653,other reference arc,False,False
+00000056,2086,24797,24792,18840,other reference arc,False,False
+00000056,2087,18841,24797,18840,other reference arc,False,False
+00000056,2093,24838,24840,24840,other reference arc,False,False
+00000056,2098,24852,18467,18467,other reference arc,False,False
+00000056,2101,18469,24841,24841,other reference arc,False,False
+00000056,2111,24808,24810,24810,other reference arc,False,False
+00000056,2210,9977,9934,9977,other reference arc,False,True
+00000056,2320,18598,18599,18598,other reference arc,False,True
+00000056,2321,18598,18599,18598,other reference arc,False,True
+00000056,2322,18598,18599,18598,other reference arc,False,True
+00000056,2323,18598,18599,18598,other reference arc,False,True
+00000056,2324,18598,18599,18599,other reference arc,False,False
+00000056,2325,18598,18599,18598,other reference arc,False,True
+00000056,2326,18598,18599,18598,other reference arc,False,True
+00000056,2327,18598,18599,18598,other reference arc,False,True
+00000056,2328,18598,18599,18598,other reference arc,False,True
+00000056,2329,18598,18599,18599,other reference arc,False,False
+00000056,2330,18598,18599,18599,other reference arc,False,False
+00000056,2331,18598,18599,18599,other reference arc,False,False
+00000056,2332,18598,18599,18599,other reference arc,False,False
+00000056,2333,18598,18599,18598,other reference arc,False,True
+00000056,2334,18598,18599,18598,other reference arc,False,True
+00000056,2335,18598,18599,18598,other reference arc,False,True
+00000056,2336,18598,18599,18598,other reference arc,False,True
+00000056,2337,18598,18599,18598,other reference arc,False,True
+00000056,2338,18598,18599,18598,other reference arc,False,True
+00000056,2339,18598,18599,18599,other reference arc,False,False
+00000056,2340,18598,18599,18599,other reference arc,False,False
+00000056,2341,18598,18599,18599,other reference arc,False,False
+00000056,2343,18599,1814,25478,other reference arc,False,False
+00000056,2366,20318,18573,20318,other reference arc,False,True
+00000056,2367,20318,18573,20318,other reference arc,False,True
+00000056,2368,20318,18573,20318,other reference arc,False,True
+00000056,2369,20318,18573,20318,other reference arc,False,True
+00000056,2370,20318,18573,20318,other reference arc,False,True
+00000056,2371,20318,18573,20318,other reference arc,False,True
+00000056,2372,20318,18573,18573,other reference arc,False,False
+00000056,2373,20318,18573,18573,other reference arc,False,False
+00000056,2374,20318,18573,18591,other reference arc,False,False
+00000056,2375,20318,18573,18591,other reference arc,False,False
+00000056,2555,18727,18699,18699,candidate miss,False,False
+00000056,2593,18687,20307,18687,other reference arc,False,True
+00000056,2594,18687,20307,18687,other reference arc,False,True
+00000056,2595,18687,20307,18687,other reference arc,False,True
+00000056,2596,18687,18688,18687,other reference arc,False,True
+00000056,2597,18687,18688,18687,other reference arc,False,True
+00000056,2598,18687,18688,18687,other reference arc,False,True
+00000056,2599,18687,18688,18687,other reference arc,False,True
+00000056,2600,18687,18688,20306,other reference arc,False,False
+00000056,2601,18687,18688,18687,other reference arc,False,True
+00000056,2602,18687,18688,18688,other reference arc,False,False
+00000056,2603,20307,18688,18688,other reference arc,False,False
+00000056,2604,20307,18688,18688,other reference arc,False,False
+00000056,2610,18715,18714,18714,other reference arc,False,False
+00000056,2677,18655,18654,18654,other reference arc,False,False
+00000056,2725,24046,24041,24041,other reference arc,False,False
+00000056,2757,22988,23468,23468,other reference arc,False,False
+00000056,2887,24170,24169,24169,other reference arc,False,False
+00000056,3065,18727,18728,18728,other reference arc,False,False
+00000056,3094,18045,16079,16079,other reference arc,False,False
+00000056,3104,17681,17990,17990,other reference arc,False,False
+00000056,3111,17673,16404,16404,other reference arc,False,False
+00000056,3113,23864,18127,18127,other reference arc,False,False
+00000056,3164,3801,3803,3803,other reference arc,False,False
+00000056,3186,12504,15923,12504,other reference arc,False,True
+00000056,3187,15923,22023,22027,candidate miss,False,False
+00000056,3188,15923,22027,15923,other off-route,False,True
+00000056,3189,17834,22025,17834,other off-route,False,True
+00000056,3190,17834,22025,17834,other off-route,False,True
+00000056,3245,14100,1838,1838,other reference arc,False,False
+00000056,3352,24168,24167,24168,adjacent off-route,False,True
+00000056,3353,24169,24167,24169,other off-route,False,True
+00000056,3354,24169,24167,24169,other off-route,False,True
+00000056,3355,24170,24167,24170,other off-route,False,True
+00000056,3356,24171,18338,18338,other off-route,False,False
+00000056,3357,24171,18338,18338,other off-route,False,False
+00000056,3358,24172,18338,24172,adjacent off-route,False,True
+00000056,3442,23015,24058,24058,other reference arc,False,False
+00000056,3463,23421,23423,23423,other reference arc,False,False
+00000056,3474,23506,23440,23440,other reference arc,False,False
+00000056,3477,23516,23513,23441,other reference arc,False,False
+00000056,3520,2772,5716,5716,adjacent off-route,False,False
+00000056,3521,2772,5716,5716,adjacent off-route,False,False
+00000056,3522,2772,5716,5716,adjacent off-route,False,False
+00000056,3523,2772,5716,5716,adjacent off-route,False,False
+00000056,3524,2772,5716,5716,adjacent off-route,False,False
+00000056,3525,2772,5716,5716,candidate miss,False,False
+00000056,3526,2772,5716,5716,candidate miss,False,False
+00000056,3527,2772,5716,5716,candidate miss,False,False
+00000056,3528,2772,5716,5716,candidate miss,False,False
+00000056,3529,2772,5716,5716,candidate miss,False,False
+00000056,3530,2772,5716,5716,candidate miss,False,False
+00000056,3531,2772,5716,5716,candidate miss,False,False
+00000056,3532,2772,5697,5716,candidate miss,False,False
+00000056,3533,2772,5697,5716,candidate miss,False,False
+00000056,3534,2772,5697,5716,candidate miss,False,False
+00000056,3535,2772,5697,5716,candidate miss,False,False
+00000056,3536,2772,5697,5697,candidate miss,False,False
+00000056,3537,2772,5697,5697,candidate miss,False,False
+00000056,3538,2772,5697,5697,candidate miss,False,False
+00000056,3539,2772,5697,5697,candidate miss,False,False
+00000056,3540,2772,5697,5697,candidate miss,False,False
+00000056,3541,2772,5697,5697,candidate miss,False,False
+00000056,3542,2772,5697,5697,adjacent off-route,False,False
+00000056,3543,2772,5697,5697,adjacent off-route,False,False
+00000056,3544,2772,5697,5697,adjacent off-route,False,False
+00000056,3545,2772,5697,5697,adjacent off-route,False,False
+00000056,3546,2772,5697,5697,adjacent off-route,False,False
+00000056,3547,2772,5697,5697,adjacent off-route,False,False
+00000056,3548,2772,5697,5697,adjacent off-route,False,False
+00000056,3549,2772,5697,5697,adjacent off-route,False,False
+00000056,3550,2772,5697,5697,adjacent off-route,False,False
+00000056,3551,2772,5697,5697,adjacent off-route,False,False
+00000056,3552,2772,5697,5697,adjacent off-route,False,False
+00000056,3553,2772,5697,5697,adjacent off-route,False,False
+00000056,3554,2772,5697,5697,adjacent off-route,False,False
+00000056,3555,2772,5697,5697,adjacent off-route,False,False
+00000056,3556,2772,5697,5697,adjacent off-route,False,False
+00000056,3557,2772,5697,5697,adjacent off-route,False,False
+00000056,3558,2772,5697,5697,adjacent off-route,False,False
+00000056,3559,2772,5697,5697,adjacent off-route,False,False
+00000056,3560,2772,5697,5697,adjacent off-route,False,False
+00000056,3561,2772,5697,5697,adjacent off-route,False,False
+00000056,3562,2772,5697,5697,adjacent off-route,False,False
+00000056,3563,2772,5697,5697,adjacent off-route,False,False
+00000056,3648,6451,6877,6451,other reference arc,False,True
+00000056,3649,6451,6877,6451,other reference arc,False,True
+00000056,3650,6451,6877,6451,other reference arc,False,True
+00000056,3651,6451,6877,6451,other reference arc,False,True
+00000056,3652,6451,6877,6451,other reference arc,False,True
+00000056,3653,6451,6877,6451,other reference arc,False,True
+00000056,3789,6441,22994,25409,candidate miss,False,False
+00000056,3790,6441,25401,6441,other off-route,False,True
+00000056,3791,23603,25401,23603,other off-route,False,True
+00000056,3792,11893,25401,11893,other off-route,False,True
+00000056,3793,11893,25401,11893,other off-route,False,True
+00000065,43,7680,7728,7730,reverse arc,True,False
+00000065,44,7680,7728,7730,reverse arc,True,False
+00000065,45,7680,7728,7737,reverse arc,False,False
+00000065,46,7680,7728,7737,reverse arc,True,False
+00000065,47,7680,7728,7745,reverse arc,True,False
+00000065,48,7680,7728,7728,reverse arc,True,False
+00000065,49,7680,7728,7728,reverse arc,True,False
+00000065,100,7310,7311,7298,adjacent off-route,False,False
+00000065,101,7310,7312,7298,adjacent off-route,False,False
+00000065,127,7297,7902,7902,other reference arc,False,False
+00000065,137,7720,8888,7713,other reference arc,False,False
+00000065,237,345,381,381,other reference arc,False,False
+00000065,241,381,380,380,other reference arc,False,False
+00000065,242,381,380,381,other reference arc,False,True
+00000065,267,1426,1433,1433,candidate miss,False,False
+00000065,268,1426,11637,1426,other off-route,False,True
+00000065,269,1426,11637,1426,other off-route,False,True
+00000065,270,1426,11637,1426,other off-route,False,True
+00000065,402,12130,530,530,other reference arc,False,False
+00000065,454,12004,9716,9716,other reference arc,False,False
+00000065,455,12004,9716,12022,other reference arc,False,False
+00000065,476,605,6085,6085,other reference arc,False,False
+00000065,603,10030,7573,10030,other reference arc,False,True
+00000065,604,10030,7573,10030,other reference arc,False,True
+00000065,605,10030,7573,10030,other reference arc,False,True
+00000065,606,10030,7573,10030,other reference arc,False,True
+00000065,618,2309,10030,2309,other reference arc,False,True
+00000065,636,4132,9009,4132,other reference arc,False,True
+00000065,637,4132,9009,4132,other reference arc,False,True
+00000065,638,4132,9009,4132,other reference arc,False,True
+00000065,639,4132,9009,4132,other reference arc,False,True
+00000065,640,4132,9009,4132,other reference arc,False,True
+00000065,690,4049,4120,4120,reverse arc,True,False
+00000065,691,4049,4120,4048,reverse arc,True,False
+00000065,692,4049,4120,4048,reverse arc,False,False
+00000065,693,4049,4120,4120,reverse arc,False,False
+00000065,694,4049,4120,4120,reverse arc,False,False
+00000065,695,4049,4120,4048,reverse arc,True,False
+00000065,724,4049,4122,4129,other reference arc,False,False
+00000065,725,4049,4122,4122,other reference arc,False,False
+00000065,738,4122,4114,4122,other reference arc,False,True
+00000065,753,4131,4111,4131,other reference arc,False,True
+00000065,754,4131,4111,4131,other reference arc,False,True
+00000065,755,4131,4111,4131,other reference arc,False,True
+00000065,756,4131,4111,4131,other reference arc,False,True
+00000065,757,4131,4111,4131,other reference arc,False,True
+00000065,758,4131,4111,4131,other reference arc,False,True
+00000065,759,4131,4111,4131,other reference arc,False,True
+00000065,760,4131,4111,4131,other reference arc,False,True
+00000065,761,4131,4111,4131,other reference arc,False,True
+00000065,762,4131,4111,4131,other reference arc,False,True
+00000065,763,4131,4111,4131,other reference arc,False,True
+00000065,764,4131,4111,4131,other reference arc,False,True
+00000065,765,4131,4121,4131,other off-route,False,True
+00000065,766,4131,4121,4131,other off-route,False,True
+00000065,767,4131,4121,4131,other off-route,False,True
+00000076,0,46579,1136,1136,adjacent off-route,False,False
+00000076,15,1124,1125,1125,adjacent off-route,False,False
+00000076,16,1124,1125,4859,adjacent off-route,False,False
+00000076,17,4859,1125,4859,other off-route,False,True
+00000076,18,4859,1137,3147,candidate miss,False,False
+00000076,19,21082,47941,47941,candidate miss,False,False
+00000076,20,4860,3148,3148,adjacent off-route,False,False
+00000076,45,640,21021,21021,other reference arc,False,False
+00000076,46,640,21021,640,other reference arc,False,True
+00000076,54,1122,274,274,other off-route,False,False
+00000076,55,1122,14316,1122,other off-route,False,True
+00000076,56,1122,21020,1122,adjacent off-route,False,True
+00000076,188,20868,253,20868,reverse arc,False,True
+00000076,189,252,20868,20868,candidate miss,False,False
+00000076,190,1261,252,252,other reference arc,False,False
+00000076,191,1261,252,252,other reference arc,False,False
+00000076,198,235,20851,20851,other reference arc,False,False
+00000076,455,39400,26560,26560,other reference arc,False,False
+00000076,459,3167,341,341,other reference arc,False,False
+00000076,499,26542,29763,29763,candidate miss,False,False
+00000076,500,29767,29754,29754,candidate miss,False,False
+00000076,514,26530,26532,26532,other reference arc,False,False
+00000076,516,26527,26530,26530,other reference arc,False,False
+00000076,541,26500,29668,29668,candidate miss,False,False
+00000076,578,26493,2058,2058,candidate miss,False,False
+00000076,581,50135,16960,16960,other reference arc,False,False
+00000076,582,50135,16960,16960,other reference arc,False,False
+00000076,583,50135,16960,50135,other reference arc,False,True
+00000076,617,13492,16964,13492,other reference arc,False,True
+00000076,618,13492,16964,16964,other reference arc,False,False
+00000076,682,26605,26608,26608,other reference arc,False,False
+00000076,686,50110,5557,50110,other reference arc,False,True
+00000076,687,50110,5557,5557,other reference arc,False,False
+00000076,704,12582,12706,29325,candidate miss,False,False
+00000076,786,4331,225,225,other reference arc,False,False
+00000076,804,44454,44453,28442,candidate miss,False,False
+00000076,821,26582,16978,16978,other reference arc,False,False
+00000076,857,12168,16429,16429,candidate miss,False,False
+00000076,858,12168,16429,12168,other reference arc,False,True
+00000076,907,28372,24378,24149,candidate miss,False,False
+00000076,908,28372,24378,28372,adjacent off-route,False,True
+00000076,909,28372,24378,28372,adjacent off-route,False,True
+00000076,921,53745,3341,53745,other reference arc,False,True
+00000076,922,53745,3341,53745,other reference arc,False,True
+00000076,923,53745,3341,53745,other reference arc,False,True
+00000076,933,3337,53744,3337,reverse arc,False,True
+00000076,977,13849,11707,13849,other reference arc,False,True
+00000076,978,13849,13847,13964,candidate miss,False,False
+00000076,1005,16426,44496,16406,other reference arc,False,False
+00000076,1362,16448,16455,16455,other reference arc,False,False
+00000076,1363,16448,16455,16448,other reference arc,False,True
+00000076,1365,16455,51188,16455,adjacent off-route,False,True
+00000076,1366,16455,51192,16455,adjacent off-route,False,True
+00000076,1367,16455,51192,51187,adjacent off-route,False,False
+00000076,1401,3362,4833,9941,reverse arc,False,False
+00000076,1408,518,517,4834,adjacent off-route,False,False
+00000076,1409,518,517,518,adjacent off-route,False,True
+00000076,1483,16460,508,508,other reference arc,False,False
+00000076,1485,16460,11204,3375,adjacent off-route,False,False
+00000077,0,8348,8344,8342,adjacent off-route,False,False
+00000077,1,8348,8344,8342,adjacent off-route,False,False
+00000077,2,8348,8344,8342,adjacent off-route,False,False
+00000077,3,8348,8344,8342,adjacent off-route,False,False
+00000077,4,8348,8344,8347,adjacent off-route,False,False
+00000077,5,8348,8344,8347,adjacent off-route,False,False
+00000077,6,8348,8344,8347,adjacent off-route,False,False
+00000077,7,8348,8344,8342,adjacent off-route,False,False
+00000077,8,8348,8344,8342,adjacent off-route,False,False
+00000077,9,8348,8344,8342,adjacent off-route,False,False
+00000077,10,8348,8344,8347,adjacent off-route,False,False
+00000077,11,8348,8344,8347,adjacent off-route,False,False
+00000077,12,8348,8344,8347,adjacent off-route,False,False
+00000077,13,8348,8344,8342,adjacent off-route,False,False
+00000077,14,8348,8344,8347,adjacent off-route,False,False
+00000077,15,8348,8344,8347,adjacent off-route,False,False
+00000077,16,8348,8344,8347,adjacent off-route,False,False
+00000077,17,8348,8344,8347,adjacent off-route,False,False
+00000077,18,8348,8344,8347,adjacent off-route,False,False
+00000077,19,8348,8344,8347,adjacent off-route,False,False
+00000077,20,8348,8344,8347,adjacent off-route,False,False
+00000077,21,8348,8344,8347,adjacent off-route,False,False
+00000077,22,8348,8344,8347,adjacent off-route,False,False
+00000077,23,8348,8344,8347,adjacent off-route,False,False
+00000077,24,8348,8344,8347,adjacent off-route,False,False
+00000077,25,8348,8344,8345,adjacent off-route,False,False
+00000077,26,8348,8344,8342,adjacent off-route,False,False
+00000077,27,8348,8344,8342,adjacent off-route,False,False
+00000077,28,8348,8344,8342,adjacent off-route,False,False
+00000077,29,8348,8344,8347,adjacent off-route,False,False
+00000077,30,8348,8344,8347,adjacent off-route,False,False
+00000077,31,8348,8344,8345,adjacent off-route,False,False
+00000077,32,8348,8344,8342,adjacent off-route,False,False
+00000077,33,8348,8344,8342,adjacent off-route,False,False
+00000077,34,8348,8344,8342,adjacent off-route,False,False
+00000077,35,8348,8344,8347,adjacent off-route,False,False
+00000077,36,8348,8344,8342,adjacent off-route,False,False
+00000077,37,8348,8344,8342,adjacent off-route,False,False
+00000077,38,8348,8344,8342,adjacent off-route,False,False
+00000077,39,8348,8344,8347,adjacent off-route,False,False
+00000077,40,8348,8344,8347,adjacent off-route,False,False
+00000077,41,8348,8344,8347,adjacent off-route,False,False
+00000077,42,8348,8344,8347,adjacent off-route,False,False
+00000077,43,8348,8344,8347,adjacent off-route,False,False
+00000077,44,8348,8344,8347,adjacent off-route,False,False
+00000077,45,8348,8344,8347,adjacent off-route,False,False
+00000077,46,8348,8344,8347,adjacent off-route,False,False
+00000077,47,8348,8344,8347,adjacent off-route,False,False
+00000077,48,8348,8344,8347,adjacent off-route,False,False
+00000077,49,8348,8344,8347,adjacent off-route,False,False
+00000077,50,8348,8344,8347,adjacent off-route,False,False
+00000077,51,8348,8344,8347,adjacent off-route,False,False
+00000077,52,8348,8344,8347,adjacent off-route,False,False
+00000077,53,8348,8344,8348,adjacent off-route,False,True
+00000077,54,8348,8344,8342,adjacent off-route,False,False
+00000077,55,8348,8344,8347,adjacent off-route,False,False
+00000077,56,8348,8344,8348,adjacent off-route,False,True
+00000077,57,8348,8344,8342,adjacent off-route,False,False
+00000077,58,8348,8344,8347,adjacent off-route,False,False
+00000077,59,8348,8344,8348,adjacent off-route,False,True
+00000077,60,8348,8344,8348,adjacent off-route,False,True
+00000077,61,8348,8344,8348,adjacent off-route,False,True
+00000077,62,8348,8344,8348,adjacent off-route,False,True
+00000077,63,8348,8344,8348,adjacent off-route,False,True
+00000077,64,8348,8344,8348,adjacent off-route,False,True
+00000077,65,8348,8344,8348,adjacent off-route,False,True
+00000077,66,8348,8344,8348,adjacent off-route,False,True
+00000077,67,8348,8344,8348,adjacent off-route,False,True
+00000077,68,8348,8344,8348,adjacent off-route,False,True
+00000077,69,8348,8344,8348,adjacent off-route,False,True
+00000077,70,8348,8344,8348,adjacent off-route,False,True
+00000077,71,8345,8344,8348,adjacent off-route,False,False
+00000077,72,8345,8344,8348,adjacent off-route,False,False
+00000077,73,8345,8344,8345,adjacent off-route,False,True
+00000077,74,8345,8344,8345,adjacent off-route,False,True
+00000077,75,8345,8344,8345,adjacent off-route,False,True
+00000077,76,8345,8344,8345,adjacent off-route,False,True
+00000077,77,8345,8344,8345,adjacent off-route,False,True
+00000077,78,8345,8344,8345,adjacent off-route,False,True
+00000077,79,8345,8344,8345,adjacent off-route,False,True
+00000077,80,8345,8344,8345,adjacent off-route,False,True
+00000077,81,8345,8344,8345,adjacent off-route,False,True
+00000077,82,8345,8344,8345,adjacent off-route,False,True
+00000077,83,8345,8344,8345,adjacent off-route,False,True
+00000077,84,8345,8344,8345,adjacent off-route,False,True
+00000077,85,8345,8344,8345,adjacent off-route,False,True
+00000077,102,8345,8342,8345,reverse arc,False,True
+00000077,103,8345,8342,8345,reverse arc,False,True
+00000077,104,8345,8342,8345,reverse arc,False,True
+00000077,105,8345,8342,8345,reverse arc,False,True
+00000077,106,8345,8342,8345,reverse arc,False,True
+00000077,107,8345,8342,8345,reverse arc,False,True
+00000077,108,8345,8342,8345,reverse arc,False,True
+00000077,109,8345,8342,8345,reverse arc,False,True
+00000077,110,8345,8342,8345,reverse arc,False,True
+00000077,111,8345,8342,8345,reverse arc,False,True
+00000077,112,8345,8342,8345,reverse arc,False,True
+00000077,113,8345,8342,8345,reverse arc,False,True
+00000077,114,8345,8342,8345,reverse arc,False,True
+00000077,115,8345,8342,8345,reverse arc,False,True
+00000077,116,8345,8342,8345,reverse arc,False,True
+00000077,117,8345,8342,8345,reverse arc,False,True
+00000077,118,8345,8342,8345,reverse arc,False,True
+00000077,119,8345,8341,8345,adjacent off-route,False,True
+00000077,120,8345,8341,8345,adjacent off-route,False,True
+00000077,121,8345,8341,8345,adjacent off-route,False,True
+00000077,122,8345,8341,8345,adjacent off-route,False,True
+00000077,123,8345,8341,8345,adjacent off-route,False,True
+00000077,124,8345,8341,8345,adjacent off-route,False,True
+00000077,125,8345,8341,8345,adjacent off-route,False,True
+00000077,126,8345,8341,8345,adjacent off-route,False,True
+00000077,127,8345,8341,8345,adjacent off-route,False,True
+00000077,128,8345,8341,8345,adjacent off-route,False,True
+00000077,129,8345,8341,8345,adjacent off-route,False,True
+00000077,130,8345,8341,8345,adjacent off-route,False,True
+00000077,131,8345,8341,8345,adjacent off-route,False,True
+00000077,132,8345,8341,8345,adjacent off-route,False,True
+00000077,133,8345,8341,8345,adjacent off-route,False,True
+00000077,134,8345,8341,8345,adjacent off-route,False,True
+00000077,135,8345,8341,8345,adjacent off-route,False,True
+00000077,136,8345,8341,8345,adjacent off-route,False,True
+00000077,137,8345,8341,8345,adjacent off-route,False,True
+00000077,138,8345,8341,8345,adjacent off-route,False,True
+00000077,139,8345,8341,8345,adjacent off-route,False,True
+00000077,140,8345,8341,8345,adjacent off-route,False,True
+00000077,141,8345,8341,8345,adjacent off-route,False,True
+00000077,142,8345,8341,8345,adjacent off-route,False,True
+00000077,143,8345,8341,8345,adjacent off-route,False,True
+00000077,144,8345,8341,8345,adjacent off-route,False,True
+00000077,145,8345,8341,8345,adjacent off-route,False,True
+00000077,146,8345,8341,8345,adjacent off-route,False,True
+00000077,147,8345,8341,8345,adjacent off-route,False,True
+00000077,148,8345,8341,8345,adjacent off-route,False,True
+00000077,149,8345,8341,8345,adjacent off-route,False,True
+00000077,150,8345,8341,8345,adjacent off-route,False,True
+00000077,151,8345,8341,8345,adjacent off-route,False,True
+00000077,152,8345,8341,8345,adjacent off-route,False,True
+00000077,153,8345,8342,8343,reverse arc,False,False
+00000077,154,8345,8342,8345,reverse arc,False,True
+00000077,155,8343,8342,8343,adjacent off-route,False,True
+00000077,156,8343,8342,8343,adjacent off-route,False,True
+00000077,157,8343,8342,8343,adjacent off-route,False,True
+00000077,158,8343,8342,8343,adjacent off-route,False,True
+00000077,159,8343,8342,8343,adjacent off-route,False,True
+00000077,160,8343,8342,8343,adjacent off-route,False,True
+00000077,161,8343,8342,8343,adjacent off-route,False,True
+00000077,162,8343,8342,8343,adjacent off-route,False,True
+00000077,163,8343,8342,8343,adjacent off-route,False,True
+00000077,164,8343,8342,8343,adjacent off-route,False,True
+00000077,165,8343,8342,8343,adjacent off-route,False,True
+00000077,166,8343,8342,8343,adjacent off-route,False,True
+00000077,167,8343,8342,8343,adjacent off-route,False,True
+00000077,168,8343,8342,8343,adjacent off-route,False,True
+00000077,169,8343,8342,8343,adjacent off-route,False,True
+00000077,170,8343,8342,8343,adjacent off-route,False,True
+00000077,171,8343,8342,8343,adjacent off-route,False,True
+00000077,182,8343,8339,8343,other reference arc,False,True
+00000077,183,8343,8339,8343,other reference arc,False,True
+00000077,184,8343,8339,8343,other reference arc,False,True
+00000077,185,8343,8339,8343,other reference arc,False,True
+00000077,186,8343,8339,8343,other reference arc,False,True
+00000077,187,8343,8339,8343,other reference arc,False,True
+00000077,188,8343,8339,8343,other reference arc,False,True
+00000077,189,8343,8339,8343,other reference arc,False,True
+00000077,190,8343,8339,8343,other reference arc,False,True
+00000077,191,8343,8339,8343,other reference arc,False,True
+00000077,192,8343,8339,8343,other reference arc,False,True
+00000077,193,8343,8339,8343,other reference arc,False,True
+00000077,194,8343,8339,8343,other reference arc,False,True
+00000077,195,8343,8339,8343,other reference arc,False,True
+00000077,196,8343,8339,8343,other reference arc,False,True
+00000077,197,8343,8339,8343,other reference arc,False,True
+00000077,198,8343,8339,8343,other reference arc,False,True
+00000077,199,8343,8339,8343,other reference arc,False,True
+00000077,217,911,875,875,other reference arc,False,False
+00000077,336,44,4561,44,other reference arc,False,True
+00000077,337,44,4561,44,other reference arc,False,True
+00000077,338,44,4561,44,other reference arc,False,True
+00000077,339,44,4561,44,other reference arc,False,True
+00000077,340,44,4561,44,other reference arc,False,True
+00000077,341,44,4561,44,other reference arc,False,True
+00000077,342,44,4561,44,other reference arc,False,True
+00000077,343,44,4561,44,other reference arc,False,True
+00000077,344,44,4561,44,other reference arc,False,True
+00000077,345,44,4561,44,other reference arc,False,True
+00000077,346,44,4561,44,other reference arc,False,True
+00000077,347,44,4561,44,other reference arc,False,True
+00000077,348,44,4561,44,other reference arc,False,True
+00000077,371,44,310,44,adjacent off-route,False,True
+00000077,372,44,310,312,adjacent off-route,False,False
+00000077,373,44,2969,44,adjacent off-route,False,True
+00000077,374,44,2969,312,adjacent off-route,False,False
+00000077,375,44,2969,312,adjacent off-route,False,False
+00000077,376,44,2969,44,adjacent off-route,False,True
+00000077,377,44,2969,44,adjacent off-route,False,True
+00000077,378,44,310,312,adjacent off-route,False,False
+00000077,379,44,310,312,adjacent off-route,False,False
+00000077,380,44,310,312,adjacent off-route,False,False
+00000077,381,44,2969,44,adjacent off-route,False,True
+00000077,382,44,2969,44,adjacent off-route,False,True
+00000077,383,44,2969,312,adjacent off-route,False,False
+00000077,384,44,2969,44,adjacent off-route,False,True
+00000077,385,44,310,312,adjacent off-route,False,False
+00000077,386,44,310,44,adjacent off-route,False,True
+00000077,387,44,310,44,adjacent off-route,False,True
+00000077,388,44,2969,312,adjacent off-route,False,False
+00000077,389,44,2969,44,adjacent off-route,False,True
+00000077,390,44,2969,312,adjacent off-route,False,False
+00000077,391,44,2969,44,adjacent off-route,False,True
+00000077,392,44,2969,312,adjacent off-route,False,False
+00000077,393,44,2969,44,adjacent off-route,False,True
+00000077,394,44,2969,44,adjacent off-route,False,True
+00000077,395,44,2969,44,adjacent off-route,False,True
+00000077,396,44,312,312,reverse arc,False,False
+00000077,397,44,312,44,reverse arc,False,True
+00000077,398,44,312,312,reverse arc,True,False
+00000077,399,44,312,312,reverse arc,False,False
+00000077,400,44,312,44,reverse arc,False,True
+00000077,401,44,312,44,reverse arc,True,True
+00000077,402,44,312,44,reverse arc,False,True
+00000077,403,44,312,312,reverse arc,False,False
+00000077,404,44,312,312,reverse arc,True,False
+00000077,405,44,312,312,reverse arc,False,False
+00000077,406,44,312,44,reverse arc,False,True
+00000077,407,44,312,44,reverse arc,True,True
+00000077,408,44,312,44,reverse arc,False,True
+00000077,409,44,312,44,reverse arc,True,True
+00000077,410,44,312,44,reverse arc,True,True
+00000077,427,44,5727,44,adjacent off-route,False,True
+00000077,428,44,312,312,reverse arc,False,False
+00000077,429,44,312,312,reverse arc,False,False
+00000077,430,44,312,312,reverse arc,False,False
+00000077,431,44,312,312,reverse arc,True,False
+00000077,432,44,312,44,reverse arc,True,True
+00000077,433,44,312,312,reverse arc,True,False
+00000077,434,44,312,312,reverse arc,False,False
+00000077,435,44,312,312,reverse arc,False,False
+00000077,436,44,312,312,reverse arc,False,False
+00000077,437,44,312,312,reverse arc,True,False
+00000077,438,44,312,312,reverse arc,True,False
+00000077,439,44,312,312,reverse arc,True,False
+00000077,440,44,312,312,reverse arc,True,False
+00000077,441,44,312,312,reverse arc,False,False
+00000077,442,44,312,44,reverse arc,False,True
+00000077,448,44,310,44,adjacent off-route,False,True
+00000077,449,44,310,44,adjacent off-route,False,True
+00000077,450,44,310,312,adjacent off-route,False,False
+00000077,451,44,310,312,adjacent off-route,False,False
+00000077,452,44,310,312,adjacent off-route,False,False
+00000077,453,44,310,312,adjacent off-route,False,False
+00000077,454,44,310,44,adjacent off-route,False,True
+00000077,455,44,310,44,adjacent off-route,False,True
+00000077,456,44,310,312,adjacent off-route,False,False
+00000077,457,44,310,312,adjacent off-route,False,False
+00000077,458,44,310,312,adjacent off-route,False,False
+00000077,459,44,310,312,adjacent off-route,False,False
+00000077,460,44,2969,44,adjacent off-route,False,True
+00000077,461,44,2969,312,adjacent off-route,False,False
+00000077,462,44,2969,312,adjacent off-route,False,False
+00000077,463,44,312,312,reverse arc,False,False
+00000077,464,44,312,44,reverse arc,False,True
+00000077,465,44,312,312,reverse arc,False,False
+00000077,466,44,312,312,reverse arc,True,False
+00000077,467,44,312,312,reverse arc,True,False
+00000077,468,44,312,312,reverse arc,True,False
+00000077,469,44,312,312,reverse arc,True,False
+00000077,470,44,312,44,reverse arc,True,True
+00000077,471,44,312,312,reverse arc,True,False
+00000077,472,44,312,312,reverse arc,True,False
+00000077,493,44,310,44,adjacent off-route,False,True
+00000077,494,44,2969,44,adjacent off-route,False,True
+00000077,495,44,2969,44,adjacent off-route,False,True
+00000077,496,44,2969,44,adjacent off-route,False,True
+00000077,497,44,2969,44,adjacent off-route,False,True
+00000077,498,44,2969,44,adjacent off-route,False,True
+00000077,499,44,2969,44,adjacent off-route,False,True
+00000077,500,44,2969,44,adjacent off-route,False,True
+00000077,501,44,310,44,adjacent off-route,False,True
+00000077,502,44,2969,44,adjacent off-route,False,True
+00000077,503,44,2969,44,adjacent off-route,False,True
+00000077,504,44,2969,44,adjacent off-route,False,True
+00000077,505,44,2969,2969,adjacent off-route,False,False
+00000077,506,44,2969,44,adjacent off-route,False,True
+00000077,507,44,2969,44,adjacent off-route,False,True
+00000077,508,44,2969,44,adjacent off-route,False,True
+00000077,509,44,2969,44,adjacent off-route,False,True
+00000077,510,44,2969,44,adjacent off-route,False,True
+00000077,511,44,2969,44,adjacent off-route,False,True
+00000077,512,44,313,44,other reference arc,False,True
+00000077,513,44,313,44,other reference arc,False,True
+00000077,514,44,313,44,other reference arc,False,True
+00000077,515,44,313,44,other reference arc,False,True
+00000077,577,314,9505,9505,other reference arc,False,False
+00000077,658,323,2823,323,other reference arc,False,True
+00000077,659,323,2823,323,other reference arc,False,True
+00000077,660,323,2823,323,other reference arc,False,True
+00000077,661,323,2823,323,other reference arc,False,True
+00000077,662,323,2823,323,other reference arc,False,True
+00000077,669,2455,323,2455,other reference arc,False,True
+00000077,670,2455,323,2455,other reference arc,False,True
+00000077,671,2455,323,2455,other reference arc,False,True
+00000077,675,2455,5071,2455,other reference arc,False,True
+00000077,676,2455,5071,2455,other reference arc,False,True
+00000077,677,2455,5071,2455,other reference arc,False,True
+00000077,678,2455,5071,2455,other reference arc,False,True
+00000077,679,2455,5071,2455,other reference arc,False,True
+00000077,717,188,621,188,other reference arc,False,True
+00000077,718,188,621,188,other reference arc,False,True
+00000077,719,188,621,188,other reference arc,False,True
+00000077,720,188,621,188,other reference arc,False,True
+00000077,721,188,621,188,other reference arc,False,True
+00000077,722,188,621,188,other reference arc,False,True
+00000077,723,188,621,188,other reference arc,False,True
+00000077,724,188,621,188,other reference arc,False,True
+00000077,786,6394,181,6394,reverse arc,True,True
+00000077,787,6394,181,6394,reverse arc,True,True
+00000077,788,6394,181,6394,reverse arc,True,True
+00000077,789,6394,181,6394,reverse arc,True,True
+00000077,790,6394,181,6394,reverse arc,False,True
+00000077,791,6394,181,6394,reverse arc,False,True
+00000077,792,6394,181,6394,reverse arc,True,True
+00000077,793,6394,181,6394,reverse arc,True,True
+00000077,794,6394,181,181,reverse arc,True,False
+00000077,795,6394,181,6516,reverse arc,True,False
+00000077,796,6394,181,181,reverse arc,False,False
+00000077,797,6394,181,6516,reverse arc,False,False
+00000077,798,6394,181,6516,reverse arc,True,False
+00000077,799,6394,181,6394,reverse arc,False,True
+00000077,800,6394,181,6516,reverse arc,False,False
+00000077,801,6394,181,6516,reverse arc,False,False
+00000077,802,6394,181,181,reverse arc,False,False
+00000077,803,6394,181,6516,reverse arc,False,False
+00000077,818,6394,181,6394,reverse arc,False,True
+00000077,828,6394,181,6394,reverse arc,True,True
+00000077,829,6394,181,6394,reverse arc,True,True
+00000077,830,6394,181,6394,reverse arc,True,True
+00000077,831,6394,181,6394,reverse arc,True,True
+00000077,839,6394,182,6394,other reference arc,False,True
+00000077,840,6394,182,6394,other reference arc,False,True
+00000077,841,6394,182,6394,other reference arc,False,True
+00000077,842,6394,182,181,other reference arc,False,False
+00000077,843,6394,4401,181,adjacent off-route,False,False
+00000077,844,6394,181,181,reverse arc,False,False
+00000077,845,6394,181,181,reverse arc,False,False
+00000077,846,6394,181,6394,reverse arc,False,True
+00000077,847,6394,181,6394,reverse arc,False,True
+00000077,848,6394,181,181,reverse arc,False,False
+00000077,849,6394,181,181,reverse arc,True,False
+00000077,850,6394,181,6394,reverse arc,True,True
+00000077,851,6394,181,6394,reverse arc,False,True
+00000077,852,6394,181,6394,reverse arc,True,True
+00000077,853,6394,181,181,reverse arc,True,False
+00000077,854,6394,181,6394,reverse arc,False,True
+00000077,855,6394,181,6394,reverse arc,True,True
+00000077,856,6394,181,6394,reverse arc,False,True
+00000077,861,6394,181,6394,reverse arc,False,True
+00000077,862,6394,181,6394,reverse arc,True,True
+00000077,863,6394,181,6394,reverse arc,True,True
+00000077,864,6394,181,6394,reverse arc,True,True
+00000077,891,6394,181,181,reverse arc,False,False
+00000077,892,6394,181,181,reverse arc,True,False
+00000077,893,6394,181,6394,reverse arc,True,True
+00000077,894,6394,181,6394,reverse arc,True,True
+00000077,895,6394,181,181,reverse arc,True,False
+00000077,896,6394,181,6394,reverse arc,True,True
+00000077,914,6394,182,6394,other reference arc,False,True
+00000077,915,6394,182,6394,other reference arc,False,True
+00000077,916,6394,182,6394,other reference arc,False,True
+00000077,917,6394,182,6394,other reference arc,False,True
+00000077,918,6394,4401,181,adjacent off-route,False,False
+00000077,919,6394,4401,6394,adjacent off-route,False,True
+00000077,920,6394,4401,6394,adjacent off-route,False,True
+00000077,921,6394,181,6394,reverse arc,True,True
+00000077,922,6394,181,6394,reverse arc,False,True
+00000077,923,6394,181,181,reverse arc,True,False
+00000077,924,6394,181,6394,reverse arc,False,True
+00000077,925,6394,181,6394,reverse arc,False,True
+00000077,926,6394,181,181,reverse arc,True,False
+00000077,927,6394,181,181,reverse arc,False,False
+00000077,928,6394,181,181,reverse arc,True,False
+00000077,929,6394,181,181,reverse arc,False,False
+00000077,930,6394,181,181,reverse arc,False,False
+00000077,960,6394,181,181,reverse arc,False,False
+00000077,961,6394,181,181,reverse arc,True,False
+00000077,962,6394,181,181,reverse arc,False,False
+00000077,963,6394,181,181,reverse arc,True,False
+00000077,964,6394,181,6394,reverse arc,True,True
+00000077,965,6394,181,6394,reverse arc,True,True
+00000077,966,6394,181,6394,reverse arc,True,True
+00000077,967,6394,181,6394,reverse arc,False,True
+00000077,968,6394,181,181,reverse arc,False,False
+00000077,970,6394,181,6394,reverse arc,False,True
+00000077,971,6394,181,181,reverse arc,False,False
+00000077,992,6394,181,6394,reverse arc,True,True
+00000077,993,6394,181,6394,reverse arc,False,True
+00000077,994,6394,181,6394,reverse arc,True,True
+00000077,995,6394,181,6394,reverse arc,True,True
+00000077,996,6394,181,6394,reverse arc,False,True
+00000077,997,6394,181,6394,reverse arc,True,True
+00000077,998,6394,181,6394,reverse arc,True,True
+00000077,999,6394,181,6394,reverse arc,False,True
+00000077,1000,6394,181,6394,reverse arc,False,True
+00000077,1001,6394,181,6394,reverse arc,True,True
+00000077,1002,6394,181,6394,reverse arc,True,True
+00000077,1014,182,6394,6394,other reference arc,False,False
+00000077,1042,8912,8779,8912,other reference arc,False,True
+00000077,1043,8912,8779,8912,other reference arc,False,True
+00000077,1044,8912,8779,8912,other reference arc,False,True
+00000077,1045,8912,8779,8912,other reference arc,False,True
+00000077,1046,8912,8779,8912,other reference arc,False,True
+00000077,1047,8912,8779,8912,other reference arc,False,True
+00000077,1048,8912,8779,8912,other reference arc,False,True
+00000077,1049,8912,8779,8912,other reference arc,False,True
+00000077,1050,8912,8779,8912,other reference arc,False,True
+00000077,1051,8912,8779,8912,other reference arc,False,True
+00000077,1052,8912,8779,8912,other reference arc,False,True
+00000077,1053,8912,8779,8912,other reference arc,False,True
+00000077,1062,8912,100,8912,reverse arc,False,True
+00000077,1063,8912,100,8912,reverse arc,True,True
+00000077,1064,8912,100,8912,reverse arc,True,True
+00000077,1065,8912,100,8912,reverse arc,True,True
+00000077,1066,8912,100,100,reverse arc,False,False
+00000077,1067,8912,100,8912,reverse arc,False,True
+00000077,1068,8912,100,8912,reverse arc,False,True
+00000077,1069,8912,100,8912,reverse arc,False,True
+00000077,1070,8912,100,8912,reverse arc,False,True
+00000077,1071,8912,100,100,reverse arc,True,False
+00000077,1072,8912,100,8912,reverse arc,True,True
+00000077,1073,8912,100,8912,reverse arc,False,True
+00000077,1079,8912,100,8912,reverse arc,True,True
+00000077,1080,8912,100,8912,reverse arc,True,True
+00000077,1081,8912,100,8912,reverse arc,True,True
+00000077,1082,8912,100,8912,reverse arc,True,True
+00000077,1083,8912,100,8913,reverse arc,False,False
+00000077,1084,8912,100,8910,reverse arc,True,False
+00000077,1085,8912,100,8912,reverse arc,False,True
+00000077,1086,8912,100,8912,reverse arc,False,True
+00000077,1087,8912,100,8912,reverse arc,False,True
+00000077,1088,8912,100,8912,reverse arc,False,True
+00000077,1089,8912,100,8912,reverse arc,True,True
+00000077,1090,8912,100,8912,reverse arc,True,True
+00000077,1091,8912,100,8912,reverse arc,False,True
+00000077,1092,8912,100,8912,reverse arc,True,True
+00000077,1093,8912,100,8912,reverse arc,False,True
+00000077,1094,8912,100,8912,reverse arc,False,True
+00000077,1095,8912,100,8912,reverse arc,False,True
+00000077,1096,8912,100,8912,reverse arc,False,True
+00000077,1097,8912,100,8912,reverse arc,False,True
+00000077,1098,8912,100,8912,reverse arc,False,True
+00000077,1099,8912,100,8912,reverse arc,False,True
+00000077,1100,8912,100,8912,reverse arc,False,True
+00000077,1101,8912,100,8912,reverse arc,False,True
+00000077,1102,8912,100,8912,reverse arc,False,True
+00000077,1103,8912,100,8912,reverse arc,True,True
+00000077,1104,8912,100,8912,reverse arc,False,True
+00000077,1105,8912,100,8912,reverse arc,True,True
+00000077,1106,8912,100,8912,reverse arc,True,True
+00000077,1107,8912,100,8912,reverse arc,False,True
+00000077,1118,8912,100,100,reverse arc,True,False
+00000077,1119,8912,100,8912,reverse arc,True,True
+00000077,1120,8912,100,8912,reverse arc,True,True
+00000077,1121,8912,100,8912,reverse arc,False,True
+00000077,1124,8912,100,8912,reverse arc,False,True
+00000077,1125,8912,100,8912,reverse arc,False,True
+00000077,1126,8912,100,8912,reverse arc,False,True
+00000077,1127,8912,100,8912,reverse arc,True,True
+00000077,1128,8912,100,8912,reverse arc,True,True
+00000077,1129,8912,100,8912,reverse arc,False,True
+00000077,1130,8912,100,8912,reverse arc,True,True
+00000077,1131,8912,100,8912,reverse arc,False,True
+00000077,1132,8912,100,8912,reverse arc,False,True
+00000077,1133,8912,100,8912,reverse arc,True,True
+00000077,1134,8912,100,8912,reverse arc,False,True
+00000077,1135,8912,100,8912,reverse arc,True,True
+00000077,1136,8912,100,8912,reverse arc,True,True
+00000077,1137,8912,100,8912,reverse arc,False,True
+00000077,1146,8912,102,5296,other reference arc,False,False
+00000077,1168,5156,8914,5157,other reference arc,False,False
+00000077,1175,5156,5136,5156,reverse arc,False,True
+00000077,1183,5137,5156,5156,other reference arc,False,False
+00000077,1184,5137,5156,5156,other reference arc,False,False
+00000077,1191,5161,5116,5116,other reference arc,False,False
+00000077,1205,5161,5095,5161,adjacent off-route,False,True
+00000077,1206,5161,5095,5161,adjacent off-route,False,True
+00000077,1207,5161,5095,5161,adjacent off-route,False,True
+00000077,1208,5161,5095,5161,adjacent off-route,False,True
+00000077,1209,5161,5095,5161,adjacent off-route,False,True
+00000077,1210,5161,5095,5161,adjacent off-route,False,True
+00000077,1211,5161,5095,5161,adjacent off-route,False,True
+00000077,1212,5161,5095,5161,adjacent off-route,False,True
+00000077,1213,5161,5095,5161,adjacent off-route,False,True
+00000077,1214,5161,5095,5161,adjacent off-route,False,True
+00000077,1215,5161,5095,5161,adjacent off-route,False,True
+00000077,1216,5161,5146,5149,adjacent off-route,False,False
+00000077,1217,5161,5146,5149,adjacent off-route,False,False
+00000077,1218,5161,5146,5161,adjacent off-route,False,True
+00000077,1219,5161,5146,5161,adjacent off-route,False,True
+00000077,1220,5161,5146,5161,adjacent off-route,False,True
+00000077,1221,5161,5146,5161,adjacent off-route,False,True
+00000077,1222,5161,5146,5149,adjacent off-route,False,False
+00000077,1223,5161,5146,5094,adjacent off-route,False,False
+00000077,1224,5161,5146,5161,adjacent off-route,False,True
+00000077,1225,5161,5146,5161,adjacent off-route,False,True
+00000077,1226,5161,5146,5161,adjacent off-route,False,True
+00000077,1227,5161,5146,5094,adjacent off-route,False,False
+00000077,1228,5161,5146,5149,adjacent off-route,False,False
+00000077,1229,5161,5146,5161,adjacent off-route,False,True
+00000077,1230,5161,5146,5161,adjacent off-route,False,True
+00000077,1231,5161,5146,5094,adjacent off-route,False,False
+00000077,1232,5161,5146,5161,adjacent off-route,False,True
+00000077,1233,5161,5146,5161,adjacent off-route,False,True
+00000077,1234,5161,5146,5094,adjacent off-route,False,False
+00000077,1235,5161,5146,5161,adjacent off-route,False,True
+00000077,1236,5161,5146,5094,adjacent off-route,False,False
+00000077,1237,5161,5146,5161,adjacent off-route,False,True
+00000077,1238,5161,5146,5161,adjacent off-route,False,True
+00000077,1239,5161,5146,5161,adjacent off-route,False,True
+00000077,1240,5161,5146,5161,adjacent off-route,False,True
+00000077,1241,5161,5094,5161,reverse arc,True,True
+00000077,1242,5161,5094,5161,reverse arc,False,True
+00000077,1243,5161,5094,5161,reverse arc,True,True
+00000077,1244,5161,5094,5161,reverse arc,False,True
+00000077,1245,5161,5094,5161,reverse arc,True,True
+00000077,1246,5161,5094,5161,reverse arc,False,True
+00000077,1247,5161,5094,5161,reverse arc,True,True
+00000077,1248,5161,5094,5161,reverse arc,True,True
+00000077,1249,5161,5094,5161,reverse arc,True,True
+00000077,1250,5161,5160,5161,other reference arc,False,True
+00000077,1251,5161,5116,5161,other reference arc,False,True
+00000077,1276,5161,5146,5161,adjacent off-route,False,True
+00000077,1277,5161,5146,5161,adjacent off-route,False,True
+00000077,1278,5161,5146,5161,adjacent off-route,False,True
+00000077,1279,5161,5146,5161,adjacent off-route,False,True
+00000077,1280,5161,5146,5161,adjacent off-route,False,True
+00000077,1281,5161,5094,5161,reverse arc,False,True
+00000077,1282,5161,5094,5161,reverse arc,False,True
+00000077,1283,5161,5094,5161,reverse arc,True,True
+00000077,1284,5161,5094,5094,reverse arc,False,False
+00000077,1285,5161,5094,5161,reverse arc,False,True
+00000077,1286,5161,5094,5161,reverse arc,False,True
+00000077,1287,5161,5094,5161,reverse arc,False,True
+00000077,1288,5161,5094,5149,reverse arc,True,False
+00000077,1289,5161,5094,5094,reverse arc,False,False
+00000077,1290,5161,5094,5161,reverse arc,True,True
+00000077,1291,5161,5094,5161,reverse arc,True,True
+00000077,1292,5161,5094,5161,reverse arc,True,True
+00000077,1293,5161,5094,5161,reverse arc,True,True
+00000077,1294,5161,5094,5094,reverse arc,False,False
+00000077,1320,5161,5094,5161,reverse arc,False,True
+00000077,1348,5161,5095,5161,adjacent off-route,False,True
+00000077,1349,5161,5095,5161,adjacent off-route,False,True
+00000077,1350,5161,5147,5161,other off-route,False,True
+00000077,1351,5161,5149,5161,other off-route,False,True
+00000077,1352,5161,5149,5161,other off-route,False,True
+00000077,1353,5161,5149,5161,other off-route,False,True
+00000077,1354,5161,5149,5161,other off-route,False,True
+00000077,1355,5161,5149,5161,other off-route,False,True
+00000077,1356,5161,5149,5161,other off-route,False,True
+00000077,1357,5161,5149,5161,other off-route,False,True
+00000077,1358,5161,5149,5161,other off-route,False,True
+00000077,1359,5161,5149,5161,other off-route,False,True
+00000077,1360,5161,5149,5161,other off-route,False,True
+00000077,1361,5161,5149,5161,other off-route,False,True
+00000077,1362,5161,5149,5161,other off-route,False,True
+00000077,1363,5161,5149,5149,other off-route,False,False
+00000077,1364,5161,5149,5161,other off-route,False,True
+00000077,1365,5094,5149,5161,other off-route,False,False
+00000077,1366,5094,5149,5161,other off-route,False,False
+00000077,1367,5094,5149,5161,other off-route,False,False
+00000077,1368,5094,5149,5161,other off-route,False,False
+00000077,1369,5094,5149,5161,other off-route,False,False
+00000077,1370,5094,5149,5149,other off-route,False,False
+00000077,1371,5094,5149,5149,other off-route,False,False
+00000077,1372,5094,5149,5161,other off-route,False,False
+00000077,1373,5094,5149,5161,other off-route,False,False
+00000077,1374,5094,5149,5161,other off-route,False,False
+00000077,1375,5094,5146,5161,adjacent off-route,False,False
+00000077,1376,5094,5146,5161,adjacent off-route,False,False
+00000077,1377,5094,5146,5161,adjacent off-route,False,False
+00000077,1396,5094,5161,5161,reverse arc,False,False
+00000077,1397,5094,5161,5161,reverse arc,True,False
+00000077,1398,5094,5161,5161,reverse arc,True,False
+00000077,1399,5094,5161,5161,reverse arc,False,False
+00000077,1400,5094,5161,5161,reverse arc,True,False
+00000077,1401,5094,5161,5161,reverse arc,False,False
+00000077,1402,5094,5161,5161,reverse arc,False,False
+00000077,1403,5094,5161,5161,reverse arc,True,False
+00000077,1404,5094,5161,5161,reverse arc,False,False
+00000077,1405,5094,5161,5161,reverse arc,False,False
+00000077,1408,5094,5161,5161,reverse arc,True,False
+00000077,1409,5094,5161,5161,reverse arc,True,False
+00000077,1410,5094,5161,5161,reverse arc,True,False
+00000077,1411,5094,5161,5161,reverse arc,True,False
+00000077,1412,5094,5161,5161,reverse arc,True,False
+00000077,1413,5094,5161,5161,reverse arc,False,False
+00000077,1414,5094,5161,5161,reverse arc,True,False
+00000077,1415,5094,5161,5161,reverse arc,False,False
+00000077,1416,5094,5161,5161,reverse arc,False,False
+00000077,1417,5094,5161,5161,reverse arc,False,False
+00000077,1418,5094,5161,5161,reverse arc,False,False
+00000077,1419,5094,5161,5161,reverse arc,False,False
+00000077,1420,5094,5161,5161,reverse arc,False,False
+00000077,1421,5094,5161,5161,reverse arc,True,False
+00000077,1422,5094,5161,5161,reverse arc,True,False
+00000077,1423,5094,5161,5161,reverse arc,False,False
+00000077,1424,5094,5161,5161,reverse arc,True,False
+00000077,1425,5094,5146,5161,adjacent off-route,False,False
+00000077,1426,5094,5146,5094,adjacent off-route,False,True
+00000077,1427,5094,5146,5094,adjacent off-route,False,True
+00000077,1428,5094,5146,5094,adjacent off-route,False,True
+00000077,1429,5094,5146,5094,adjacent off-route,False,True
+00000077,1430,5094,5146,5094,adjacent off-route,False,True
+00000077,1431,5094,5146,5094,adjacent off-route,False,True
+00000077,1432,5094,5146,5094,adjacent off-route,False,True
+00000077,1433,5094,5146,5094,adjacent off-route,False,True
+00000077,1448,5115,5160,5160,other reference arc,False,False
+00000077,1449,5115,5160,5160,other reference arc,False,False
+00000077,1450,5115,5160,5160,other reference arc,False,False
+00000077,1451,5115,5160,5160,other reference arc,False,False
+00000077,1452,5136,5115,5136,other reference arc,False,True
+00000077,1453,5136,5115,5136,other reference arc,False,True
+00000077,1474,5136,5158,5159,adjacent off-route,False,False
+00000077,1475,5136,8914,8914,other reference arc,False,False
+00000077,1476,5136,8914,8914,other reference arc,False,False
+00000077,1477,5136,8914,8914,other reference arc,False,False
+00000077,1478,5136,8914,8914,other reference arc,False,False
+00000077,1479,5136,8914,8914,other reference arc,False,False
+00000077,1480,5136,8914,8914,other reference arc,False,False
+00000077,1481,5136,8914,8914,other reference arc,False,False
+00000077,1482,5136,8914,5136,other reference arc,False,True
+00000077,1483,5136,8914,8914,other reference arc,False,False
+00000077,1484,5136,8914,8914,other reference arc,False,False
+00000077,1485,5136,8914,8914,other reference arc,False,False
+00000077,1486,5136,8914,8914,other reference arc,False,False
+00000077,1487,5136,8914,8914,other reference arc,False,False
+00000077,1488,5136,8914,8914,other reference arc,False,False
+00000077,1489,5136,8914,8914,other reference arc,False,False
+00000077,1499,5144,5157,5144,other reference arc,False,True
+00000077,1500,5144,5157,5144,other reference arc,False,True
+00000077,1501,5144,5157,5144,other reference arc,False,True
+00000077,1517,99,8987,99,other reference arc,False,True
+00000077,1518,99,8987,99,other reference arc,False,True
+00000077,1569,151,4765,151,other reference arc,False,True
+00000077,1570,151,4765,151,other reference arc,False,True
+00000077,1571,151,4765,151,other reference arc,False,True
+00000077,1572,151,4765,151,other reference arc,False,True
+00000077,1573,151,4765,151,other reference arc,False,True
+00000077,1574,151,4765,151,other reference arc,False,True
+00000077,1575,151,4765,151,other reference arc,False,True
+00000077,1576,151,4765,151,other reference arc,False,True
+00000077,1577,151,4765,151,other reference arc,False,True
+00000077,1578,151,4765,151,other reference arc,False,True
+00000077,1579,151,4765,151,other reference arc,False,True
+00000077,1580,151,4765,151,other reference arc,False,True
+00000077,1581,151,4765,151,other reference arc,False,True
+00000077,1582,151,4765,151,other reference arc,False,True
+00000077,1583,151,4765,151,other reference arc,False,True
+00000077,1584,151,4765,151,other reference arc,False,True
+00000077,1585,151,4765,151,other reference arc,False,True
+00000077,1586,151,4765,151,other reference arc,False,True
+00000077,1587,151,4765,151,other reference arc,False,True
+00000077,1588,151,4765,151,other reference arc,False,True
+00000077,1680,1710,163,1710,reverse arc,False,True
+00000077,1718,164,4620,164,other reference arc,False,True
+00000077,1719,164,4620,164,other reference arc,False,True
+00000077,1720,164,4620,164,other reference arc,False,True
+00000077,1721,164,4620,164,other reference arc,False,True
+00000077,1722,164,4620,164,other reference arc,False,True
+00000077,1723,164,4620,164,other reference arc,False,True
+00000077,1724,164,4620,164,other reference arc,False,True
+00000077,1725,164,4620,164,other reference arc,False,True
+00000077,1726,164,4620,164,other reference arc,False,True
+00000077,1727,164,4620,164,other reference arc,False,True
+00000077,1728,164,4620,164,other reference arc,False,True
+00000077,1729,164,4620,164,other reference arc,False,True
+00000077,1730,164,4620,164,other reference arc,False,True
+00000077,1731,164,4620,164,other reference arc,False,True
+00000077,1732,164,4620,164,other reference arc,False,True
+00000077,1733,164,4620,164,other reference arc,False,True
+00000077,1734,164,4620,164,other reference arc,False,True
+00000077,1735,164,4620,164,other reference arc,False,True
+00000077,1736,164,4620,164,other reference arc,False,True
+00000077,1737,164,4620,164,other reference arc,False,True
+00000077,1738,164,4620,164,other reference arc,False,True
+00000077,1739,164,4620,164,other reference arc,False,True
+00000077,1740,164,4620,164,other reference arc,False,True
+00000077,1741,164,4620,164,other reference arc,False,True
+00000077,1742,164,4620,164,other reference arc,False,True
+00000077,1743,164,4620,164,other reference arc,False,True
+00000077,1775,494,1866,1866,other reference arc,False,False
+00000077,1776,494,1866,494,other reference arc,False,True
+00000077,1832,4623,8073,8073,other reference arc,False,False
+00000077,1833,4623,8073,8073,other reference arc,False,False
+00000077,1834,4623,8073,8073,other reference arc,False,False
+00000077,1835,4623,8073,4623,other reference arc,False,True
+00000077,1836,4623,8073,4623,other reference arc,False,True
+00000077,1839,8073,282,282,adjacent off-route,False,False
+00000077,1840,8073,282,282,candidate miss,False,False
+00000077,1841,8073,282,1535,adjacent off-route,False,False
+00000077,1842,8073,282,1535,adjacent off-route,False,False
+00000077,1843,8073,1534,4623,adjacent off-route,False,False
+00000077,1844,8073,8070,8070,candidate miss,False,False
+00000077,1845,8073,283,282,reverse arc,False,False
+00000077,1846,8073,8072,1535,adjacent off-route,False,False
+00000077,1847,8073,8072,8072,adjacent off-route,False,False
+00000077,1848,8073,4623,1535,other reference arc,False,False
+00000077,1849,8073,4623,1535,candidate miss,False,False
+00000077,1850,8073,4623,4623,candidate miss,False,False
+00000077,1851,8073,4623,4623,other reference arc,False,False
+00000077,1852,8073,4623,4623,other reference arc,False,False
+00000077,1853,8073,4623,4623,other reference arc,False,False
+00000077,1854,8073,4623,4623,other reference arc,False,False
+00000077,1855,8073,4623,8072,other reference arc,False,False
+00000077,1856,8073,4623,8072,other reference arc,False,False
+00000077,1857,8073,4623,8072,other reference arc,False,False
+00000077,1858,8073,4623,4623,other reference arc,False,False
+00000077,1859,8073,4623,4623,other reference arc,False,False
+00000077,1860,8073,4623,8073,other reference arc,False,True
+00000077,1861,8073,4623,4623,other reference arc,False,False
+00000077,1862,8073,4623,8073,other reference arc,False,True
+00000077,1866,8073,1534,57,candidate miss,False,False
+00000077,1867,8073,1534,57,adjacent off-route,False,False
+00000077,1868,8073,1534,8073,adjacent off-route,False,True
+00000077,1869,8073,1534,8073,adjacent off-route,False,True
+00000077,1870,8073,283,8073,reverse arc,True,True
+00000077,1871,8073,8072,4623,adjacent off-route,False,False
+00000077,1878,8073,284,284,candidate miss,False,False
+00000077,1879,8073,284,284,candidate miss,False,False
+00000077,2016,4066,602,4066,reverse arc,False,True
+00000077,2017,4066,602,4066,reverse arc,True,True
+00000077,2018,4066,602,4066,reverse arc,False,True
+00000077,2019,4066,602,4066,reverse arc,True,True
+00000077,2020,4066,602,4066,reverse arc,True,True
+00000077,2028,4066,601,1977,adjacent off-route,False,False
+00000077,2029,4066,1977,1977,adjacent off-route,False,False
+00000077,2030,4066,1977,1977,adjacent off-route,False,False
+00000077,2031,4066,1977,1977,adjacent off-route,False,False
+00000077,2032,4066,1977,1977,adjacent off-route,False,False
+00000077,2033,4066,1977,1977,adjacent off-route,False,False
+00000077,2034,4066,1977,1977,adjacent off-route,False,False
+00000077,2035,4066,1977,1977,adjacent off-route,False,False
+00000077,2036,600,603,600,other reference arc,False,True
+00000077,2037,4965,603,4965,other reference arc,False,True
+00000077,2038,4965,603,4965,other reference arc,False,True
+00000077,2039,4965,600,603,candidate miss,False,False
+00000077,2072,4972,4957,4957,other reference arc,False,False
+00000077,2094,4953,4970,4956,reverse arc,False,False
+00000077,2095,4953,4970,4970,reverse arc,False,False
+00000077,2096,4953,4970,4953,reverse arc,True,True
+00000077,2097,4953,4970,4953,reverse arc,False,True
+00000077,2098,4953,4970,4970,reverse arc,False,False
+00000077,2099,4953,4970,4970,reverse arc,True,False
+00000077,2100,4953,4970,4970,reverse arc,False,False
+00000077,2101,4953,4970,4970,reverse arc,True,False
+00000077,2102,4953,4970,4953,reverse arc,True,True
+00000077,2103,4953,4970,4970,reverse arc,False,False
+00000077,2104,4953,4970,4953,reverse arc,True,True
+00000077,2105,4953,4970,4970,reverse arc,True,False
+00000077,2106,4953,4955,4970,adjacent off-route,False,False
+00000077,2120,4953,4970,4970,reverse arc,False,False
+00000077,2121,4953,4970,4953,reverse arc,True,True
+00000077,2122,4953,4970,4953,reverse arc,False,True
+00000077,2123,4953,4970,4970,reverse arc,False,False
+00000077,2124,4953,4970,4970,reverse arc,True,False
+00000077,2125,4953,4970,4962,reverse arc,True,False
+00000077,2126,4953,4970,4962,reverse arc,False,False
+00000077,2127,4953,4970,4953,reverse arc,False,True
+00000077,2128,4953,4970,4953,reverse arc,False,True
+00000077,2129,4953,4970,4953,reverse arc,True,True
+00000077,2130,4953,4955,4970,adjacent off-route,False,False
+00000077,2150,4953,4970,4953,reverse arc,False,True
+00000077,2151,4953,4970,4970,reverse arc,True,False
+00000077,2152,4953,4970,4970,reverse arc,True,False
+00000077,2154,4953,4970,4953,reverse arc,False,True
+00000077,2155,4953,4970,4953,reverse arc,False,True
+00000077,2156,4953,4970,4970,reverse arc,True,False
+00000077,2157,4953,4970,4953,reverse arc,True,True
+00000077,2158,4953,4970,4970,reverse arc,True,False
+00000077,2159,4953,4970,4962,reverse arc,False,False
+00000077,2160,4953,4970,4953,reverse arc,False,True
+00000077,2161,4953,4970,4953,reverse arc,True,True
+00000077,2162,4953,4970,4970,reverse arc,True,False
+00000077,2163,4953,4970,4953,reverse arc,False,True
+00000077,2164,4953,4970,4953,reverse arc,True,True
+00000077,2165,4953,4970,4970,reverse arc,False,False
+00000077,2166,4953,4970,4953,reverse arc,False,True
+00000077,2167,4953,4970,4953,reverse arc,True,True
+00000077,2168,4953,4970,4953,reverse arc,False,True
+00000077,2169,4953,4970,4970,reverse arc,True,False
+00000077,2170,4953,4970,4953,reverse arc,False,True
+00000077,2171,4953,4970,4953,reverse arc,True,True
+00000077,2172,4953,4970,4970,reverse arc,False,False
+00000077,2173,4953,4970,4953,reverse arc,True,True
+00000077,2174,4953,4970,4953,reverse arc,True,True
+00000077,2175,4953,4970,4970,reverse arc,True,False
+00000077,2176,4953,4970,4953,reverse arc,False,True
+00000077,2177,4953,4970,4953,reverse arc,False,True
+00000077,2178,4953,4970,4953,reverse arc,False,True
+00000077,2179,4953,4970,4970,reverse arc,False,False
+00000077,2180,4953,4970,4953,reverse arc,True,True
+00000077,2181,4953,4970,4953,reverse arc,False,True
+00000077,2182,4953,4970,4970,reverse arc,True,False
+00000077,2183,4953,4970,4970,reverse arc,True,False
+00000077,2184,4953,4970,4953,reverse arc,False,True
+00000077,2185,4953,4970,4953,reverse arc,True,True
+00000077,2186,4953,4955,4970,adjacent off-route,False,False
+00000077,2223,4969,4953,4969,other reference arc,False,True
+00000077,2224,4969,4953,4969,other reference arc,False,True
+00000077,2225,4969,4953,4969,other reference arc,False,True
+00000077,2239,4969,4425,4969,other reference arc,False,True
+00000077,2240,4969,4425,4969,other reference arc,False,True
+00000077,2241,4969,4425,4969,other reference arc,False,True
+00000077,2242,4969,4425,4425,other reference arc,False,False
+00000077,2298,4417,4419,4419,reverse arc,True,False
+00000077,2299,4417,4419,4419,reverse arc,False,False
+00000077,2300,4417,4419,4419,reverse arc,True,False
+00000077,2301,4417,4419,4419,reverse arc,True,False
+00000077,2302,4417,4419,4419,reverse arc,False,False
+00000077,2303,4417,4419,4419,reverse arc,True,False
+00000077,2304,4417,4418,4419,other reference arc,False,False
+00000077,2305,4417,6704,4419,other reference arc,False,False
+00000077,2318,4419,4418,4419,other reference arc,False,True
+00000077,2319,4419,6704,4419,other reference arc,False,True
+00000077,2320,4419,4417,4419,reverse arc,True,True
+00000077,2321,4419,4417,4419,reverse arc,False,True
+00000077,2343,4419,4418,4419,other reference arc,False,True
+00000077,2344,4419,4418,4419,other reference arc,False,True
+00000077,2345,4419,4418,4419,other reference arc,False,True
+00000077,2346,4419,4418,4419,other reference arc,False,True
+00000077,2347,4419,4418,4419,other reference arc,False,True
+00000077,2348,4419,6704,4419,other reference arc,False,True
+00000077,2349,4419,6704,4419,other reference arc,False,True
+00000077,2350,4419,4417,4419,reverse arc,False,True
+00000077,2351,4419,4417,4419,reverse arc,False,True
+00000077,2352,4419,4417,4419,reverse arc,True,True
+00000077,2353,4419,4417,4419,reverse arc,True,True
+00000077,2354,4419,4417,4419,reverse arc,False,True
+00000077,2355,4419,4417,4419,reverse arc,False,True
+00000077,2356,4419,4417,4419,reverse arc,False,True
+00000077,2357,4419,4417,4419,reverse arc,False,True
+00000077,2358,4419,4417,4419,reverse arc,True,True
+00000077,2362,4419,4418,4419,other reference arc,False,True
+00000077,2363,4419,4417,4419,reverse arc,True,True
+00000077,2364,4419,4417,4419,reverse arc,False,True
+00000077,2365,4419,4417,4417,reverse arc,True,False
+00000077,2366,4419,4417,4419,reverse arc,True,True
+00000077,2367,4419,4417,4419,reverse arc,True,True
+00000077,2368,4419,4417,4419,reverse arc,False,True
+00000077,2411,4419,4418,4419,other reference arc,False,True
+00000077,2412,4419,6704,4419,other reference arc,False,True
+00000077,2413,4419,6704,4419,other reference arc,False,True
+00000077,2414,4419,6704,4419,other reference arc,False,True
+00000077,2415,4419,4417,4419,reverse arc,True,True
+00000077,2416,4419,4417,4419,reverse arc,False,True
+00000077,2417,4419,4417,4419,reverse arc,True,True
+00000077,2418,4419,4417,4419,reverse arc,True,True
+00000077,2419,4419,4417,4419,reverse arc,False,True
+00000077,2437,4419,4417,4419,reverse arc,False,True
+00000077,2438,4419,4417,4419,reverse arc,True,True
+00000077,2439,4419,4417,4419,reverse arc,False,True
+00000077,2440,4419,4417,4419,reverse arc,False,True
+00000077,2441,4419,4417,4419,reverse arc,True,True
+00000077,2442,4419,4417,4419,reverse arc,False,True
+00000077,2443,4419,4417,4419,reverse arc,True,True
+00000077,2444,4419,4417,4419,reverse arc,False,True
+00000077,2445,4419,4417,4419,reverse arc,False,True
+00000077,2446,4419,4417,4419,reverse arc,True,True
+00000077,2447,4419,4417,4419,reverse arc,False,True
+00000077,2471,4419,4417,4419,reverse arc,True,True
+00000077,2472,4419,4417,4419,reverse arc,False,True
+00000077,2473,4419,4417,4419,reverse arc,True,True
+00000077,2487,4419,4417,4419,reverse arc,True,True
+00000077,2488,4419,4417,4419,reverse arc,True,True
+00000077,2489,4419,4417,4419,reverse arc,True,True
+00000077,2490,4419,4417,4419,reverse arc,False,True
+00000077,2491,4419,4417,4419,reverse arc,False,True
+00000077,2492,4419,4417,4419,reverse arc,False,True
+00000077,2493,4419,4417,4419,reverse arc,False,True
+00000077,2494,4419,4417,4419,reverse arc,False,True
+00000077,2495,4419,4417,4419,reverse arc,True,True
+00000077,2496,4419,4417,4419,reverse arc,False,True
+00000077,2497,4419,4417,4419,reverse arc,False,True
+00000077,2498,4419,4417,4419,reverse arc,True,True
+00000077,2499,4419,4417,4419,reverse arc,False,True
+00000077,2500,4419,4417,4419,reverse arc,False,True
+00000077,2501,4419,4417,4419,reverse arc,False,True
+00000077,2502,4419,4417,4419,reverse arc,True,True
+00000077,2503,4419,4417,4419,reverse arc,True,True
+00000077,2504,4419,4417,4419,reverse arc,False,True
+00000077,2505,4419,4417,4419,reverse arc,True,True
+00000077,2506,4419,4417,4419,reverse arc,False,True
+00000077,2529,4419,4418,4419,other reference arc,False,True
+00000077,2530,4419,4418,4419,other reference arc,False,True
+00000077,2531,4419,6704,4419,other reference arc,False,True
+00000077,2532,4419,4417,4419,reverse arc,False,True
+00000077,2533,4419,4417,4419,reverse arc,False,True
+00000077,2534,4419,4417,4419,reverse arc,False,True
+00000077,2535,4419,4417,4419,reverse arc,True,True
+00000077,2536,4419,4417,4419,reverse arc,False,True
+00000077,2537,4419,4417,4419,reverse arc,True,True
+00000077,2538,4419,4417,4419,reverse arc,False,True
+00000077,2539,4419,4417,4419,reverse arc,True,True
+00000077,2540,4419,4417,4419,reverse arc,True,True
+00000077,2541,4419,4417,4419,reverse arc,True,True
+00000077,2542,4419,4417,4419,reverse arc,True,True
+00000077,2543,4419,4417,4419,reverse arc,False,True
+00000077,2544,4419,4417,4419,reverse arc,False,True
+00000077,2545,4419,4417,4419,reverse arc,False,True
+00000077,2546,4419,4417,4419,reverse arc,True,True
+00000077,2547,4419,4417,4419,reverse arc,False,True
+00000077,2555,4419,4418,4419,other reference arc,False,True
+00000077,2556,4419,6704,4419,other reference arc,False,True
+00000077,2557,4419,4417,4419,reverse arc,True,True
+00000077,2558,4419,4417,4419,reverse arc,False,True
+00000077,2559,4419,4417,4419,reverse arc,True,True
+00000077,2560,4419,4417,4419,reverse arc,False,True
+00000077,2561,4419,4417,4419,reverse arc,True,True
+00000077,2562,4419,4417,4419,reverse arc,False,True
+00000077,2563,4419,4417,4419,reverse arc,False,True
+00000077,2564,4419,4417,4419,reverse arc,True,True
+00000077,2565,4419,4417,4419,reverse arc,False,True
+00000077,2571,4419,4417,4419,reverse arc,False,True
+00000077,2610,6698,4423,6698,other reference arc,False,True
+00000077,2611,6698,4423,6698,other reference arc,False,True
+00000077,2612,6698,4423,4423,other reference arc,False,False
+00000077,2613,6698,4423,4423,other reference arc,False,False
+00000077,2614,6698,4423,4423,other reference arc,False,False
+00000077,2615,6698,4423,4423,other reference arc,False,False
+00000077,2621,6698,4426,4426,other reference arc,False,False
+00000077,2622,6698,4426,4426,other reference arc,False,False
+00000077,2623,6698,4426,4426,other reference arc,False,False
+00000077,2624,6698,4426,6698,other reference arc,False,True
+00000077,2625,6698,4426,6698,other reference arc,False,True
+00000077,2626,6698,4426,6698,other reference arc,False,True
+00000077,2650,4971,4426,4970,other reference arc,False,False
+00000077,2651,4971,4426,4426,other reference arc,False,False
+00000077,2652,4971,4970,4970,adjacent off-route,False,False
+00000077,2653,4971,4970,4970,adjacent off-route,False,False
+00000077,2654,4971,4970,4970,adjacent off-route,False,False
+00000077,2655,4971,4970,4970,adjacent off-route,False,False
+00000077,2656,4971,4970,4970,adjacent off-route,False,False
+00000077,2657,4971,4970,4970,adjacent off-route,False,False
+00000077,2658,4971,4970,4970,adjacent off-route,False,False
+00000077,2659,4971,4953,4970,other reference arc,False,False
+00000077,2660,4971,4953,4970,other reference arc,False,False
+00000077,2661,4971,4953,4967,other reference arc,False,False
+00000077,2662,4971,4953,4970,other reference arc,False,False
+00000077,2663,4971,4953,4967,other reference arc,False,False
+00000077,2664,4971,4953,4971,other reference arc,False,True
+00000077,2665,4971,4953,4971,other reference arc,False,True
+00000077,2666,4971,4953,4971,other reference arc,False,True
+00000077,2667,4971,4953,4967,other reference arc,False,False
+00000077,2668,4971,4953,4970,other reference arc,False,False
+00000077,2669,4971,4953,4971,other reference arc,False,True
+00000077,2670,4971,4953,4971,other reference arc,False,True
+00000077,2671,4971,4953,4971,other reference arc,False,True
+00000077,2672,4971,4953,4971,other reference arc,False,True
+00000077,2673,4971,4953,4971,other reference arc,False,True
+00000077,2674,4971,4953,4971,other reference arc,False,True
+00000077,2675,4971,4953,4971,other reference arc,False,True
+00000077,2676,4971,4953,4971,other reference arc,False,True
+00000077,2677,4971,4953,4971,other reference arc,False,True
+00000077,2678,4971,4953,4971,other reference arc,False,True
+00000077,2679,4971,4953,4971,other reference arc,False,True
+00000077,2715,4966,6726,6726,other reference arc,False,False
+00000077,2716,4966,6726,6726,other reference arc,False,False
+00000077,2717,4966,6726,4966,other reference arc,False,True
+00000077,2718,4966,6726,4966,other reference arc,False,True
+00000077,2732,4958,4960,4960,other reference arc,False,False
+00000077,2733,4958,4960,4958,other reference arc,False,True
+00000077,2734,4958,4960,604,other reference arc,False,False
+00000077,2735,4958,4960,4960,other reference arc,False,False
+00000077,2736,4958,4960,4960,other reference arc,False,False
+00000077,2737,4958,4960,4960,other reference arc,False,False
+00000077,2752,4958,4965,604,reverse arc,True,False
+00000077,2753,4958,4965,4965,reverse arc,False,False
+00000077,2754,4958,4965,4958,reverse arc,True,True
+00000077,2755,4958,4965,4965,reverse arc,False,False
+00000077,2756,4958,4965,4965,reverse arc,True,False
+00000077,2757,4958,4965,4958,reverse arc,True,True
+00000077,2758,4958,4965,604,reverse arc,True,False
+00000077,2759,4958,4965,604,reverse arc,False,False
+00000077,2770,4958,4963,4958,other reference arc,False,True
+00000077,2771,4958,4963,4958,other reference arc,False,True
+00000077,2772,4958,4963,4963,other reference arc,False,False
+00000077,2773,4958,4963,4963,candidate miss,False,False
+00000077,2774,4958,4963,604,other reference arc,False,False
+00000077,2775,4958,4963,4958,other reference arc,False,True
+00000077,2794,4963,602,4066,candidate miss,False,False
+00000077,2795,4963,4066,4066,other reference arc,False,False
+00000077,2796,4963,4066,4066,other reference arc,False,False
+00000077,3016,3213,3983,3213,other reference arc,False,True
+00000077,3017,3213,3983,3213,other reference arc,False,True
+00000077,3030,8549,28,8549,other reference arc,False,True
+00000077,3031,8549,28,8549,other reference arc,False,True
+00000077,3032,8549,28,8549,other reference arc,False,True
+00000077,3033,8549,28,8549,other reference arc,False,True
+00000077,3034,8549,28,8549,other reference arc,False,True
+00000077,3035,8549,28,8549,other reference arc,False,True
+00000077,3066,4018,4000,4018,other reference arc,False,True
+00000077,3067,4018,4000,4018,other reference arc,False,True
+00000077,3068,4018,4000,4018,other reference arc,False,True
+00000077,3069,4018,4000,4018,other reference arc,False,True
+00000077,3070,4018,4000,4018,other reference arc,False,True
+00000077,3071,4018,4000,4018,other reference arc,False,True
+00000077,3072,4018,4000,4018,other reference arc,False,True
+00000077,3073,4018,4000,4018,other reference arc,False,True
+00000077,3074,4018,4000,4018,other reference arc,False,True
+00000077,3075,4018,4000,4018,other reference arc,False,True
+00000077,3076,4018,4000,4018,other reference arc,False,True
+00000077,3077,4018,4000,4018,other reference arc,False,True
+00000077,3078,4018,4000,4018,other reference arc,False,True
+00000077,3079,4018,4000,4018,other reference arc,False,True
+00000077,3080,4018,4000,4018,other reference arc,False,True
+00000077,3081,4018,4000,4018,other reference arc,False,True
+00000077,3082,4018,4000,4018,other reference arc,False,True
+00000077,3221,1611,120,1611,other reference arc,False,True
+00000077,3391,4088,4082,4082,other reference arc,False,False
+00000077,3454,4975,4111,4975,other reference arc,False,True
+00000077,3455,4975,4111,4975,other reference arc,False,True
+00000077,3456,4975,4111,4975,other reference arc,False,True
+00000077,3457,4975,4111,4975,other reference arc,False,True
+00000077,3491,4975,33,4975,reverse arc,False,True
+00000077,3498,4975,35,4975,other reference arc,False,True
+00000077,3499,4975,35,4975,other reference arc,False,True
+00000077,3500,4975,35,4975,other reference arc,False,True
+00000077,3501,4975,35,4975,other reference arc,False,True
+00000077,3502,4975,35,4975,other reference arc,False,True
+00000077,3503,4975,35,4975,other reference arc,False,True
+00000077,3504,4975,35,35,other reference arc,False,False
+00000077,3531,8465,4661,8465,other reference arc,False,True
+00000077,3532,8465,4661,8465,other reference arc,False,True
+00000077,3533,8465,4661,8465,other reference arc,False,True
+00000077,3549,8465,4085,4085,other reference arc,False,False
+00000077,3593,4917,4484,4917,reverse arc,False,True
+00000077,3603,8721,4483,8721,other reference arc,False,True
+00000077,3604,8721,4483,8721,other reference arc,False,True
+00000077,3605,8721,4483,8721,other reference arc,False,True
+00000077,3606,8721,4483,8721,other reference arc,False,True
+00000077,3607,8721,4483,8721,other reference arc,False,True
+00000077,3608,8721,4483,8721,other reference arc,False,True
+00000077,3609,8721,4483,8721,other reference arc,False,True
+00000077,3610,8721,4483,8721,other reference arc,False,True
+00000077,3611,8721,4483,8721,other reference arc,False,True
+00000077,3612,8721,4483,8721,other reference arc,False,True
+00000077,3613,8721,4483,8721,other reference arc,False,True
+00000077,3614,8721,4483,8721,other reference arc,False,True
+00000077,3615,8721,4483,8721,other reference arc,False,True
+00000077,3616,8721,4483,8721,other reference arc,False,True
+00000077,3617,8721,4483,8721,other reference arc,False,True
+00000077,3618,8721,4483,8721,other reference arc,False,True
+00000077,3619,8721,4483,8721,other reference arc,False,True
+00000077,3620,8721,4483,8721,other reference arc,False,True
+00000077,3621,8721,4483,8721,other reference arc,False,True
+00000077,3622,8721,4483,8721,other reference arc,False,True
+00000077,3623,8721,4483,8721,other reference arc,False,True
+00000077,3624,8721,4483,8721,other reference arc,False,True
+00000077,3625,8721,4483,8721,other reference arc,False,True
+00000077,3626,8721,4483,8721,other reference arc,False,True
+00000077,3627,8721,4483,8721,other reference arc,False,True
+00000077,3628,8721,4483,8721,other reference arc,False,True
+00000077,3629,8721,4483,8721,other reference arc,False,True
+00000077,3630,8721,4483,8721,other reference arc,False,True
+00000077,3631,8721,4483,8721,other reference arc,False,True
+00000077,3648,8721,5301,8721,other reference arc,False,True
+00000077,3649,8721,5301,8721,other reference arc,False,True
+00000077,3650,8721,5301,8721,other reference arc,False,True
+00000077,3651,8721,5301,8721,other reference arc,False,True
+00000077,3652,8721,5301,8721,other reference arc,False,True
+00000077,3653,8721,5301,8721,other reference arc,False,True
+00000077,3654,8721,5301,8721,other reference arc,False,True
+00000077,3655,8721,5301,8721,other reference arc,False,True
+00000077,3656,8721,5301,8721,other reference arc,False,True
+00000077,3657,8721,5301,8721,other reference arc,False,True
+00000077,3658,8721,5301,8721,other reference arc,False,True
+00000077,3659,8721,5301,8721,other reference arc,False,True
+00000077,3660,8721,5301,8721,other reference arc,False,True
+00000077,3661,8721,5301,8721,other reference arc,False,True
+00000077,3662,8721,5301,8721,other reference arc,False,True
+00000077,3663,8721,5301,8721,other reference arc,False,True
+00000077,3664,8721,5301,8721,other reference arc,False,True
+00000077,3665,8721,5301,8721,other reference arc,False,True
+00000077,3666,8721,5301,8721,other reference arc,False,True
+00000077,3667,8721,5301,8721,other reference arc,False,True
+00000077,3668,8721,5301,8721,other reference arc,False,True
+00000077,3669,8721,5301,8721,other reference arc,False,True
+00000077,3670,8721,5301,8721,other reference arc,False,True
+00000077,3671,8721,517,5300,other off-route,False,False
+00000077,3672,8721,517,8721,other off-route,False,True
+00000077,3673,8721,517,8721,other off-route,False,True
+00000077,3674,8721,5305,8721,other off-route,False,True
+00000077,3675,8721,5305,8721,other off-route,False,True
+00000077,3676,8721,5305,8721,other off-route,False,True
+00000077,3677,8721,5305,8721,other off-route,False,True
+00000077,3678,8721,5301,8721,other reference arc,False,True
+00000077,3679,8721,5301,8721,other reference arc,False,True
+00000077,3680,8721,5301,8721,other reference arc,False,True
+00000077,3681,8721,5301,8721,other reference arc,False,True
+00000077,3682,8721,5301,8721,other reference arc,False,True
+00000077,3683,8721,5301,8721,other reference arc,False,True
+00000077,3684,8721,5301,8721,other reference arc,False,True
+00000077,3685,8721,5301,8721,other reference arc,False,True
+00000077,3686,8721,5301,8721,other reference arc,False,True
+00000077,3687,8721,5301,8721,other reference arc,False,True
+00000077,3688,8721,5301,8721,other reference arc,False,True
+00000077,3714,4300,4305,4305,other reference arc,False,False
+00000077,3715,4300,4305,4305,other reference arc,False,False
+00000077,3716,4300,4305,4305,other reference arc,False,False
+00000077,3717,4300,4305,4300,other reference arc,False,True
+00000077,3718,4300,4305,4305,other reference arc,False,False
+00000077,3719,4300,4305,4304,other reference arc,False,False
+00000077,3720,4300,4305,4305,other reference arc,False,False
+00000077,3721,4300,4305,4305,other reference arc,False,False
+00000077,3722,4300,4305,4305,other reference arc,False,False
+00000077,3723,4300,4305,4305,other reference arc,False,False
+00000077,3724,4300,4305,4305,other reference arc,False,False
+00000077,3760,4305,4306,5086,adjacent off-route,False,False
+00000077,3761,4305,4306,5086,adjacent off-route,False,False
+00000077,3762,4305,4306,5086,adjacent off-route,False,False
+00000077,3763,4305,4306,4305,adjacent off-route,False,True
+00000077,3764,4305,4306,5086,adjacent off-route,False,False
+00000077,3765,4305,4306,5086,adjacent off-route,False,False
+00000077,3766,4305,4306,5086,adjacent off-route,False,False
+00000077,3767,4305,4306,5086,adjacent off-route,False,False
+00000077,3768,4305,4306,5086,adjacent off-route,False,False
+00000077,3769,4305,4306,5086,adjacent off-route,False,False
+00000077,3770,4305,4306,5086,adjacent off-route,False,False
+00000077,3771,4305,4306,5086,adjacent off-route,False,False
+00000077,3772,4305,4306,5086,adjacent off-route,False,False
+00000077,3773,4305,4306,4925,adjacent off-route,False,False
+00000077,3774,4305,4306,629,adjacent off-route,False,False
+00000077,3775,4305,4306,5086,adjacent off-route,False,False
+00000077,3776,4305,4306,4305,adjacent off-route,False,True
+00000077,3777,4305,4306,4925,adjacent off-route,False,False
+00000077,3778,4305,4306,4925,adjacent off-route,False,False
+00000077,3779,4305,4306,5086,adjacent off-route,False,False
+00000077,3780,4305,4306,5086,adjacent off-route,False,False
+00000077,3781,4305,4306,5086,adjacent off-route,False,False
+00000077,3782,4305,4306,5086,adjacent off-route,False,False
+00000077,3783,4305,4306,5086,adjacent off-route,False,False
+00000077,3784,4305,4306,5086,adjacent off-route,False,False
+00000077,3785,4305,4306,5086,adjacent off-route,False,False
+00000077,3786,4305,4306,5086,adjacent off-route,False,False
+00000077,3787,4305,5086,5086,reverse arc,False,False
+00000077,3788,4305,5086,5086,reverse arc,False,False
+00000077,3789,4305,5086,5086,reverse arc,False,False
+00000077,3790,4305,5086,5086,reverse arc,False,False
+00000077,3791,4305,5086,5086,reverse arc,False,False
+00000077,3792,4305,5086,4925,reverse arc,False,False
+00000077,3793,4305,5086,4925,reverse arc,True,False
+00000077,3794,4305,5086,5086,reverse arc,False,False
+00000077,3795,4305,5086,5086,reverse arc,True,False
+00000077,3796,4305,5086,5086,reverse arc,True,False
+00000077,3797,4305,5086,5086,reverse arc,True,False
+00000077,3798,4305,5086,5086,reverse arc,True,False
+00000077,3799,4305,5086,5086,reverse arc,True,False
+00000077,3800,4305,5086,5086,reverse arc,False,False
+00000077,3801,4305,4301,5086,other off-route,False,False
+00000077,3814,4305,5085,4305,adjacent off-route,False,True
+00000077,3815,4305,5085,5086,adjacent off-route,False,False
+00000077,3816,4305,5085,5086,adjacent off-route,False,False
+00000077,3817,4305,5085,5086,adjacent off-route,False,False
+00000077,3818,4305,4306,4305,adjacent off-route,False,True
+00000077,3819,4305,4306,5086,adjacent off-route,False,False
+00000077,3820,4305,4306,4305,adjacent off-route,False,True
+00000077,3821,4305,4306,4305,adjacent off-route,False,True
+00000077,3822,4305,4306,4305,adjacent off-route,False,True
+00000077,3823,4305,4306,5086,adjacent off-route,False,False
+00000077,3824,4305,4306,4305,adjacent off-route,False,True
+00000077,3825,4305,4306,4305,adjacent off-route,False,True
+00000077,3826,4305,4306,5086,adjacent off-route,False,False
+00000077,3827,4305,4306,5086,adjacent off-route,False,False
+00000077,3828,4305,4306,5086,adjacent off-route,False,False
+00000077,3829,4305,4306,5086,adjacent off-route,False,False
+00000077,3830,4305,4306,5086,adjacent off-route,False,False
+00000077,3831,4305,4306,5086,adjacent off-route,False,False
+00000077,3832,4305,4306,5086,adjacent off-route,False,False
+00000077,3833,4305,4306,5086,adjacent off-route,False,False
+00000077,3834,4305,4306,5086,adjacent off-route,False,False
+00000077,3835,4305,4306,5086,adjacent off-route,False,False
+00000077,3836,4305,4306,4305,adjacent off-route,False,True
+00000077,3837,4305,4306,4305,adjacent off-route,False,True
+00000077,3838,4305,4306,4305,adjacent off-route,False,True
+00000077,3839,4305,4306,5086,adjacent off-route,False,False
+00000077,3840,4305,4306,4925,adjacent off-route,False,False
+00000077,3841,4305,4306,4925,adjacent off-route,False,False
+00000077,3842,4305,4306,5086,adjacent off-route,False,False
+00000077,3843,4305,4306,5086,adjacent off-route,False,False
+00000077,3844,4305,5086,629,reverse arc,False,False
+00000077,3845,4305,5086,4925,reverse arc,False,False
+00000077,3846,4305,629,4925,candidate miss,False,False
+00000077,3847,4305,4925,4925,other off-route,False,False
+00000077,3848,4305,4925,5086,other off-route,False,False
+00000077,3858,4305,4306,5086,adjacent off-route,False,False
+00000077,3859,4305,4306,4305,adjacent off-route,False,True
+00000077,3860,4305,4306,5086,adjacent off-route,False,False
+00000077,3861,4305,4306,5086,adjacent off-route,False,False
+00000077,3862,4305,4306,4305,adjacent off-route,False,True
+00000077,3863,4305,4306,4305,adjacent off-route,False,True
+00000077,3864,4305,4306,5086,adjacent off-route,False,False
+00000077,3865,4305,4306,5086,adjacent off-route,False,False
+00000077,3866,4305,4306,5086,adjacent off-route,False,False
+00000077,3867,4305,4306,4305,adjacent off-route,False,True
+00000077,3868,4305,4306,4925,adjacent off-route,False,False
+00000077,3869,4305,4306,4925,adjacent off-route,False,False
+00000077,3870,4305,4306,5086,adjacent off-route,False,False
+00000077,3871,4305,4306,5086,adjacent off-route,False,False
+00000077,3872,4305,4306,5086,adjacent off-route,False,False
+00000077,3873,4305,4306,4305,adjacent off-route,False,True
+00000077,3874,4305,4306,5086,adjacent off-route,False,False
+00000077,3875,4305,4306,4305,adjacent off-route,False,True
+00000077,3876,4305,4306,5086,adjacent off-route,False,False
+00000077,3877,4305,4306,4305,adjacent off-route,False,True
+00000077,3878,4305,4306,4305,adjacent off-route,False,True
+00000077,3879,4305,4306,4305,adjacent off-route,False,True
+00000077,3880,4305,4306,5086,adjacent off-route,False,False
+00000077,3881,4305,4306,4305,adjacent off-route,False,True
+00000077,3882,4305,4306,5086,adjacent off-route,False,False
+00000077,3883,4305,4306,5086,adjacent off-route,False,False
+00000077,3884,4305,4306,5086,adjacent off-route,False,False
+00000077,3885,4305,4306,5086,adjacent off-route,False,False
+00000077,3886,4305,4306,5086,adjacent off-route,False,False
+00000077,3887,4305,4306,5086,adjacent off-route,False,False
+00000077,3888,4305,4306,5086,adjacent off-route,False,False
+00000077,3889,4305,4306,5086,adjacent off-route,False,False
+00000077,3890,4305,4306,5086,adjacent off-route,False,False
+00000077,3891,4305,4306,5086,adjacent off-route,False,False
+00000077,3892,4305,4306,5086,adjacent off-route,False,False
+00000077,3893,4305,4306,5086,adjacent off-route,False,False
+00000077,3894,4305,4306,5086,adjacent off-route,False,False
+00000077,3895,4305,4306,5086,adjacent off-route,False,False
+00000077,3896,4305,5086,5086,reverse arc,True,False
+00000077,3897,4305,5086,5086,reverse arc,False,False
+00000077,3898,4305,5086,5086,reverse arc,True,False
+00000077,3899,4305,5086,4305,reverse arc,False,True
+00000077,3900,4305,5086,4925,reverse arc,False,False
+00000077,3901,4305,5086,5086,reverse arc,False,False
+00000077,3902,4305,5086,5086,reverse arc,False,False
+00000077,3903,4305,5086,4305,reverse arc,False,True
+00000077,3904,4305,5086,4305,reverse arc,False,True
+00000077,3905,4305,5086,4305,reverse arc,True,True
+00000077,3906,4305,5086,5086,reverse arc,True,False
+00000077,3907,4305,5086,5086,reverse arc,True,False
+00000077,3908,4305,5086,4305,reverse arc,True,True
+00000077,3909,4305,5086,4925,reverse arc,False,False
+00000077,3910,4305,5086,5086,reverse arc,True,False
+00000091,24,11431,11429,11431,other reference arc,False,True
+00000091,25,11431,11429,11431,other reference arc,False,True
+00000091,26,11431,351,11431,adjacent off-route,False,True
+00000091,27,11431,11430,11431,reverse arc,False,True
+00000091,28,11431,11430,11431,reverse arc,False,True
+00000091,29,11431,11430,11431,reverse arc,True,True
+00000091,30,11431,11430,11431,reverse arc,True,True
+00000091,31,11431,11430,11430,reverse arc,True,False
+00000091,32,11431,11430,11431,reverse arc,False,True
+00000091,33,11431,11430,11431,reverse arc,False,True
+00000091,34,11431,11430,11430,reverse arc,False,False
+00000091,35,11431,11430,11431,reverse arc,True,True
+00000091,36,11431,11430,11431,reverse arc,False,True
+00000091,37,11431,11430,11431,reverse arc,False,True
+00000091,38,11431,11430,11431,reverse arc,True,True
+00000091,39,11431,11430,11431,reverse arc,False,True
+00000091,40,11431,11430,11431,reverse arc,True,True
+00000091,104,6685,384,6685,adjacent off-route,False,True
+00000091,105,6685,384,6685,adjacent off-route,False,True
+00000091,106,6685,384,6685,adjacent off-route,False,True
+00000091,113,6685,384,6685,adjacent off-route,False,True
+00000091,114,6685,384,6685,adjacent off-route,False,True
+00000091,115,6685,6693,6685,other off-route,False,True
+00000091,118,6685,383,384,adjacent off-route,False,False
+00000091,119,6685,383,384,adjacent off-route,False,False
+00000091,120,6685,6686,6685,adjacent off-route,False,True
+00000091,121,6685,6686,6685,adjacent off-route,False,True
+00000091,122,6685,384,384,adjacent off-route,False,False
+00000091,123,6685,384,384,adjacent off-route,False,False
+00000091,124,6685,384,6693,adjacent off-route,False,False
+00000091,125,6685,384,6685,adjacent off-route,False,True
+00000091,126,6685,6693,6685,other off-route,False,True
+00000091,127,6685,6693,6685,other off-route,False,True
+00000091,128,6685,6693,6685,other off-route,False,True
+00000091,129,6685,6693,6685,other off-route,False,True
+00000091,130,6685,6693,6685,other off-route,False,True
+00000091,131,6685,6694,6685,other reference arc,False,True
+00000091,162,6613,8301,8301,other reference arc,False,False
+00000091,171,95,8259,8259,other reference arc,False,False
+00000091,219,11872,6708,11871,other reference arc,False,False
+00000091,267,7256,10853,10853,other reference arc,False,False
+00000091,303,956,10,956,other reference arc,False,True
+00000091,304,956,10,10,other reference arc,False,False
+00000091,305,956,3197,10,other reference arc,False,False
+00000091,306,956,3197,956,other reference arc,False,True
+00000091,307,956,3197,956,other reference arc,False,True
+00000091,308,956,3197,10,other reference arc,False,False
+00000091,309,10,3197,10,other reference arc,False,True
+00000091,349,3875,8781,3875,other reference arc,False,True
+00000091,350,3875,8781,3875,other reference arc,False,True
+00000091,632,6395,1873,1873,other reference arc,False,False
+00000091,634,1871,1873,1873,other reference arc,False,False
+00000091,751,4865,4279,4872,other reference arc,False,False
+00000091,752,4853,4872,4872,other reference arc,False,False
+00000091,780,4236,4294,4294,other reference arc,False,False
+00000091,785,4814,4253,4253,other reference arc,False,False
+00000091,808,4793,4216,8059,other reference arc,False,False
+00000091,817,4805,4847,4847,other reference arc,False,False
+00000091,818,4805,4847,4847,other reference arc,False,False
+00000091,827,10345,10359,10359,other reference arc,False,False
+00000091,843,10328,10332,10351,other reference arc,False,False
+00000091,848,10790,10338,10338,other reference arc,False,False
+00000091,852,10338,10340,10340,adjacent off-route,False,False
+00000091,853,10341,10340,10340,adjacent off-route,False,False
+00000091,854,10341,10340,10340,adjacent off-route,False,False
+00000091,855,10341,10340,10340,adjacent off-route,False,False
+00000091,856,10341,10340,10340,adjacent off-route,False,False
+00000091,857,10341,10343,10340,other off-route,False,False
+00000091,858,10341,10322,10340,reverse arc,False,False
+00000091,859,10341,10340,10340,adjacent off-route,False,False
+00000091,860,10341,10340,10340,adjacent off-route,False,False
+00000091,861,10341,10340,10340,adjacent off-route,False,False
+00000091,862,10341,10340,10340,adjacent off-route,False,False
+00000091,863,10341,10340,10340,adjacent off-route,False,False
+00000091,864,10341,10340,10340,adjacent off-route,False,False
+00000091,865,10341,10340,10340,adjacent off-route,False,False
+00000091,866,10341,10340,10340,adjacent off-route,False,False
+00000091,867,10341,10340,10340,adjacent off-route,False,False
+00000091,868,10341,10340,10340,adjacent off-route,False,False
+00000091,869,10341,10340,10340,adjacent off-route,False,False
+00000091,870,10341,10343,10343,other off-route,False,False
+00000091,871,10341,10343,10343,other off-route,False,False
+00000091,872,10341,10343,10322,other off-route,False,False
+00000091,873,10341,10327,10326,adjacent off-route,False,False

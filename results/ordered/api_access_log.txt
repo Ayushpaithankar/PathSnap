@@ -1,0 +1,22 @@
+INFO:     Started server process [97195]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://127.0.0.1:8781 (Press CTRL+C to quit)
+INFO:     127.0.0.1:50959 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50967 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50968 - "GET /api/trips?partition=student_test HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50969 - "POST /api/predict HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50970 - "POST /api/predict HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50971 - "POST /api/predict HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50972 - "POST /api/predict HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50973 - "POST /api/predict HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50974 - "POST /api/predict HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50975 - "POST /api/predict HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50976 - "POST /api/predict HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50977 - "POST /api/predict HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50978 - "POST /api/predict HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50979 - "POST /api/predict HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:50982 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50982 - "GET /api/trips?partition=student_test HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50982 - "GET /favicon.ico HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:50986 - "POST /api/predict HTTP/1.1" 200 OK

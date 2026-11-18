@@ -1,0 +1,62 @@
+{
+  "configs": {
+    "Nearest road": {
+      "emission_weight": 0.5,
+      "beta_multiplier": 4.0,
+      "max_gap_s": 15.0,
+      "max_speed_mps": 28.0
+    },
+    "Distance + heading": {
+      "emission_weight": 0.25,
+      "beta_multiplier": 10.0,
+      "max_gap_s": 15.0,
+      "max_speed_mps": 28.0
+    },
+    "LightGBM untuned": {
+      "emission_weight": 2.0,
+      "beta_multiplier": 1.0,
+      "max_gap_s": 15.0,
+      "max_speed_mps": 28.0
+    },
+    "LightGBM tuned without context": {
+      "emission_weight": 0.5,
+      "beta_multiplier": 2.0,
+      "max_gap_s": 60.0,
+      "max_speed_mps": 28.0
+    },
+    "LightGBM tuned": {
+      "emission_weight": 0.25,
+      "beta_multiplier": 4.0,
+      "max_gap_s": 15.0,
+      "max_speed_mps": 28.0
+    },
+    "HistGradientBoosting": {
+      "emission_weight": 1.0,
+      "beta_multiplier": 1.0,
+      "max_gap_s": 15.0,
+      "max_speed_mps": 28.0
+    }
+  },
+  "slopes": {
+    "Nearest road": 2.866641155858726,
+    "Distance + heading": 1.6976917345651226,
+    "LightGBM untuned": 0.8419517156883821,
+    "LightGBM tuned without context": 0.9517949801420007,
+    "LightGBM tuned": 0.8669715688097317,
+    "HistGradientBoosting": 0.6091332128390287
+  },
+  "calibration_trips": [
+    "00000084"
+  ],
+  "decoder_development_trips": [
+    "00000082",
+    "00000078",
+    "00000055",
+    "00000001",
+    "00000061",
+    "00000093",
+    "00000003",
+    "00000018",
+    "00000039"
+  ]
+}

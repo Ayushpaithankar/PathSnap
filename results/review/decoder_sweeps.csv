@@ -1,0 +1,217 @@
+method,sweep,coordinate,top1,emission_weight,beta_multiplier,max_gap_s,max_speed_mps
+Nearest road,1,emission_weight,0.7395805855974676,0.0,4.0,60.0,52.0
+Nearest road,1,emission_weight,0.7556713268266948,0.25,4.0,60.0,52.0
+Nearest road,1,emission_weight,0.7569242943814297,0.5,4.0,60.0,52.0
+Nearest road,1,emission_weight,0.7563967290952255,0.75,4.0,60.0,52.0
+Nearest road,1,emission_weight,0.7558032181482458,1.0,4.0,60.0,52.0
+Nearest road,1,emission_weight,0.7513848588762859,1.5,4.0,60.0,52.0
+Nearest road,1,emission_weight,0.7496043260353469,2.0,4.0,60.0,52.0
+Nearest road,2,beta_multiplier,0.742416249010815,0.5,0.5,60.0,52.0
+Nearest road,2,beta_multiplier,0.7498021630176734,0.5,1.0,60.0,52.0
+Nearest road,2,beta_multiplier,0.7552756528620417,0.5,2.0,60.0,52.0
+Nearest road,2,beta_multiplier,0.7569242943814297,0.5,4.0,60.0,52.0
+Nearest road,2,beta_multiplier,0.75633078343445,0.5,6.0,60.0,52.0
+Nearest road,2,beta_multiplier,0.7555394355051438,0.5,10.0,60.0,52.0
+Nearest road,3,max_gap_s,0.7571221313637563,0.5,4.0,15.0,52.0
+Nearest road,3,max_gap_s,0.7569902400422053,0.5,4.0,30.0,52.0
+Nearest road,3,max_gap_s,0.7569242943814297,0.5,4.0,60.0,52.0
+Nearest road,3,max_gap_s,0.7569242943814297,0.5,4.0,90.0,52.0
+Nearest road,3,max_gap_s,0.7569242943814297,0.5,4.0,120.0,52.0
+Nearest road,4,max_speed_mps,0.7581772619361646,0.5,4.0,15.0,28.0
+Nearest road,4,max_speed_mps,0.7571221313637563,0.5,4.0,15.0,40.0
+Nearest road,4,max_speed_mps,0.7571221313637563,0.5,4.0,15.0,52.0
+Nearest road,4,max_speed_mps,0.7572540226853073,0.5,4.0,15.0,64.0
+Nearest road,4,max_speed_mps,0.7572540226853073,0.5,4.0,15.0,80.0
+Nearest road,5,emission_weight,0.7401740965444473,0.0,4.0,15.0,28.0
+Nearest road,5,emission_weight,0.7567924030598786,0.25,4.0,15.0,28.0
+Nearest road,5,emission_weight,0.7581772619361646,0.5,4.0,15.0,28.0
+Nearest road,5,emission_weight,0.7577815879715115,0.75,4.0,15.0,28.0
+Nearest road,5,emission_weight,0.757847533632287,1.0,4.0,15.0,28.0
+Nearest road,5,emission_weight,0.7535610656818781,1.5,4.0,15.0,28.0
+Nearest road,5,emission_weight,0.7525059351094698,2.0,4.0,15.0,28.0
+Nearest road,6,beta_multiplier,0.7441308361909786,0.5,0.5,15.0,28.0
+Nearest road,6,beta_multiplier,0.7513848588762859,0.5,1.0,15.0,28.0
+Nearest road,6,beta_multiplier,0.7569902400422053,0.5,2.0,15.0,28.0
+Nearest road,6,beta_multiplier,0.7581772619361646,0.5,4.0,15.0,28.0
+Nearest road,6,beta_multiplier,0.757715642310736,0.5,6.0,15.0,28.0
+Nearest road,6,beta_multiplier,0.7569902400422053,0.5,10.0,15.0,28.0
+Distance + heading,1,emission_weight,0.7395805855974676,0.0,4.0,60.0,52.0
+Distance + heading,1,emission_weight,0.7494064890530203,0.25,4.0,60.0,52.0
+Distance + heading,1,emission_weight,0.7490108150883672,0.5,4.0,60.0,52.0
+Distance + heading,1,emission_weight,0.7491427064099182,0.75,4.0,60.0,52.0
+Distance + heading,1,emission_weight,0.748219467159061,1.0,4.0,60.0,52.0
+Distance + heading,1,emission_weight,0.7457135320495911,1.5,4.0,60.0,52.0
+Distance + heading,1,emission_weight,0.7441308361909786,2.0,4.0,60.0,52.0
+Distance + heading,2,beta_multiplier,0.7378659984173042,0.25,0.5,60.0,52.0
+Distance + heading,2,beta_multiplier,0.7420865207069375,0.25,1.0,60.0,52.0
+Distance + heading,2,beta_multiplier,0.7479556845159588,0.25,2.0,60.0,52.0
+Distance + heading,2,beta_multiplier,0.7494064890530203,0.25,4.0,60.0,52.0
+Distance + heading,2,beta_multiplier,0.7500659456607756,0.25,6.0,60.0,52.0
+Distance + heading,2,beta_multiplier,0.7505935109469797,0.25,10.0,60.0,52.0
+Distance + heading,3,max_gap_s,0.7507254022685307,0.25,10.0,15.0,52.0
+Distance + heading,3,max_gap_s,0.7505935109469797,0.25,10.0,30.0,52.0
+Distance + heading,3,max_gap_s,0.7505935109469797,0.25,10.0,60.0,52.0
+Distance + heading,3,max_gap_s,0.7505935109469797,0.25,10.0,90.0,52.0
+Distance + heading,3,max_gap_s,0.7505935109469797,0.25,10.0,120.0,52.0
+Distance + heading,4,max_speed_mps,0.751648641519388,0.25,10.0,15.0,28.0
+Distance + heading,4,max_speed_mps,0.7507254022685307,0.25,10.0,15.0,40.0
+Distance + heading,4,max_speed_mps,0.7507254022685307,0.25,10.0,15.0,52.0
+Distance + heading,4,max_speed_mps,0.7508572935900818,0.25,10.0,15.0,64.0
+Distance + heading,4,max_speed_mps,0.7508572935900818,0.25,10.0,15.0,80.0
+Distance + heading,5,emission_weight,0.7418227380638354,0.0,10.0,15.0,28.0
+Distance + heading,5,emission_weight,0.751648641519388,0.25,10.0,15.0,28.0
+Distance + heading,5,emission_weight,0.7504616196254287,0.5,10.0,15.0,28.0
+Distance + heading,5,emission_weight,0.7469005539435505,0.75,10.0,15.0,28.0
+Distance + heading,5,emission_weight,0.7465708256396729,1.0,10.0,15.0,28.0
+Distance + heading,5,emission_weight,0.7457135320495911,1.5,10.0,15.0,28.0
+Distance + heading,5,emission_weight,0.7432735426008968,2.0,10.0,15.0,28.0
+Distance + heading,6,beta_multiplier,0.7394486942759166,0.25,0.5,15.0,28.0
+Distance + heading,6,beta_multiplier,0.743537325243999,0.25,1.0,15.0,28.0
+Distance + heading,6,beta_multiplier,0.748351358480612,0.25,2.0,15.0,28.0
+Distance + heading,6,beta_multiplier,0.7504616196254287,0.25,4.0,15.0,28.0
+Distance + heading,6,beta_multiplier,0.7511210762331838,0.25,6.0,15.0,28.0
+Distance + heading,6,beta_multiplier,0.751648641519388,0.25,10.0,15.0,28.0
+LightGBM untuned,1,emission_weight,0.7395805855974676,0.0,4.0,60.0,52.0
+LightGBM untuned,1,emission_weight,0.7595621208124506,0.25,4.0,60.0,52.0
+LightGBM untuned,1,emission_weight,0.7591664468477974,0.5,4.0,60.0,52.0
+LightGBM untuned,1,emission_weight,0.7592983381693484,0.75,4.0,60.0,52.0
+LightGBM untuned,1,emission_weight,0.7597599577947771,1.0,4.0,60.0,52.0
+LightGBM untuned,1,emission_weight,0.7616064362964917,1.5,4.0,60.0,52.0
+LightGBM untuned,1,emission_weight,0.7616723819572672,2.0,4.0,60.0,52.0
+LightGBM untuned,2,beta_multiplier,0.7599577947771037,2.0,0.5,60.0,52.0
+LightGBM untuned,2,beta_multiplier,0.761012925349512,2.0,1.0,60.0,52.0
+LightGBM untuned,2,beta_multiplier,0.7609469796887365,2.0,2.0,60.0,52.0
+LightGBM untuned,2,beta_multiplier,0.7616723819572672,2.0,4.0,60.0,52.0
+LightGBM untuned,2,beta_multiplier,0.7614745449749406,2.0,6.0,60.0,52.0
+LightGBM untuned,2,beta_multiplier,0.7606831970456344,2.0,10.0,60.0,52.0
+LightGBM untuned,3,max_gap_s,0.7618042732788183,2.0,4.0,15.0,52.0
+LightGBM untuned,3,max_gap_s,0.7616723819572672,2.0,4.0,30.0,52.0
+LightGBM untuned,3,max_gap_s,0.7616723819572672,2.0,4.0,60.0,52.0
+LightGBM untuned,3,max_gap_s,0.7616723819572672,2.0,4.0,90.0,52.0
+LightGBM untuned,3,max_gap_s,0.7616723819572672,2.0,4.0,120.0,52.0
+LightGBM untuned,4,max_speed_mps,0.762265892904247,2.0,4.0,15.0,28.0
+LightGBM untuned,4,max_speed_mps,0.7618042732788183,2.0,4.0,15.0,40.0
+LightGBM untuned,4,max_speed_mps,0.7618042732788183,2.0,4.0,15.0,52.0
+LightGBM untuned,4,max_speed_mps,0.7618702189395937,2.0,4.0,15.0,64.0
+LightGBM untuned,4,max_speed_mps,0.7618702189395937,2.0,4.0,15.0,80.0
+LightGBM untuned,5,emission_weight,0.7401740965444473,0.0,4.0,15.0,28.0
+LightGBM untuned,5,emission_weight,0.7600237404378792,0.25,4.0,15.0,28.0
+LightGBM untuned,5,emission_weight,0.7616723819572672,0.5,4.0,15.0,28.0
+LightGBM untuned,5,emission_weight,0.7618042732788183,0.75,4.0,15.0,28.0
+LightGBM untuned,5,emission_weight,0.762265892904247,1.0,4.0,15.0,28.0
+LightGBM untuned,5,emission_weight,0.762265892904247,1.5,4.0,15.0,28.0
+LightGBM untuned,5,emission_weight,0.762265892904247,2.0,4.0,15.0,28.0
+LightGBM untuned,6,beta_multiplier,0.7617383276180427,2.0,0.5,15.0,28.0
+LightGBM untuned,6,beta_multiplier,0.7635188604589818,2.0,1.0,15.0,28.0
+LightGBM untuned,6,beta_multiplier,0.7623318385650224,2.0,2.0,15.0,28.0
+LightGBM untuned,6,beta_multiplier,0.762265892904247,2.0,4.0,15.0,28.0
+LightGBM untuned,6,beta_multiplier,0.7618702189395937,2.0,6.0,15.0,28.0
+LightGBM untuned,6,beta_multiplier,0.7608810340279609,2.0,10.0,15.0,28.0
+LightGBM tuned without context,1,emission_weight,0.7395805855974676,0.0,4.0,60.0,52.0
+LightGBM tuned without context,1,emission_weight,0.7575178053284094,0.25,4.0,60.0,52.0
+LightGBM tuned without context,1,emission_weight,0.7568583487206542,0.5,4.0,60.0,52.0
+LightGBM tuned without context,1,emission_weight,0.7554734898443682,0.75,4.0,60.0,52.0
+LightGBM tuned without context,1,emission_weight,0.7569902400422053,1.0,4.0,60.0,52.0
+LightGBM tuned without context,1,emission_weight,0.7572540226853073,1.5,4.0,60.0,52.0
+LightGBM tuned without context,1,emission_weight,0.7561329464521235,2.0,4.0,60.0,52.0
+LightGBM tuned without context,2,beta_multiplier,0.7509232392508572,0.25,0.5,60.0,52.0
+LightGBM tuned without context,2,beta_multiplier,0.754682141915062,0.25,1.0,60.0,52.0
+LightGBM tuned without context,2,beta_multiplier,0.7576496966499604,0.25,2.0,60.0,52.0
+LightGBM tuned without context,2,beta_multiplier,0.7575178053284094,0.25,4.0,60.0,52.0
+LightGBM tuned without context,2,beta_multiplier,0.7567924030598786,0.25,6.0,60.0,52.0
+LightGBM tuned without context,2,beta_multiplier,0.757583750989185,0.25,10.0,60.0,52.0
+LightGBM tuned without context,3,max_gap_s,0.757583750989185,0.25,2.0,15.0,52.0
+LightGBM tuned without context,3,max_gap_s,0.7576496966499604,0.25,2.0,30.0,52.0
+LightGBM tuned without context,3,max_gap_s,0.7576496966499604,0.25,2.0,60.0,52.0
+LightGBM tuned without context,3,max_gap_s,0.7576496966499604,0.25,2.0,90.0,52.0
+LightGBM tuned without context,3,max_gap_s,0.7576496966499604,0.25,2.0,120.0,52.0
+LightGBM tuned without context,4,max_speed_mps,0.7586388815615932,0.25,2.0,60.0,28.0
+LightGBM tuned without context,4,max_speed_mps,0.7576496966499604,0.25,2.0,60.0,40.0
+LightGBM tuned without context,4,max_speed_mps,0.7576496966499604,0.25,2.0,60.0,52.0
+LightGBM tuned without context,4,max_speed_mps,0.7576496966499604,0.25,2.0,60.0,64.0
+LightGBM tuned without context,4,max_speed_mps,0.7576496966499604,0.25,2.0,60.0,80.0
+LightGBM tuned without context,5,emission_weight,0.7401740965444473,0.0,2.0,60.0,28.0
+LightGBM tuned without context,5,emission_weight,0.7586388815615932,0.25,2.0,60.0,28.0
+LightGBM tuned without context,5,emission_weight,0.7594302294908994,0.5,2.0,60.0,28.0
+LightGBM tuned without context,5,emission_weight,0.7588367185439198,0.75,2.0,60.0,28.0
+LightGBM tuned without context,5,emission_weight,0.7582432075969401,1.0,2.0,60.0,28.0
+LightGBM tuned without context,5,emission_weight,0.7573199683460828,1.5,2.0,60.0,28.0
+LightGBM tuned without context,5,emission_weight,0.7591005011870219,2.0,2.0,60.0,28.0
+LightGBM tuned without context,6,beta_multiplier,0.7542205222896333,0.5,0.5,60.0,28.0
+LightGBM tuned without context,6,beta_multiplier,0.7570561857029807,0.5,1.0,60.0,28.0
+LightGBM tuned without context,6,beta_multiplier,0.7594302294908994,0.5,2.0,60.0,28.0
+LightGBM tuned without context,6,beta_multiplier,0.7585729359008178,0.5,4.0,60.0,28.0
+LightGBM tuned without context,6,beta_multiplier,0.7581113162753891,0.5,6.0,60.0,28.0
+LightGBM tuned without context,6,beta_multiplier,0.7588367185439198,0.5,10.0,60.0,28.0
+LightGBM tuned,1,emission_weight,0.7395805855974676,0.0,4.0,60.0,52.0
+LightGBM tuned,1,emission_weight,0.7605513057240834,0.25,4.0,60.0,52.0
+LightGBM tuned,1,emission_weight,0.7600237404378792,0.5,4.0,60.0,52.0
+LightGBM tuned,1,emission_weight,0.7591005011870219,0.75,4.0,60.0,52.0
+LightGBM tuned,1,emission_weight,0.7592983381693484,1.0,4.0,60.0,52.0
+LightGBM tuned,1,emission_weight,0.7589686098654709,1.5,4.0,60.0,52.0
+LightGBM tuned,1,emission_weight,0.7602875230809812,2.0,4.0,60.0,52.0
+LightGBM tuned,2,beta_multiplier,0.7533632286995515,0.25,0.5,60.0,52.0
+LightGBM tuned,2,beta_multiplier,0.7567924030598786,0.25,1.0,60.0,52.0
+LightGBM tuned,2,beta_multiplier,0.7598259034555527,0.25,2.0,60.0,52.0
+LightGBM tuned,2,beta_multiplier,0.7605513057240834,0.25,4.0,60.0,52.0
+LightGBM tuned,2,beta_multiplier,0.759364283830124,0.25,6.0,60.0,52.0
+LightGBM tuned,2,beta_multiplier,0.7579134792930625,0.25,10.0,60.0,52.0
+LightGBM tuned,3,max_gap_s,0.7613426536533896,0.25,4.0,15.0,52.0
+LightGBM tuned,3,max_gap_s,0.7605513057240834,0.25,4.0,30.0,52.0
+LightGBM tuned,3,max_gap_s,0.7605513057240834,0.25,4.0,60.0,52.0
+LightGBM tuned,3,max_gap_s,0.7605513057240834,0.25,4.0,90.0,52.0
+LightGBM tuned,3,max_gap_s,0.7605513057240834,0.25,4.0,120.0,52.0
+LightGBM tuned,4,max_speed_mps,0.7623318385650224,0.25,4.0,15.0,28.0
+LightGBM tuned,4,max_speed_mps,0.7613426536533896,0.25,4.0,15.0,40.0
+LightGBM tuned,4,max_speed_mps,0.7613426536533896,0.25,4.0,15.0,52.0
+LightGBM tuned,4,max_speed_mps,0.7614745449749406,0.25,4.0,15.0,64.0
+LightGBM tuned,4,max_speed_mps,0.7614745449749406,0.25,4.0,15.0,80.0
+LightGBM tuned,5,emission_weight,0.7401740965444473,0.0,4.0,15.0,28.0
+LightGBM tuned,5,emission_weight,0.7623318385650224,0.25,4.0,15.0,28.0
+LightGBM tuned,5,emission_weight,0.7621340015826958,0.5,4.0,15.0,28.0
+LightGBM tuned,5,emission_weight,0.7614085993141652,0.75,4.0,15.0,28.0
+LightGBM tuned,5,emission_weight,0.7613426536533896,1.0,4.0,15.0,28.0
+LightGBM tuned,5,emission_weight,0.7603534687417568,1.5,4.0,15.0,28.0
+LightGBM tuned,5,emission_weight,0.7606172513848589,2.0,4.0,15.0,28.0
+LightGBM tuned,6,beta_multiplier,0.7549459245581641,0.25,0.5,15.0,28.0
+LightGBM tuned,6,beta_multiplier,0.7583750989184912,0.25,1.0,15.0,28.0
+LightGBM tuned,6,beta_multiplier,0.7618702189395937,0.25,2.0,15.0,28.0
+LightGBM tuned,6,beta_multiplier,0.7623318385650224,0.25,4.0,15.0,28.0
+LightGBM tuned,6,beta_multiplier,0.7616723819572672,0.25,6.0,15.0,28.0
+LightGBM tuned,6,beta_multiplier,0.7596940121340016,0.25,10.0,15.0,28.0
+HistGradientBoosting,1,emission_weight,0.7395805855974676,0.0,4.0,60.0,52.0
+HistGradientBoosting,1,emission_weight,0.7620680559219203,0.25,4.0,60.0,52.0
+HistGradientBoosting,1,emission_weight,0.7613426536533896,0.5,4.0,60.0,52.0
+HistGradientBoosting,1,emission_weight,0.7606831970456344,0.75,4.0,60.0,52.0
+HistGradientBoosting,1,emission_weight,0.7620680559219203,1.0,4.0,60.0,52.0
+HistGradientBoosting,1,emission_weight,0.7618042732788183,1.5,4.0,60.0,52.0
+HistGradientBoosting,1,emission_weight,0.7616064362964917,2.0,4.0,60.0,52.0
+HistGradientBoosting,2,beta_multiplier,0.7587707728831443,1.0,0.5,60.0,52.0
+HistGradientBoosting,2,beta_multiplier,0.7630572408335532,1.0,1.0,60.0,52.0
+HistGradientBoosting,2,beta_multiplier,0.762265892904247,1.0,2.0,60.0,52.0
+HistGradientBoosting,2,beta_multiplier,0.7620680559219203,1.0,4.0,60.0,52.0
+HistGradientBoosting,2,beta_multiplier,0.7606831970456344,1.0,6.0,60.0,52.0
+HistGradientBoosting,2,beta_multiplier,0.7613426536533896,1.0,10.0,60.0,52.0
+HistGradientBoosting,3,max_gap_s,0.764310208388288,1.0,1.0,15.0,52.0
+HistGradientBoosting,3,max_gap_s,0.7630572408335532,1.0,1.0,30.0,52.0
+HistGradientBoosting,3,max_gap_s,0.7630572408335532,1.0,1.0,60.0,52.0
+HistGradientBoosting,3,max_gap_s,0.7630572408335532,1.0,1.0,90.0,52.0
+HistGradientBoosting,3,max_gap_s,0.7630572408335532,1.0,1.0,120.0,52.0
+HistGradientBoosting,4,max_speed_mps,0.7652993932999209,1.0,1.0,15.0,28.0
+HistGradientBoosting,4,max_speed_mps,0.764310208388288,1.0,1.0,15.0,40.0
+HistGradientBoosting,4,max_speed_mps,0.764310208388288,1.0,1.0,15.0,52.0
+HistGradientBoosting,4,max_speed_mps,0.7644420997098391,1.0,1.0,15.0,64.0
+HistGradientBoosting,4,max_speed_mps,0.7644420997098391,1.0,1.0,15.0,80.0
+HistGradientBoosting,5,emission_weight,0.7383276180427328,0.0,1.0,15.0,28.0
+HistGradientBoosting,5,emission_weight,0.7554734898443682,0.25,1.0,15.0,28.0
+HistGradientBoosting,5,emission_weight,0.7609469796887365,0.5,1.0,15.0,28.0
+HistGradientBoosting,5,emission_weight,0.7631891321551042,0.75,1.0,15.0,28.0
+HistGradientBoosting,5,emission_weight,0.7652993932999209,1.0,1.0,15.0,28.0
+HistGradientBoosting,5,emission_weight,0.764178317066737,1.5,1.0,15.0,28.0
+HistGradientBoosting,5,emission_weight,0.7644420997098391,2.0,1.0,15.0,28.0
+HistGradientBoosting,6,beta_multiplier,0.7604853600633078,1.0,0.5,15.0,28.0
+HistGradientBoosting,6,beta_multiplier,0.7652993932999209,1.0,1.0,15.0,28.0
+HistGradientBoosting,6,beta_multiplier,0.7647058823529411,1.0,2.0,15.0,28.0
+HistGradientBoosting,6,beta_multiplier,0.7633869691374308,1.0,4.0,15.0,28.0
+HistGradientBoosting,6,beta_multiplier,0.7613426536533896,1.0,6.0,15.0,28.0
+HistGradientBoosting,6,beta_multiplier,0.7620021102611448,1.0,10.0,15.0,28.0

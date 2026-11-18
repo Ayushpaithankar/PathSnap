@@ -1,0 +1,7 @@
+# Model, decoder and API interface
+
+`pathsnap.candidates.predict_trip(trip, artifact)` accepts a `Trip` containing a string ID and NumPy track, node and directed arc arrays. It returns ordered observations and candidate DataFrames. An ordered-model artifact provides feature order, candidate settings, a fitted estimator, a calibration slope and decoder parameters.
+
+Observations have `trip_id, observation_index, lon, lat, timestamp`. Candidate rows have `trip_id, observation_index, timestamp, arc_id, snapped_lon, snapped_lat, distance_m, probability`. Observation and arc IDs are original zero-based row indices. Trip IDs retain leading zeroes. In an ordered-model response, probability is a calibrated candidate-set softmax probability and the additional rule scores are `nearest_score` and `heading_score`. Legacy artifacts supply unnormalized binary positive-class scores. The decoder clips scores, normalizes within each candidate set and takes logs. An observation with no candidates remains in the ordered observation list.
+
+`GET /api/trips?partition=evaluator_test` lists available IDs. `POST /api/predict` accepts a JSON object with string `trip_id` and optional `partition` (default `evaluator_test`). It returns GPS observations, candidate road geometry, baseline and decoded arc IDs and geometry, connecting arcs indexed by destination observation, warnings and aggregate metrics. Unmatched observations are `null`. The reference route is loaded only after inference. The response contains no reference route or aligned labels.

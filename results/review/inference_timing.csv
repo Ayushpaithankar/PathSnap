@@ -1,0 +1,4 @@
+method,trips,observations,total_seconds,median_ms_per_trip,ms_per_observation,scope
+LightGBM untuned,10,19160,3.889219751348719,346.89618757693097,0.2029864170850062,"feature generation and candidate scoring, excludes Viterbi"
+LightGBM tuned,10,19160,3.7163729569874704,349.208791507408,0.19396518564652768,"feature generation and candidate scoring, excludes Viterbi"
+Nearest road,10,19160,3.377605250920169,300.5295419716276,0.17628419889980004,"feature generation and candidate scoring, excludes Viterbi"

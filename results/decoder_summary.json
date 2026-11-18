@@ -1,0 +1,18 @@
+{
+  "trips": 10,
+  "observations": 19160,
+  "labeled": 16854,
+  "label_coverage": 0.8796450939457202,
+  "candidate_miss_rate": 0.013171947312210752,
+  "candidate_coverage_differences": 0,
+  "baseline": {
+    "point_accuracy": 0.8568292393497092,
+    "direct_continuity": 0.900574412532637,
+    "sequence_f1": 0.5556497973800772
+  },
+  "decoded": {
+    "point_accuracy": 0.8674498635338792,
+    "direct_continuity": 0.9482506527415143,
+    "sequence_f1": 0.6806167400881057
+  }
+}

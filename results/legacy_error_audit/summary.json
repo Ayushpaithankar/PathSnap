@@ -1,0 +1,47 @@
+{
+  "trip_id": "00000077",
+  "observations": 3911,
+  "labeled": 3361,
+  "methods": {
+    "classifier": {
+      "errors": 956,
+      "exclusive": {
+        "reverse_arc": 703,
+        "intersection_proxy": 146,
+        "stationary_or_slow": 6,
+        "candidate_miss": 51,
+        "parallel_road_proxy": 24,
+        "unlabelled_adjacent": 15,
+        "other": 11
+      },
+      "overlapping": {
+        "reverse_arc": 709,
+        "intersection_proxy": 772,
+        "unlabelled_adjacent": 166,
+        "stationary_or_slow": 6,
+        "candidate_miss": 51,
+        "parallel_road_proxy": 28
+      }
+    },
+    "decoder": {
+      "errors": 949,
+      "exclusive": {
+        "intersection_proxy": 218,
+        "stationary_or_slow": 6,
+        "reverse_arc": 475,
+        "other": 173,
+        "unlabelled_adjacent": 25,
+        "candidate_miss": 51,
+        "parallel_road_proxy": 1
+      },
+      "overlapping": {
+        "intersection_proxy": 641,
+        "unlabelled_adjacent": 182,
+        "stationary_or_slow": 6,
+        "reverse_arc": 480,
+        "candidate_miss": 51,
+        "parallel_road_proxy": 4
+      }
+    }
+  }
+}

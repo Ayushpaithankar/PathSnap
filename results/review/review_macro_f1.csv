@@ -1,0 +1,13 @@
+split,method,macro_f1,observations,candidate_rows,correct,definition
+cv_trusted,Distance + heading,0.8700005463262502,120433,811206,93576,"candidate-row binary macro F1, one positive predicted candidate per observation"
+cv_trusted,HistGradientBoosting,0.9531458928918393,120433,811206,110602,"candidate-row binary macro F1, one positive predicted candidate per observation"
+cv_trusted,LightGBM tuned,0.9533509971180671,120433,811206,110644,"candidate-row binary macro F1, one positive predicted candidate per observation"
+cv_trusted,LightGBM tuned without context,0.9325866359294799,120433,811206,106392,"candidate-row binary macro F1, one positive predicted candidate per observation"
+cv_trusted,LightGBM untuned,0.9543130336077547,120433,811206,110841,"candidate-row binary macro F1, one positive predicted candidate per observation"
+cv_trusted,Nearest road,0.7344803705632019,120433,811206,65825,"candidate-row binary macro F1, one positive predicted candidate per observation"
+student_test,Distance + heading,0.8795799129434436,19160,130965,15187,"candidate-row binary macro F1, one positive predicted candidate per observation"
+student_test,HistGradientBoosting,0.9451411097363457,19160,130965,17328,"candidate-row binary macro F1, one positive predicted candidate per observation"
+student_test,LightGBM tuned,0.952765928980359,19160,130965,17577,"candidate-row binary macro F1, one positive predicted candidate per observation"
+student_test,LightGBM tuned without context,0.9342397617408889,19160,130965,16972,"candidate-row binary macro F1, one positive predicted candidate per observation"
+student_test,LightGBM untuned,0.950898001374396,19160,130965,17516,"candidate-row binary macro F1, one positive predicted candidate per observation"
+student_test,Nearest road,0.7251849786931812,19160,130965,10145,"candidate-row binary macro F1, one positive predicted candidate per observation"

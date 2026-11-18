@@ -1,0 +1,25 @@
+{
+  "name": "HistGradientBoosting",
+  "params": {
+    "learning_rate": 0.07247161488593983,
+    "max_leaf_nodes": 29
+  },
+  "tuned": true,
+  "features": [
+    "distance_m",
+    "arc_length_m",
+    "arc_fraction",
+    "heading_cos",
+    "speed_mps",
+    "elapsed_s",
+    "distance_rank",
+    "candidate_count"
+  ],
+  "candidate_settings": {
+    "radius": 75.0,
+    "limit": 5
+  },
+  "seed": 42,
+  "cap": 250,
+  "folds": 4
+}

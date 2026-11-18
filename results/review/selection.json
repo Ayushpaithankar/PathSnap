@@ -1,0 +1,31 @@
+{
+  "selected": "LightGBM untuned",
+  "trusted_cv_ranker_vs_nearest": {
+    "delta": -0.004525337739656074,
+    "low": -0.007298947839741666,
+    "high": -0.0015297568471147381,
+    "wins": 14,
+    "losses": 36,
+    "ties": 2
+  },
+  "transition_beta_m": 2.6152586684738566,
+  "model_fit_trips": 78,
+  "trusted_fit_observations": 180365,
+  "selection_policy": "highest trusted decoded assessment CV accuracy among trained models; rules remain baselines",
+  "trusted_cv_selected_vs_nearest": {
+    "delta": 0.003969011815698355,
+    "low": -0.0019373421712256538,
+    "high": 0.012060588704532386,
+    "wins": 17,
+    "losses": 33,
+    "ties": 2
+  },
+  "trusted_cv_tuned_vs_untuned": {
+    "delta": -0.008494349555354429,
+    "low": -0.017135542323506715,
+    "high": -0.0022377906781469296,
+    "wins": 22,
+    "losses": 29,
+    "ties": 1
+  }
+}

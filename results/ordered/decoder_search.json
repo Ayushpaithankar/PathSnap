@@ -1,0 +1,48 @@
+{
+  "source": "Conditional logit",
+  "config": 5,
+  "best": {
+    "scale": 5.0,
+    "max_gap_s": 90.0,
+    "max_speed_mps": 60.0,
+    "emission_weight": 0.6
+  },
+  "configs": [
+    {
+      "scale": 1.0,
+      "max_gap_s": 30.0,
+      "max_speed_mps": 45.0,
+      "emission_weight": 1.0
+    },
+    {
+      "scale": 2.0,
+      "max_gap_s": 15.0,
+      "max_speed_mps": 38.0,
+      "emission_weight": 0.7
+    },
+    {
+      "scale": 4.0,
+      "max_gap_s": 60.0,
+      "max_speed_mps": 55.0,
+      "emission_weight": 1.0
+    },
+    {
+      "scale": 3.0,
+      "max_gap_s": 25.0,
+      "max_speed_mps": 45.0,
+      "emission_weight": 1.5
+    },
+    {
+      "scale": 6.0,
+      "max_gap_s": 45.0,
+      "max_speed_mps": 35.0,
+      "emission_weight": 2.0
+    },
+    {
+      "scale": 5.0,
+      "max_gap_s": 90.0,
+      "max_speed_mps": 60.0,
+      "emission_weight": 0.6
+    }
+  ]
+}

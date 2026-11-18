@@ -1,0 +1,3 @@
+-r requirements.txt
+lightgbm==4.7.0
+optuna==4.9.0

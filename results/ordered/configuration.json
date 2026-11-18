@@ -1,0 +1,22 @@
+{
+  "model": "LightGBM ranker",
+  "best_grouped_cv_model": "LightGBM ranker",
+  "best_learned_cv_model": "HistGradientBoosting",
+  "best_overall_cv_method": "Nearest road",
+  "training_observations": 208417,
+  "training_observations_with_candidate": 185264,
+  "training_candidate_misses": 23153,
+  "fitted_exponential_beta_m": 3.1834799833381924,
+  "calibration_slope": 1.1267273550979515,
+  "decoder": {
+    "beta_m": 15.917399916690961,
+    "max_gap_s": 90.0,
+    "max_speed_mps": 60.0,
+    "emission_weight": 0.6,
+    "reversal_penalty": 2.0,
+    "stationary_speed": 1.0,
+    "bridge_gaps": true
+  },
+  "student_test_observations": 19160,
+  "student_test_candidate_misses": 81
+}

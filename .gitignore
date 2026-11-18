@@ -1,0 +1,10 @@
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+work/
+evaluator_test/
+*.log
+.DS_Store
+inputs/*.zip
+results/notebook_proof/five_model/oof_*.npz

@@ -1,0 +1,421 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>PathSnap · Route reconstruction</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+  <style>
+    :root {
+      color-scheme: light;
+      font: 15px/1.5 system-ui, sans-serif;
+      --ink: #19263e; --muted: #536279; --line: #dce3ec;
+      --green: #2457d6; --mint: #ecf1ff; --paper: #f1f4f9;
+    }
+    * { box-sizing: border-box; }
+    [hidden] { display: none !important; }
+    body { margin: 0; background: var(--paper); color: var(--ink); }
+    header { background: #12213a; color: white; }
+    .shell { width: min(1440px, calc(100% - 64px)); margin-inline: auto; }
+    .masthead { min-height: 66px; display: flex; align-items: center; justify-content: space-between; gap: 12px; }
+    .brand { display: flex; align-items: center; gap: 11px; font-size: 21px; font-weight: 750; letter-spacing: -.05em; }
+    .mark { width: 32px; height: 32px; display: grid; place-items: center; background: #a6bcff; color: #142d5e; border-radius: 9px; font-size: 19px; }
+    .connection { display: flex; align-items: center; gap: 8px; color: #d7ebe5; font-size: 12px; }
+    .dot { width: 8px; height: 8px; border-radius: 50%; background: #adc6bd; }
+    .connection[data-state="ready"] .dot { background: #8ee5ae; }
+    .connection[data-state="error"] .dot { background: #ffa591; }
+    main { padding-block: 30px 48px; }
+    h1, h2, p { margin: 0; }
+    h1 { font-size: clamp(29px, 4vw, 44px); letter-spacing: -.055em; line-height: 1.1; }
+    h2 { font-size: 19px; letter-spacing: -.025em; }
+    .intro p { color: var(--muted); margin-top: 7px; }
+    .card { background: #fff; border: 1px solid var(--line); border-radius: 16px; box-shadow: 0 2px 6px #16372a08; }
+    .controls { padding: 15px 18px 12px; margin-block: 23px 18px; }
+    .fields { display: grid; grid-template-columns: minmax(160px,1fr) minmax(155px,1fr) auto; gap: 12px; align-items: end; }
+    label { display: grid; gap: 5px; font-size: 13px; font-weight: 680; }
+    input, select, button { font: inherit; border-radius: 9px; min-height: 42px; }
+    input, select { padding: 0 11px; border: 1px solid #c9d9d0; background: #fff; color: var(--ink); width: 100%; }
+    select:disabled { background: var(--paper); }
+    button { padding: 0 17px; border: 1px solid var(--line); background: white; color: var(--ink); cursor: pointer; font-weight: 680; }
+    button:hover:enabled { background: var(--paper); }
+    button:disabled { cursor: default; opacity: .6; }
+    button.primary { background: var(--green); border-color: var(--green); color: white; }
+    button.primary:hover:enabled { background: #1943ac; }
+    :focus-visible { outline: 3px solid #5e80e8; outline-offset: 3px; }
+    .control-footer { display: flex; justify-content: space-between; gap: 12px; align-items: baseline; margin-top: 9px; }
+    .status { color: var(--muted); font-size: 13px; }
+    .status[data-state="error"] { color: #a12e26; }
+    details { font-size: 13px; color: var(--muted); }
+    summary { cursor: pointer; font-weight: 650; }
+    .connection-fields { display: flex; gap: 10px; align-items: end; margin-top: 10px; }
+    .connection-fields label { flex: 1; }
+    .dashboard { display: grid; grid-template-columns: minmax(0, 1fr) minmax(300px, 346px); gap: 18px; align-items: start; }
+    .map-card { overflow: hidden; }
+    .card-head { padding: 15px 18px; border-bottom: 1px solid var(--line); display: flex; justify-content: space-between; align-items: center; gap: 12px; }
+    .trip-tag { border-radius: 7px; background: var(--paper); padding: 4px 8px; color: var(--muted); font: 12px ui-monospace, monospace; }
+    .map-wrap { position: relative; }
+    #map { height: clamp(380px, 60vh, 660px); background: #e2ebe6; }
+    #map-hint { position: absolute; z-index: 500; top: 48%; left: 50%; transform: translate(-50%, -50%); width: max-content; max-width: 80%; padding: 13px 17px; background: #fff; border: 1px solid var(--line); border-radius: 12px; box-shadow: 0 6px 24px #162e2a22; text-align: center; pointer-events: none; }
+    .legend { display: flex; flex-wrap: wrap; gap: 9px 17px; padding: 11px 18px; color: var(--muted); font-size: 12px; }
+    .legend span { display: inline-flex; align-items: center; gap: 6px; }
+    .swatch { width: 15px; height: 0; border-top: 3px solid var(--color); border-radius: 2px; }
+    .swatch.gps { width: 8px; height: 8px; border: 0; border-radius: 50%; background: var(--color); }
+    .swatch.connector { border-top-style: dashed; }
+    .comparison { padding: 15px 16px; }
+    .comparison > p, .metric-note { font-size: 13px; color: var(--muted); margin-top: 4px; }
+    .metric { padding: 12px 0; border-bottom: 1px solid var(--line); }
+    .metric:last-child { border: 0; }
+    .metric-head { display: flex; justify-content: space-between; gap: 6px; align-items: center; }
+    .metric h3 { margin: 0; font-size: 13px; }
+    .delta { font-size: 11px; font-weight: 700; padding: 2px 6px; border-radius: 5px; background: #e4f7ec; color: #086044; white-space: nowrap; }
+    .delta.loss { background: #fce9e4; color: #942f25; }
+    .delta.neutral { background: var(--paper); color: var(--muted); }
+    .values { margin-top: 7px; display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+    .values div { background: #f1f5f7; border-radius: 8px; padding: 6px 9px; }
+    .values div:last-child { background: var(--mint); }
+    .values span, .facts dt { display: block; color: var(--muted); font-size: 11px; }
+    .values strong { font-size: 19px; letter-spacing: -.035em; font-variant-numeric: tabular-nums; }
+    .facts { display: grid; grid-template-columns: 1fr 1fr; gap: 9px; margin: 12px 0 0; }
+    .facts div { padding: 8px 10px; border: 1px solid var(--line); border-radius: 8px; }
+    .facts dd { margin: 0; font-weight: 700; }
+    .warnings { margin-top: 11px; }
+    .warnings ul { max-height: 180px; overflow: auto; padding-left: 22px; }
+    .map-tools { display: flex; align-items: center; gap: 8px; }
+    .segments { display: inline-flex; gap: 3px; padding: 3px; border: 1px solid var(--line);
+                border-radius: 10px; background: var(--paper); }
+    .segments button, .fit { min-height: 32px; padding-inline: 8px; font-size: 12px; }
+    .segments button { border-color: transparent; background: transparent; }
+    .segments button[aria-pressed="true"] { background: #fff; color: var(--green);
+                                           box-shadow: 0 1px 3px #1c315020; }
+    .scrub { display: grid; grid-template-columns: minmax(106px,auto) 1fr auto;
+             gap: 10px; padding: 9px 18px; align-items: center; border-top: 1px solid var(--line); }
+    .scrub label, .scrub output { font-size: 12px; }
+    .scrub input { min-height: 30px; padding: 0; accent-color: var(--green); }
+    .model-choice { margin-top: 10px; }
+    .rules { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin-top: 10px; }
+    .rules div { padding: 8px; border: 1px solid var(--line); border-radius: 8px; }
+    .rules span { display: block; font-size: 11px; color: var(--muted); }
+    .model-label { margin-top: 4px; color: var(--green); font-size: 13px; font-weight: 700; }
+    @media (max-width: 600px) { .card-head { flex-wrap: wrap; } }
+    @media (max-width: 980px) { .dashboard { grid-template-columns: minmax(0,1fr) minmax(265px,295px); } .shell { width: calc(100% - 36px); } }
+    @media (max-width: 760px) { .dashboard { grid-template-columns: 1fr; } #map { height: 430px; } }
+    @media (max-width: 490px) {
+      .shell { width: calc(100% - 24px); } main { padding-top: 23px; }
+      .fields { grid-template-columns: 1fr 1fr; } .primary { grid-column: 1 / -1; }
+      .connection-fields { flex-wrap: wrap; } .connection-fields label { min-width: 100%; }
+      #map { height: 360px; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="shell masthead">
+      <div class="brand"><span class="mark" aria-hidden="true">↗</span> PathSnap</div>
+      <div id="connection" class="connection" data-state="pending"><span class="dot" aria-hidden="true"></span><span id="connection-text">Connecting to API</span></div>
+    </div>
+  </header>
+  <main class="shell">
+    <div class="intro">
+      <h1>Route explorer</h1>
+      <p>Reconstruct a GPS trip and compare the routes before and after Viterbi decoding.</p>
+    </div>
+    <section class="card controls" aria-label="Trip selection">
+      <div class="fields">
+        <label>Dataset <select id="partition">
+          <option value="evaluator_test">Evaluator test</option><option value="student_test">Student test</option><option value="train">Training</option>
+        </select></label>
+        <label>Trip <select id="trip" disabled><option value="">Loading trips…</option></select></label>
+        <button type="button" id="predict" class="primary" disabled>Reconstruct route</button>
+      </div>
+      <div class="control-footer">
+        <p class="status" id="status" role="status"></p>
+        <details id="settings"><summary>API settings</summary></details>
+      </div>
+      <div class="connection-fields" id="connection-fields" hidden>
+        <label>API URL <input id="api" type="url" placeholder="http://192.168.1.10:8000"></label>
+        <button type="button" id="refresh">Connect</button>
+      </div>
+      <label class="model-choice" id="model-choice" hidden>Scoring method <select id="method"><option value="default">Release default</option></select></label>
+    </section>
+    <div class="dashboard">
+      <section class="card map-card" aria-labelledby="map-heading">
+        <div class="card-head">
+          <div><h2 id="map-heading">Route map</h2><span id="trip-tag" class="trip-tag">No trip loaded</span></div>
+          <div class="map-tools" id="map-tools" hidden>
+            <div class="segments" role="group" aria-label="Route view">
+              <button type="button" id="view-baseline" aria-pressed="false">Arc scores</button>
+              <button type="button" id="view-decoded" aria-pressed="true">Viterbi</button>
+              <button type="button" id="view-both" aria-pressed="false">Both</button>
+            </div>
+            <button type="button" class="fit" id="fit">Fit route</button>
+          </div>
+        </div>
+        <div class="map-wrap"><div id="map" aria-label="Map of the selected trip"></div><div id="map-hint">Select a trip and reconstruct its route.</div></div>
+        <div class="scrub" id="scrub" hidden>
+          <label for="sample">Inspect GPS point</label><input id="sample" type="range" min="0" max="0" value="0">
+          <output id="sample-detail" for="sample"></output>
+        </div>
+        <div class="legend" aria-label="Map legend">
+          <span><i class="swatch gps" style="--color:#2767c4"></i>GPS points</span>
+          <span><i class="swatch" style="--color:#849191"></i>Candidate roads</span>
+          <span><i class="swatch" style="--color:#087451"></i>Decoded route</span>
+          <span><i class="swatch connector" style="--color:#824cb4"></i>Connectors</span>
+          <span><i class="swatch" style="--color:#cf6917"></i>Arc-score route</span>
+        </div>
+      </section>
+      <aside class="card comparison" aria-labelledby="results-heading">
+        <h2 id="results-heading">Method comparison</h2>
+        <p id="results-empty">Run a trip to compare arc scores and Viterbi decoding.</p>
+        <div id="results" hidden>
+          <div id="model-label" class="model-label"></div>
+          <div id="metrics"></div>
+          <p id="metric-note" class="metric-note"></p>
+          <div id="rules" class="rules" aria-label="Point accuracy baselines" hidden>
+            <div><span>Nearest road</span><strong id="rule-nearest"></strong></div>
+            <div><span>Distance + heading</span><strong id="rule-heading"></strong></div>
+          </div>
+          <dl class="facts" id="facts"></dl>
+          <details class="warnings" id="warnings" hidden><summary id="warnings-title"></summary><ul id="warnings-list"></ul></details>
+        </div>
+      </aside>
+    </div>
+  </main>
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script>
+    const $ = id => document.getElementById(id);
+    $('api').value = localStorage.getItem('pathsnap_api') || location.origin;
+    $('settings').addEventListener('toggle', () => { $('connection-fields').hidden = !$('settings').open; });
+    const map = window.L ? L.map('map', {preferCanvas: true}).setView([20, 0], 2) : null;
+    if (map) {
+      L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        attribution: '© OpenStreetMap', maxZoom: 19
+      }).addTo(map);
+    } else {
+      $('map-hint').textContent = 'Map library unavailable. Check your internet connection.';
+    }
+    let layers = [];
+    let layerControl, routeBounds, marker, mapData, baselineLayer, decodedLayer;
+    let busy = false;
+    const base = () => $('api').value.trim().replace(/\/$/, '');
+    const formatNumber = new Intl.NumberFormat();
+    const percentage = value => Number.isFinite(value) ? (100 * value).toFixed(1) + '%' : '—';
+
+    function status(message, state = '') {
+      $('status').textContent = message;
+      $('status').dataset.state = state;
+    }
+
+    function connection(state, label) {
+      $('connection').dataset.state = state;
+      $('connection-text').textContent = label;
+    }
+
+    function loading(active) {
+      busy = active;
+      for (const id of ['partition', 'api', 'refresh', 'method']) $(id).disabled = active;
+      $('trip').disabled = active || !$('trip').value;
+      $('predict').disabled = active || !$('trip').value;
+    }
+
+    function clearResult() {
+      for (const layer of layers) map.removeLayer(layer);
+      layers = [];
+      if (layerControl) layerControl.remove();
+      layerControl = null;
+      routeBounds = marker = mapData = baselineLayer = decodedLayer = null;
+      $('map-tools').hidden = true;
+      $('scrub').hidden = true;
+      $('trip-tag').textContent = 'No trip loaded';
+      $('results').hidden = true;
+      $('results-empty').hidden = false;
+      $('map-hint').hidden = false;
+    }
+
+    async function request(path, options) {
+      const response = await fetch(base() + path, options);
+      const data = await response.json();
+      if (!response.ok) throw new Error(typeof data.detail === 'string' ? data.detail : response.statusText);
+      return data;
+    }
+
+    async function refresh() {
+      if (busy) return;
+      loading(true);
+      clearResult();
+      $('trip').replaceChildren(new Option('Loading trips…', ''));
+      status('Loading trips…');
+      try {
+        const [{trip_ids: ids}, catalog] = await Promise.all([
+          request('/api/trips?partition=' + encodeURIComponent($('partition').value)),
+          request('/api/models').catch(() => ({models: []}))
+        ]);
+        const previous = $('method').value;
+        $('method').replaceChildren(...(catalog.models.length
+          ? catalog.models.map(m => new Option(m.name, m.id))
+          : [new Option('Release default', 'default')]));
+        if ([...$('method').options].some(o => o.value === previous)) $('method').value = previous;
+        $('model-choice').hidden = catalog.models.length < 2;
+        localStorage.setItem('pathsnap_api', base());
+        $('trip').replaceChildren(...(ids.length ? ids.map(id => new Option(id, id)) : [new Option('No trips available', '')]));
+        if ($('partition').value === 'student_test' && ids.includes('00000052')) $('trip').value = '00000052';
+        connection('ready', 'API connected');
+        status(ids.length ? `${ids.length} trips available` : 'No trips in this dataset. Try Student test.');
+      } catch (error) {
+        $('trip').replaceChildren(new Option('No trips loaded', ''));
+        connection('error', 'API unavailable');
+        status(`Could not load trips. ${error.message}`, 'error');
+      } finally {
+        loading(false);
+      }
+    }
+
+    function routeView(view) {
+      if (!map || !baselineLayer || !decodedLayer) return;
+      for (const [layer, show] of [[baselineLayer, view !== 'decoded'], [decodedLayer, view !== 'baseline']]) {
+        if (show) layer.addTo(map);
+        else map.removeLayer(layer);
+      }
+      if (view === 'both') baselineLayer.bringToFront();
+      if (marker) marker.bringToFront();
+      for (const key of ['baseline', 'decoded', 'both']) $('view-' + key).setAttribute('aria-pressed', key === view);
+    }
+
+    function fitRoute() {
+      if (routeBounds?.isValid()) map.fitBounds(routeBounds, {padding: [36, 36], maxZoom: 17});
+    }
+
+    function inspectPoint() {
+      if (!mapData) return;
+      const index = Number($('sample').value);
+      const obs = mapData.observations[index];
+      const matched = mapData.decoded.arc_ids[index] != null;
+      marker.setLatLng([obs.lat, obs.lon]).setStyle({color: matched ? '#2457d6' : '#c54437'});
+      marker.addTo(map).bringToFront();
+      $('sample-detail').textContent = `${index + 1} / ${mapData.observations.length} · ${matched ? 'matched' : 'unmatched'}`;
+    }
+
+    function drawMap(data) {
+      if (!map) return;
+      for (const layer of layers) map.removeLayer(layer);
+      if (layerControl) layerControl.remove();
+      const roads = L.geoJSON(data.road_network, {style: {color: '#849191', weight: 2, opacity: .65}}).addTo(map);
+      decodedLayer = L.geoJSON(data.decoded.segments, {style: feature => feature.properties.connector
+        ? {color: '#824cb4', weight: 5, dashArray: '6 6'}
+        : {color: '#087451', weight: 6, opacity: .91}});
+      const gps = L.featureGroup(data.observations.map(o => L.circleMarker([o.lat, o.lon], {
+        radius: 2, color: '#fff', weight: .7, fillColor: '#2767c4', fillOpacity: .9
+      }))).addTo(map);
+      baselineLayer = L.geoJSON(data.baseline.segments, {style: {color: '#cf6917', weight: 3, opacity: .9, dashArray: '5 5'}});
+      marker = L.circleMarker([0, 0], {radius: 7, weight: 3, fillColor: '#fff', fillOpacity: 1});
+      layers = [roads, decodedLayer, gps, baselineLayer, marker];
+      layerControl = L.control.layers(null, {'GPS points': gps, 'Candidate roads': roads}).addTo(map);
+      routeBounds = L.featureGroup([gps, decodedLayer, baselineLayer]).getBounds();
+      $('map-tools').hidden = false;
+      routeView('decoded');
+      fitRoute();
+      if (data.observations.length) {
+        mapData = data;
+        $('sample').max = data.observations.length - 1;
+        $('sample').value = 0;
+        $('scrub').hidden = false;
+        inspectPoint();
+      }
+      $('map-hint').hidden = true;
+    }
+
+    function renderResults(data) {
+      const m = data.metrics;
+      const rows = [
+        ['Point accuracy', m.baseline.point_accuracy, m.decoded.point_accuracy],
+        ['Direct continuity', m.baseline.rate, m.decoded.rate],
+        ['Ordered route overlap', m.baseline.sequence_f1, m.decoded.sequence_f1]
+      ];
+      $('metrics').replaceChildren(...rows.map(([name, baseline, decoded]) => {
+        const row = document.createElement('section');
+        row.className = 'metric';
+        row.innerHTML = '<div class="metric-head"><h3></h3><span class="delta"></span></div><div class="values"><div><span>Arc scores only</span><strong></strong></div><div><span>Viterbi</span><strong></strong></div></div>';
+        row.querySelector('h3').textContent = name;
+        const [first, second] = row.querySelectorAll('strong');
+        first.textContent = percentage(baseline);
+        second.textContent = percentage(decoded);
+        const delta = row.querySelector('.delta');
+        if (Number.isFinite(baseline) && Number.isFinite(decoded)) {
+          const difference = Math.round((decoded - baseline) * 1000) / 10;
+          delta.textContent = `${difference > 0 ? '+' : ''}${difference.toFixed(1)} pp`;
+          delta.classList.toggle('loss', difference < 0);
+          delta.classList.toggle('neutral', difference === 0);
+        } else {
+          delta.hidden = true;
+        }
+        return row;
+      }));
+      const note = m.labeled === undefined ? 'Reference metrics are unavailable for this trip.'
+        : `Point accuracy uses ${formatNumber.format(m.labeled)} of ${formatNumber.format(m.observations)} GPS observations with ${data.label_method || 'inferred'} labels.`;
+      $('metric-note').textContent = note;
+      $('model-label').textContent = data.model || '';
+      $('rules').hidden = !m.rules;
+      if (m.rules) {
+        $('rule-nearest').textContent = percentage(m.rules.nearest_road);
+        $('rule-heading').textContent = percentage(m.rules.distance_heading);
+      }
+      const facts = [
+        ['GPS observations', m.observations],
+        ['Connecting arcs', data.decoded.connecting_arc_ids.reduce((sum, arr) => sum + arr.length, 0)],
+        ['Unmatched points', data.decoded.arc_ids.filter(arc => arc === null).length],
+        ['Route events', data.warnings.length]
+      ];
+      $('facts').replaceChildren(...facts.map(([label, value]) => {
+        const item = document.createElement('div');
+        const term = document.createElement('dt');
+        const measurement = document.createElement('dd');
+        term.textContent = label;
+        measurement.textContent = formatNumber.format(value);
+        item.append(term, measurement);
+        return item;
+      }));
+      $('warnings').hidden = !data.warnings.length;
+      $('warnings').open = false;
+      $('warnings-title').textContent = 'View route events';
+      $('warnings-list').replaceChildren(...data.warnings.map(warning => {
+        const item = document.createElement('li');
+        item.textContent = warning;
+        return item;
+      }));
+      $('results-empty').hidden = true;
+      $('results').hidden = false;
+    }
+
+    async function predict() {
+      if (busy || !$('trip').value) return;
+      loading(true);
+      clearResult();
+      status('Reconstructing the route…');
+      try {
+        const data = await request('/api/predict', {
+          method: 'POST', headers: {'Content-Type': 'application/json'},
+          body: JSON.stringify({partition: $('partition').value, trip_id: $('trip').value, method: $('method').value})
+        });
+        drawMap(data);
+        renderResults(data);
+        $('trip-tag').textContent = `Trip ${data.trip_id}`;
+        connection('ready', 'API connected');
+        status(`Prediction complete for ${data.trip_id}`);
+      } catch (error) {
+        status(`Could not reconstruct the route. ${error.message}`, 'error');
+      } finally {
+        loading(false);
+      }
+    }
+
+    $('refresh').onclick = refresh;
+    $('predict').onclick = predict;
+    $('partition').onchange = refresh;
+    $('method').onchange = () => { clearResult(); status('Ready to run the selected method.'); };
+    $('trip').onchange = () => { clearResult(); status('Ready to reconstruct the selected trip.'); };
+    for (const view of ['baseline', 'decoded', 'both']) $('view-' + view).onclick = () => routeView(view);
+    $('fit').onclick = fitRoute;
+    $('sample').oninput = inspectPoint;
+    refresh();
+  </script>
+</body>
+</html>
