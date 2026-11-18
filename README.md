@@ -1,79 +1,108 @@
 # PathSnap
 
-PathSnap scores directed road candidates for each GPS point, reconstructs a route with Viterbi, and serves the result through FastAPI and a browser map. The release includes the fitted classifier, original experiment results, measured decoder results and the supplied development dataset ZIP.
+PathSnap matches noisy GPS readings to directed road segments and reconstructs a route. A fitted **LightGBM LambdaRank** model scores candidate arcs, **Viterbi** selects a sequence, and **FastAPI** serves the route and metrics to a browser map.
 
-See [Review validation](REVIEW_VALIDATION.md) for the current model, trusted-reference evaluation and decoder search. Historical files are marked in [archive](archive/README.md). Rebuild the current [technical report draft](PathSnap_Technical_Report.pdf) with `python build_current_report.py`.
-For an assessment walkthrough, see [Model training evidence](MODEL_TRAINING_EVIDENCE.md) and [Evaluator setup](EVALUATOR_SETUP.md).
+**Start here:** [Colab notebook](notebooks/PathSnap_Colab.ipynb) · [Technical report](PathSnap_Technical_Report.pdf) · [Presentation guide](PathSnap_Presentation_Guide.md) · [Two-laptop setup](EVALUATOR_SETUP.md)
+
+[View the dashboard screenshot](results/review/evaluator_ui_loaded.png) · [View the development map screenshot](results/review/demo_map.png)
+
+## Results
+
+| Dataset | Decoded point accuracy |
+| --- | ---: |
+| Student test, 10 trips | **93.17%** |
+| Evaluator follow-up, 10 trips | **95.03%** |
+| Evaluator trip `00000015` | **92.53%**, up from 61.28% |
+
+Point accuracy is the share of GPS observations assigned to the reference-aligned directed arc. Ordered route F1 compares the predicted and reference arc sequences. Trip `00000015` reached **57.63% route F1** and reported **316 route breaks**. The evaluator failure prompted the decoder update, and student-test results informed the restart penalty, so the updated figures are follow-up results. See the [per-trip results](results/review/restart_validation.csv) and [validation protocol](REVIEW_VALIDATION.md).
 
 ## Run locally
 
-Use Python 3.11–3.13. If you cloned the Git repository, copy your supplied student dataset ZIP to `inputs/Student folder.zip` first. The local project ZIP already includes this file. Keep the evaluator folder separate and set its path as described below.
+Clone the repository and enter its root. Use Python 3.11–3.13 and put the supplied student dataset at `inputs/Student folder.zip`. The ZIP contains 80 training and 10 student-test trips. The optional evaluator folder is supplied separately.
 
-From this directory:
+**macOS or Linux**
 
-```sh
+```bash
 python3 -m venv .venv
-source .venv/bin/activate
-python -m pip install -r requirements.txt
-export PATHSNAP_DATA_ROOT="$PWD/inputs/Student folder.zip"
-python -m uvicorn pathsnap.api:app --host 127.0.0.1 --port 8000 --access-log
+.venv/bin/python -m pip install -r requirements.txt
+.venv/bin/python -m uvicorn pathsnap.api:app --host 127.0.0.1 --port 8000 --access-log
 ```
 
-Open http://127.0.0.1:8000. The dashboard starts on **Evaluator test**. When the evaluator folder is unavailable, select **Student test** to rehearse with trip `00000052`. Click **Reconstruct route** to show the map and compare the two methods. Leave the server terminal visible to see requests. Leaflet and background tiles load from the internet. On Windows, activate with `.venv\Scripts\Activate.ps1` and set environment variables with `$env:NAME = "value"`.
-
-## Two-laptop demo
-
-Run the server on Laptop 1 with `--host 0.0.0.0` on a trusted LAN. Allow TCP 8000 if needed. On Laptop 2, open `http://<Laptop-1-LAN-IP>:8000` in a browser. The page defaults to the same server and supports a configurable API URL. For an independently served UI on Laptop 2, run `python -m http.server 8080 --directory pathsnap`, open `http://localhost:8080/ui.html`, and enter Laptop 1's URL before loading trips.
-
-The API reads the bundled development ZIP by default. Point `PATHSNAP_EVALUATOR_ROOT` at the supplied **evaluator_test folder** on Laptop 1; it remains outside the project and never enters training or model selection. Each trip needs `<trip_id>.track`, `.nodes`, and `.arcs`. The `.route` file supports server-side final metrics and is read only after prediction. It is never returned to the UI.
-
-macOS/Linux on Laptop 1:
-
-```sh
-export PATHSNAP_EVALUATOR_ROOT="/path/to/evaluator_test"
-python -m uvicorn pathsnap.api:app --host 0.0.0.0 --port 8000 --access-log
-```
-
-Windows PowerShell on Laptop 1:
+**Windows PowerShell**
 
 ```powershell
-$env:PATHSNAP_EVALUATOR_ROOT = "C:\path\to\evaluator_test"
-python -m uvicorn pathsnap.api:app --host 0.0.0.0 --port 8000 --access-log
+py -3 -m venv .venv
+.\.venv\Scripts\python.exe -m pip install -r requirements.txt
+.\.venv\Scripts\python.exe -m uvicorn pathsnap.api:app --host 127.0.0.1 --port 8000 --access-log
 ```
 
-Check `http://<Laptop-1-IP>:8000/api/trips?partition=evaluator_test` returns ten IDs. On Laptop 2 open `http://<Laptop-1-IP>:8000`, select an evaluator trip, and keep the Laptop 1 terminal visible for request logs. For an automated request check, run `python -m pathsnap.verify_demo --api http://127.0.0.1:8000 --partition evaluator_test` on Laptop 1. This check performs inference with the frozen release artifact and must not be used to change model or decoder parameters.
+Open [the local dashboard](http://127.0.0.1:8000) and select **Student test → 00000052 → Reconstruct route**. The map’s background tiles require internet access.
 
-## Training and selection evidence
+### Two-laptop demo
 
-The project has five learned model families in `pathsnap/grouped_training.py`: conditional logit, grouped MLP, ExtraTrees, LightGBM LambdaRank, and HistGradientBoosting. Their grouped-fold outputs and student-test comparison are in `results/ordered/`. The later review experiment in `pathsnap/review_experiment.py` tuned LightGBM with Optuna and compared end-to-end decoding against both road rules. Its trial CSV, fold records, selection rule and final artifacts are in `results/review/`. See `REVIEW_VALIDATION.md` and `results/review/RESULTS.md` for the exact protocol and measured results.
+1. On the server laptop, set `PATHSNAP_EVALUATOR_ROOT` before starting Uvicorn. Use `export PATHSNAP_EVALUATOR_ROOT="/path/to/evaluator_test"` on macOS/Linux or `$env:PATHSNAP_EVALUATOR_ROOT = "C:\path\to\evaluator_test"` in PowerShell.
+2. Start Uvicorn with `--host 0.0.0.0` and keep the access logs visible. Connect both computers to the same network.
+3. On the UI laptop, open `http://<SERVER-LAN-IP>:8000` using the **server’s** IP. Select **Evaluator test → 00000015 → Reconstruct route**. See the [full demo setup](EVALUATOR_SETUP.md).
 
-The deployed LightGBM decoder now allows a new segment at a cost of 20 log-score units. This lets well-supported candidates recover when continuing the current segment would favor an implausible route. The decoder reports each break in **Route events** and supplies no connector across it. In the follow-up API check, evaluator trip `00000015` improved from 61.28% to 92.53% decoded point accuracy and reported 316 breaks. The change was prompted by the observed evaluator failure, and the cost was selected by comparing point accuracy on the ten student-test trips. The original comparison tables describe the earlier decoder. See `results/review/restart_validation.csv` for before and after results. To reproduce this release when refitting the artifact, pass `--restart-penalty 20` to `pathsnap.reselect_release`.
+The API lists trips at `GET /api/trips`, lists scoring methods at `GET /api/models`, and reconstructs routes at `POST /api/predict`. It reads references after prediction to compute metrics. See the [API implementation](pathsnap/api.py) or open [interactive API docs](http://127.0.0.1:8000/docs) while the server is running.
 
-`notebooks/PathSnap_Colab.ipynb` walks through preprocessing, model choice, and current live student-test inference. It includes saved local training outputs from two repeats of eight folds across five model families, 18 Optuna trials, and a fitted artifact export. Run sections 1–4 for the review walkthrough and section 5 to rerun training. See [the presentation guide](PathSnap_Presentation_Guide.md) for a demo talk track. `notebooks/PathSnap_Training_Proof.ipynb` preserves the focused historical training run. The separate CSV notebook demonstrates pointwise scoring for three models.
+## How the pipeline works
 
-## Reproduce the decoder and demo checks
+1. **Generate candidates.** Snap each GPS point to up to eight nearby directed arcs. Build features for distance, heading, motion, graph connectivity, and trajectory support.
+2. **Prepare training labels.** Align GPS points to the ordered reference route with a beam search. During inference, the candidate generator uses GPS and the road graph.
+3. **Rank candidates.** LightGBM scores the arcs within each GPS observation. The pipeline normalizes the scores within each candidate group for Viterbi.
+4. **Decode the route.** Viterbi combines candidate scores with directed path feasibility and movement costs. The deployed decoder can restart a segment at a fixed cost of 20 and records a break where it does.
 
-```sh
-python -m pathsnap.evaluate_decoder "$PATHSNAP_DATA_ROOT" --labels results/student_test_reference_labels.csv
-python -m pathsnap.evaluate_decoder "$PATHSNAP_DATA_ROOT" --live --labels results/student_test_reference_labels.csv
-python -m pathsnap.maps "$PATHSNAP_DATA_ROOT" student_test 00000052 results/development_map_00000052.html --reference
+### Important source files
+
+| Area | Source files |
+| --- | --- |
+| Candidate generation and features | [Candidate scoring](pathsnap/candidates.py), [grouped features](pathsnap/grouped_features.py) |
+| Label alignment and preparation | [Ordered labels](pathsnap/ordered_labels.py), [dataset preparation](pathsnap/prepare_grouped.py) |
+| Models and grouped cross-validation | [Model implementations](pathsnap/grouped_models.py), [five-model training](pathsnap/grouped_training.py) |
+| Bayesian optimization and release export | [Optuna search and assessment](pathsnap/review_experiment.py#L108), [refit and export](pathsnap/reselect_release.py) |
+| Graph, decoder, and metrics | [Graph and Viterbi](pathsnap/core.py), [reconstruction and scoring](pathsnap/pipeline.py) |
+| API, browser UI, and map | [FastAPI server](pathsnap/api.py), [dashboard HTML](pathsnap/ui.html), [Folium export](pathsnap/maps.py) |
+| Verification and report | [Live API checks](pathsnap/verify_demo.py), [automated tests](tests/), [report generator](build_current_report.py) |
+
+Browse [all source files](pathsnap/) and [archived experiments](archive/README.md).
+
+## Training and model selection
+
+The initial experiment compared conditional logit, grouped MLP, ExtraTrees, HistGradientBoosting, and LightGBM using two repeats of eight trip-grouped folds. Nearest road and distance plus heading were rule baselines. A later Optuna TPE search ran 18 LightGBM trials. Tuning improved standalone scoring, but the untuned LightGBM configuration had the highest trusted decoded cross-validation accuracy among trained candidates, **87.94%**. Nearest road plus Viterbi scored **87.55%**, and the paired interval included zero.
+
+| What to open | Files |
+| --- | --- |
+| Main walkthrough and training output | [Colab notebook](notebooks/PathSnap_Colab.ipynb), [executed training record](notebooks/PathSnap_Training_Proof.ipynb), [model training evidence](MODEL_TRAINING_EVIDENCE.md) |
+| Compact CSV demonstration | [CSV training notebook](notebooks/PathSnap_CSV_Training_Colab.ipynb) |
+| Five-model experiment | [CV summary](results/ordered/cv_summary.csv), [fold scores](results/ordered/cv_folds.csv), [student-test comparison](results/ordered/student_test_comparison.csv) |
+| Bayesian search | [Optuna trials](results/review/ranker_optuna_trials.csv), [best parameters](results/review/ranker_parameters.json), [search plot](results/review/ranker_optuna_history.png) |
+| Release decision | [Selection record](results/review/selection.json), [decoder settings from assessment](results/review/decoder_parameters.json), [decoder update results](results/review/restart_validation.csv) |
+| Fitted artifacts | [Deployed LightGBM](results/review/deployed.joblib), [tuned LightGBM](results/review/tuned_ranker.joblib), [nearest-road rule](results/review/nearest_rule.joblib) |
+
+The primary notebook includes locally executed output. In Colab, upload the project ZIP containing the student data and run Sections 1–4 for the walkthrough or Section 5 for training and export.
+
+### Reproduce the training stages
+
+Run from the project root in the activated virtual environment. Use [requirements-training.txt](requirements-training.txt) for training and [requirements.txt](requirements.txt) for inference.
+
+```bash
+python -m pip install -r requirements-training.txt
+python -m pathsnap.prepare_grouped "inputs/Student folder.zip" work/features
+python -m pathsnap.grouped_training work/features work/family-cv --mode compare --repeats 2
+python -m pathsnap.prepare_grouped "inputs/Student folder.zip" work/context --context
+python -m pathsnap.review_experiment "inputs/Student folder.zip" work/context work/review --phase ranker --trials 18
+python -m pathsnap.review_experiment "inputs/Student folder.zip" work/context work/review --phase evaluate
+python -m pathsnap.reselect_release work/context work/review --restart-penalty 20
+```
+
+The full assessment takes longer than the notebook walkthrough. The refit writes an artifact to `work/review/deployed.joblib`. To serve it, set `PATHSNAP_MODEL` to that file and restart the API.
+
+### Verify the demo
+
+Run the second command while the API is up and the evaluator folder is configured.
+
+```bash
 python -m pytest -q
-python -m pathsnap.verify_demo --api http://127.0.0.1:8000
-python build_current_report.py
+python -m pathsnap.verify_demo --api http://127.0.0.1:8000 --partition evaluator_test --all-methods
 ```
-
-The default batch comparison uses frozen scores. The live batch and demo run raw trips through the classifier. Files ending in `_live` record the live batch. When passed the label checkpoint, the evaluator checks every reference arc and reports any difference in candidate coverage.
-
-## Retrain and export
-
-Preparation accepts either the extracted data directory or the original ZIP with its `Student folder/` prefix. Use a separate output directory to keep each run's artifact, scores, and metrics together.
-
-```sh
-python -m pathsnap.prepare_data "$PATHSNAP_DATA_ROOT" work/prepared
-python -m pathsnap.train work/prepared work/retrained
-python -m pathsnap.summarize work/prepared work/retrained --archive "$PATHSNAP_DATA_ROOT"
-python -m pathsnap.evaluate_decoder "$PATHSNAP_DATA_ROOT" --scores work/retrained/student_test_probabilities.csv.gz --out work/retrained
-export PATHSNAP_MODEL="$PWD/work/retrained/best_classifier.joblib"
-```
-
-Restart the API after switching artifacts. Load trusted joblib files only. The released default is the fitted **untuned LightGBM LambdaRank model** selected from held-out training CV decoded accuracy; tuned LightGBM and nearest road remain selectable baselines. See [the technical report](PathSnap_Technical_Report.pdf) and [model training evidence](MODEL_TRAINING_EVIDENCE.md) for the mixed tuning result and selection limitation.
