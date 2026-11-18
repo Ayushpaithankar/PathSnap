@@ -7,7 +7,9 @@ For an assessment walkthrough, see [Model training evidence](MODEL_TRAINING_EVID
 
 ## Run locally
 
-Use Python 3.11–3.13. From this directory:
+Use Python 3.11–3.13. If you cloned the Git repository, copy your supplied student dataset ZIP to `inputs/Student folder.zip` first. The local project ZIP already includes this file. Keep the evaluator folder separate and set its path as described below.
+
+From this directory:
 
 ```sh
 python3 -m venv .venv
