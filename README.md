@@ -74,6 +74,7 @@ The initial experiment compared conditional logit, grouped MLP, ExtraTrees, Hist
 | What to open | Files |
 | --- | --- |
 | Main walkthrough and training output | [Colab notebook](notebooks/PathSnap_Colab.ipynb), [executed training record](notebooks/PathSnap_Training_Proof.ipynb), [model training evidence](MODEL_TRAINING_EVIDENCE.md) |
+| Hosted Google Colab run | [Original notebook with saved output](PathSnap_Colab.ipynb), [five-model comparison](results/colab_hosted/five_model_cv.csv), [18 Optuna trials](results/colab_hosted/optuna_trials_displayed.csv), [student-test summary](results/colab_hosted/student_test_summary.csv) |
 | Compact CSV demonstration | [CSV training notebook](notebooks/PathSnap_CSV_Training_Colab.ipynb) |
 | Five-model experiment | [CV summary](results/ordered/cv_summary.csv), [fold scores](results/ordered/cv_folds.csv), [student-test comparison](results/ordered/student_test_comparison.csv) |
 | Bayesian search | [Optuna trials](results/review/ranker_optuna_trials.csv), [best parameters](results/review/ranker_parameters.json), [search plot](results/review/ranker_optuna_history.png) |
@@ -81,6 +82,8 @@ The initial experiment compared conditional logit, grouped MLP, ExtraTrees, Hist
 | Fitted artifacts | [Deployed LightGBM](results/review/deployed.joblib), [tuned LightGBM](results/review/tuned_ranker.joblib), [nearest-road rule](results/review/nearest_rule.joblib) |
 
 The primary notebook includes locally executed output. In Colab, upload the project ZIP containing the student data and run Sections 1–4 for the walkthrough or Section 5 for training and export.
+
+The hosted run used an earlier project archive. Its saved model selection and metrics describe that experiment. The [primary notebook](notebooks/PathSnap_Colab.ipynb) documents the current release.
 
 ### Reproduce the training stages
 

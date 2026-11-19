@@ -1,0 +1,6 @@
+model,top1,grouped_log_loss
+Conditional logit,0.767089,3.478564
+ExtraTrees,0.770504,3.415555
+Grouped MLP,0.772548,3.398761
+HistGradientBoosting,0.778927,3.379573
+LightGBM ranker,0.779243,3.372990
